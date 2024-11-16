@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a href="/landing-page" class="header-logo">
+    <a href="/" class="header-logo">
       <img :src="logo" alt="Logo"/>
     </a>
     <div class="hamburger" @click="toggleMenu">
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 import logo from '@/assets/logo-lg.svg'; // Import the logo image directly
 
 const isMenuOpen = ref(false);
