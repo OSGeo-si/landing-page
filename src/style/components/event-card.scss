@@ -1,0 +1,10 @@
+event-card {
+    display: inline-block;
+    width: 256px;  // Limits the width of the content
+    height: 256px;
+    padding: 20px; // Adds padding to the content
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adds optional shadow
+    border-top: 1px solid var(--primary-color);
+    border-radius: 8px; // Adds rounded corners
+}

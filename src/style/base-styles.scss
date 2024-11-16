@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Monaco", -apple-system, sans-serif;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    color: var(--black);
+
+    &.small {
+        color: var(--gray);
+        font-size: 0.75rem;
+        line-height: 0.875rem;
+        margin-bottom: .25em;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    margin-bottom: 1rem;
+
+    &.welcome {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    margin-bottom: .5rem;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    margin-bottom: .25rem;
+}
+
+a {
+    text-decoration: none;
+}

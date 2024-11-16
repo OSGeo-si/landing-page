@@ -1,0 +1,96 @@
+@mixin justify($justifyContent: start) {
+    $options: (
+            start: flex-start,
+            end: flex-end,
+            between: space-between,
+            around: space-around,
+            center: center,
+    );
+
+    @if map_has_key($options, $justifyContent) != true {
+        @warn 'Value of justifyContent is not valid';
+    }
+
+    justify-content: map_get($options, $justifyContent);
+}
+
+@mixin content($alignContent: 'start') {
+    $options: (
+            start: flex-start,
+            center: center,
+            end: flex-end,
+            between: space-between,
+            around: space-around,
+    );
+
+    @if map_has_key($options, $alignContent) != true {
+        @warn 'Value of $alignContent is not valid';
+    }
+
+    align-content: map_get($options, $alignContent);
+}
+
+@mixin items($alignItems: 'start') {
+    $options: (
+            start: flex-start,
+            center: center,
+            end: flex-end,
+    );
+
+    @if map_has_key($options, $alignItems) != true {
+        @warn 'Value of $alignContent is not valid';
+    }
+
+    align-items: map_get($options, $alignContent);
+}
+
+@mixin self($alignSelf: 'auto') {
+    $options: (
+            auto: auto,
+            start: flex-start,
+            center: center,
+            end: flex-end,
+            stretch: stretch,
+    );
+
+    @if map_has_key($options, $alignSelf) != true {
+        @warn 'Value of $alignSelf is not valid';
+    }
+
+    align-self: map_get($options, $alignSelf);
+}
+
+@mixin flex($flexDirection: 'row') {
+    $options: (
+            row: row,
+            row-reverse: row-reverse,
+            col: column,
+            col-reverse: column-reverse,
+    );
+
+    @if map_has_key($options, $flexDirection) != true {
+        @warn 'Value of $flexDirection is not valid';
+    }
+
+    flex-direction: map_get($options, $flexDirection);
+}
+
+@mixin items($alignItems: 'stretch') {
+    $options: (
+            stretch: stretch,
+            start: flex-start,
+            center: center,
+            end: flex-end,
+            baseline: baseline,
+    );
+
+    @if map_has_key($options, $alignItems) != true {
+        @warn 'Value of $alignItems is not valid';
+    }
+
+    align-items: map_get($options, $alignItems);
+}
+
+@mixin text($textAlign: 'left') {
+    text-align: $textAlign;
+}

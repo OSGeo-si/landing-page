@@ -1,5 +1,5 @@
 {
-  "name": "landing-page",
+  "name": "OSGeoSi",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "sass": "^1.80.6",
+    "sass-loader": "^16.0.3",
+    "scss": "^0.2.4",
+    "vue": "^3.2.13",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

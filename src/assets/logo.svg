@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1280 1024">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: #cb6040;
+      }
+
+      .st2 {
+        fill: #257180;
+      }
+
+      .st1 {
+        font-family: RobotoMonoForPowerline-Bold, 'Roboto Mono for Powerline';
+        font-size: 72px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path class="st2" d="M301,363.24c-17.67,0-32,14.33-32,32,0,3.04.43,5.98,1.22,8.76h.06l2.04,5.44,26.65,71.15c.7,1.87,3.34,1.87,4.04,0l26.54-70.86,2.15-5.73h.1c.79-2.78,1.22-5.73,1.22-8.76,0-17.67-14.33-32-32-32ZM301.01,408.4c-9.85,0-17.84-7.99-17.84-17.84s7.99-17.84,17.84-17.84,17.84,7.99,17.84,17.84-7.99,17.84-17.84,17.84Z"/>
+  <text class="st1" transform="translate(363.33 451.84)"><tspan x="0" y="0">OSGeo Slovenija</tspan></text>
+  <circle class="st0" cx="301.5" cy="390.5" r="8.5"/>
+</svg>

@@ -1,0 +1,19 @@
+@mixin border($border:1px) {
+	border: $border solid var(--gray-light);
+}
+
+@mixin border-top($border:1px) {
+	border-top: $border solid var(--gray-light);
+}
+
+@mixin border-bottom($border:1px) {
+	border-bottom: $border solid var(--gray-light);
+}
+
+@mixin border-right($border:1px) {
+	border-right: $border solid var(--gray-light);
+}
+
+@mixin border-left($border:1px) {
+	border-left: $border solid var(--gray-light);
+}

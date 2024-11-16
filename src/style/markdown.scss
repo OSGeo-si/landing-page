@@ -1,0 +1,33 @@
+// based on https://github.com/sindresorhus/github-markdown-css
+.markdown {
+    table {
+        border-collapse: collapse;
+        margin-bottom: var(--spacing-4);
+    }
+    table th {
+        font-weight: 600;
+    }
+    
+    table th,
+    table td {
+        padding: 6px 13px;
+    }
+
+    table th {
+        background-color: var(--main-lightest);
+        border-top: 1px solid var(--gray);
+        border-bottom: 1px solid var(--gray);
+    }
+
+    table tr {
+        background-color: var(--white);
+    }
+
+    table tr:nth-child(2n) {
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    table tr:last-child {
+        border-bottom: 1px solid var(--gray);
+    }
+} 
