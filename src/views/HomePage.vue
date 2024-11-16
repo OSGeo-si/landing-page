@@ -15,7 +15,7 @@
           </div>
         </div>
       </div>
-      <div class="section mb-6">
+      <div class="section">
         <div class="contact-container">
           <div class="newsletter">
             <a href="https://eepurl.com/i3SUYE" target="_blank" class="btn">
@@ -35,9 +35,6 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="m-3">
-
       </div>
     </div>
   </div>
