@@ -7,7 +7,7 @@ import About from './views/AboutPage.vue'
 import Teren from './views/TerenPage.vue'
 
 const routes = [
-    { path: '/landing-page', name: 'Home', component: Home},
+    { path: '/', name: 'Home', component: Home},
     { path: '/osgeo-konferenca', name: 'OsGeoConf', component: OsGeoConf },
     { path: '/geodev', name: 'GeoDev', component: GeoDev },
     { path: '/teren', name: 'Teren', component: Teren },

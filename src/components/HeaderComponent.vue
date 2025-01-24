@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a href="/landing-page" class="header-logo">
+    <a href="/" class="header-logo">
       <img :src="logo" alt="Logo"/>
     </a>
     <div class="hamburger" @click="toggleMenu">
