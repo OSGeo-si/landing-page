@@ -1,5 +1,5 @@
 // src/router.js
-import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
+import {createRouter, createWebHashHistory} from 'vue-router'
 import Home from './views/HomePage.vue'
 import OsGeoConf from './views/OsGeoConfPage.vue'
 import GeoDev from './views/GeoDevPage.vue'
