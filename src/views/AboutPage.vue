@@ -9,7 +9,7 @@
 
       <ul class="m-4">
         <li>promocija in podpora odprtokodnim geoprostorskim tehnologijam, zlasti programskim paketom, kot so QGIS,
-          PostGIS, GrassGIS in Geoserver,
+          PostGIS, GRASS GIS in GeoServer,
         </li>
         <li>organizacija izobraževanj, delavnic in drugih dogodkov, povezanih z odprtokodno geoprostorsko tehnologijo,
         </li>

@@ -2,12 +2,12 @@
 <template>
   <div class="container">
     <div class="content">
-      <h1>GeoDev Meetups Slovenia 🌍</h1>
+      <h1>GeoDev Slovenia 🌍</h1>
 
       <div class="section">
 
       </div>
-      <span>GeoDev Meetupi so odprto, sproščeno in tehnično srečanje za uporabnike in razvijalce geoprostorskih tehnologij,
+      <span>GeoDev so odprto, sproščeno in tehnično srečanje za uporabnike in razvijalce geoprostorskih tehnologij,
         in vse, ki jih zanimajo prostorski podatki in tehnologije za njihovo obdelavo, analizo in vizualizacijo.
         Od navdušenih začetnikov do strokovnjakov - vsi ste dobrodošli, da se pridružite in delite svoje ideje,
         izkušnje, vprašanja, bolečine ali radosti, povezane z geoprostorskih tehnologij.
