@@ -15,3 +15,8 @@
     <!-- built files will be auto injected -->
   </body>
 </html>
+<script>
+  if (!location.hash) {
+    location.replace(location.pathname + '#/home');
+  }
+</script>
