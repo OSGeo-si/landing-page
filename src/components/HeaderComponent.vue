@@ -1,11 +1,11 @@
 <template>
   <header>
-    <a href="/#/landing-page" class="header-logo">
+    <a href="/landing-page/#/home" class="header-logo">
       <img :src="logo" alt="Logo"/>
     </a>
     <div class="hamburger" @click="toggleMenu">
       <div></div>
-      <div></div>
+      <div></div>g
       <div></div>
     </div>
     <nav :class="{ active: isMenuOpen }">
