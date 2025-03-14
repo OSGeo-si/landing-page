@@ -32,7 +32,7 @@
 <!--      </div>-->
 
       <div class="section">
-        <h2>Postani član</h2>
+        <h2>Včlani se!</h2>
 
         <p>Če želite postati član društva,
           izpolnite
