@@ -26,13 +26,22 @@
         </li>
       </ul>
 
-      <div class="section">
+<!--      <div class="section">-->
+<!--        <h2>Statut društva</h2>-->
+<!--        <p>Status društva bo objavljen tukaj.</p>-->
+<!--      </div>-->
 
-        <span>Pridruži se nam na rednem mesečnem posvetu.</span>
-      </div>
       <div class="section">
-        <span>Bi rad pomagal ali imaš idejo, kontaktiraj nas na osgeoslovenija[🐒]gmail.com</span>
+        <h2>Postani član</h2>
+
+        <p>Če želite postati član društva,
+          izpolnite
+          <a href="/pristopna_izjava_osgeo_si_v20241101.pdf" download>pristopno izjavo</a>
+          in jo pošljite na naš elektronski naslov:
+          <a href="mailto:osgeoslovenija@gmail.com">osgeoslovenija@gmail.com</a>.
+        </p>
       </div>
+
     </div>
   </div>
 </template>
