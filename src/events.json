@@ -1,7 +1,20 @@
 [
+
+   {
+    "title": "GeoDev 13",
+    "date": "10.03.2025",
+    "time": "18:00",
+    "location": " Urbanistični inštitut Republike Slovenije, Trnovski pristan 2, 1000 Ljubljana Vhod iz pasaže, predavalnica se nahaja v 2. nadstropju.",
+    "summary": "",
+    "descriptions": "# GeoDev Meetup #13\n\n\n\uD83D\uDCCD __Lokacija:__  [Urbanistični inštitut Republike Slovenije](https://www.uirs.si/sl-si/), Trnovski pristan 2, 1000 Ljubljana. [Vhod iz pasaže](https://www.openstreetmap.org/node/12504450770), predavalnica se nahaja v 2. nadstropju\n\n\uD83D\uDCC5 __Datum:__ četrtek, 10. marec 2025\n\n\uD83D\uDD55 __Čas:__ 18.00\n\n\n## Program\n\n\n__OpenSearch: Iskanje in vizualizacija brezna velikih podatkov v realnem času__\n\nPredstavili bomo OpenSearch, odprtokodni iskalni in analitični sistem, ki omogoča hitro iskanje, obdelavo in vizualizacijo velikih količin podatkov v realnem času. OpenSearch temelji na Elasticsearch in ponuja napredne funkcionalnosti, kot so distribuirano iskanje, indeksiranje podatkov, varnostne nastavitve in spremljanje stanja aplikacij. OpenSearch vključuje zmogljiv iskalni mehanizem in intuitivne nadzorne plošče (OpenSearch Dashboards), ki omogočajo vizualizacijo podatkov, prepoznavanje vzorcev, odkrivanje anomalij s strojnim učenjem in poglobljeno analizo podatkov. Dotaknili se bomo primera uporabe Opensearch za prostorske podatke.\n\nSimon Šanca, Univerza v Bergnu, IT-oddelek\n\n\n---\n\n\n__`signals-and-markers-toolkit`: Obdelava časovnih vrst satelitskih podob za potrebe monitoringa kmetijskih površin__\n\nPredstavil bom orodje, razvito za potrebe monitoringa kmetijskih površin. Rešitev temelji na ogrodju za orkestracijo tokov Prefect in izkorišča široko paleto odprtokodnih knjižnic. Poseben poudarek je posvečen skalabilnosti sistema, saj omogoča hkratno obdelavo desetin milijonov časovnih vrst. Obenem pa ima orodje visoko izrazno moč, saj lahko na razmeroma preprost način modeliramo kompleksne odločitvene procese. Predstavljeni bodo koraki, potrebni za pridobitev ocene skladnosti kmetijskega zemljišča - od predobdelave vhodnih podatkov in pridobivanja satelitskih posnetkov do izračuna različnih cenilk in odločitvenih dreves.\n\n\nKlemen Lovenjak, Planet\n\n## Ostalo\n\nDogodek je zastonj in odprt vsem. Pridruži se zabavnemu in poučnemu večeru z drugimi razvijalci in navdušenci nad geoprostorskimi podatki.\nDogodek in prostor je omogočil [Urbanistični inštitut Republike Slovenije](https://www.uirs.si/sl-si/). \n\n",
+    "eventUrl": "https://github.com/OSGeo-si/GeoDev/tree/master/2025-13-meetup",
+    "tags": [
+      "geodev"
+    ]
+  },
    {
     "title": "GeoDev 12",
-    "date": "2025.01.29",
+    "date": "29.01.2025",
     "time": "18:00",
     "location": " Urbanistični inštitut Republike Slovenije, Trnovski pristan 2, 1000 Ljubljana Vhod iz pasaže, predavalnica se nahaja v 2. nadstropju.",
     "summary": "",
@@ -13,7 +26,7 @@
   },
   {
     "title": "GeoDev 11",
-    "date": "2024.11.20",
+    "date": "20.11.2024",
     "time": "18:00",
     "location": "Računalniški muzej, Celovška cesta 111",
     "summary": "",
