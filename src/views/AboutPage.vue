@@ -26,10 +26,10 @@
         </li>
       </ul>
 
-<!--      <div class="section">-->
-<!--        <h2>Statut društva</h2>-->
-<!--        <p>Status društva bo objavljen tukaj.</p>-->
-<!--      </div>-->
+      <div class="section">
+        <h2>Statut društva</h2>
+      <a href="/OSGeoSlovenija_statut.pdf" download>Statut Društva</a>
+      </div>
 
       <div class="section">
         <h2>Včlani se!</h2>
