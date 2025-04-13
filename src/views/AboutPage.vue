@@ -28,7 +28,7 @@
 
       <div class="section">
         <h2>Statut društva</h2>
-      <a href="/OSGeoSlovenija_statut.pdf" download>Statut Društva</a>
+        <a href="/OSGeoSlovenija_statut.pdf" download>Statut Društva</a>
       </div>
 
       <div class="section">
@@ -40,6 +40,13 @@
           in jo pošljite na naš elektronski naslov:
           <a href="mailto:osgeoslovenija@gmail.com">osgeoslovenija@gmail.com</a>.
         </p>
+      </div>
+
+      <div class="section">
+
+        <a class="btn" href="http://eepurl.com/i3SUYE" target="_blank" rel="noopener noreferrer">
+          Prijavi se na novice
+        </a>
       </div>
 
     </div>
