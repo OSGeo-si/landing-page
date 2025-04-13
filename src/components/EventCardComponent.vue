@@ -7,17 +7,33 @@
     <p><span class="text-sm">🕕 Ura:{{ event.time }} </span></p>
     <p><span class="text-sm">{{ event.summary }} </span></p>
 
-    <a v-if="hasEventUrl" class="m-2 event-link" :href="event.eventUrl" target="_blank">
+
+    <router-link
+        v-if="isInternal"
+        :to="`/geodev/${props.event.id}`"
+        class="m-2 event-link"
+    >
+      <div class="text-sm">Več informacij ...</div>
+    </router-link>
+    <a
+        v-else
+        :href="props.event.eventUrl"
+        class="m-2 event-link"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
       <div class="text-sm">Več informacij ...</div>
     </a>
+
+
   </event-card>
 </template>
 
 <script setup>
-import {defineProps} from 'vue';
+import {defineProps, computed} from 'vue'
 
-// Define the props
-defineProps({
+// Define props
+const props = defineProps({
   event: {
     type: Object,
     required: true,
@@ -28,15 +44,13 @@ defineProps({
       time: 'Default Event Time',
       summary: 'Default Event Summary',
       eventUrl: undefined,
-    }), // Default to an empty object if not provided
-  },
-});
+      tags: [],
+      id: ''
+    })
+  }
+})
 
-// // Compute whether the event has a URL safely
-// const hasEventUrl = computed(() => {
-//   return event?.eventUrl !== undefined && event?.eventUrl !== null;
-// });
-const hasEventUrl = true;
+const isInternal = computed(() => props.event.tags.includes("geodev"))
 
 
 </script>

@@ -13,6 +13,8 @@ const routes = [
     { path: '/geodev', name: 'GeoDev', component: GeoDev },
     { path: '/teren', name: 'Teren', component: Teren },
     { path: '/about', name: 'About', component: About },
+    {path: '/geodev/:geoId', name: 'GeoDevDetail', component: () => import('@/views/GeoDevEvent.vue')
+}
 ]
 
 const router = createRouter({
