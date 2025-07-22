@@ -1,6 +1,6 @@
 <!-- src/components/FooterComponent.vue -->
 <template>
-  <event-card>
+  <event-card :class="{ 'future-event': isFuture }">
     <h3>{{ event.title }}</h3>
     <p><span class="text-sm">📍 Lokacija: {{ event.location }}</span></p>
     <p><span class="text-sm">📅 Datum: {{ event.date }}</span></p>
@@ -52,12 +52,26 @@ const props = defineProps({
 
 const isInternal = computed(() => props.event.tags.includes("geodev"))
 
-
+// Check if event date is in the future
+const isFuture = computed(() => {
+  const eventDate = new Date(props.event.date)
+  const today = new Date()
+  // Ignore time, compare only date
+  eventDate.setHours(0,0,0,0)
+  today.setHours(0,0,0,0)
+  return eventDate > today
+})
 </script>
 
 <style scoped>
 /* Add scoped styles here */
 .event-link {
   text-decoration: none;
+}
+
+.future-event {
+  border: 2px solid #2a7ae2;
+  box-shadow: 0 0 10px #2a7ae233;
+  background: #eaf6ff;
 }
 </style>

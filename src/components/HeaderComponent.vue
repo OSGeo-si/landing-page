@@ -19,7 +19,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import logo from '@/assets/logo-lg.svg'; // Import the logo image directly
+import logo from '@/assets/osgeo-si-logo.svg'; // Import the logo image directly
 
 const isMenuOpen = ref(false);
 
