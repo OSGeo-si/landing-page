@@ -7,94 +7,114 @@
           <p>Gozdarski inštitut Slovenije</p>
           <p>Večna pot 2, 1000 Ljubljana</p>
           <p class="date">22 - 23 oktober 2025</p>
-<!--          <a href="https://github.com/OSGeo-si" target="_blank">-->
-<!--            <img src="../../assets/github.svg" alt="Github" class="icon"/>-->
-<!--          </a>-->
+          <a href="https://github.com/OSGeo-si" target="_blank">
+            <img src="../../assets/github.svg" alt="Github" class="icon"/>
+          </a>
         </div>
       </div>
 
-      <section class="program">
-        <h2>Program dogodka bo objavljen kmalu.</h2>
-<!--        <h2>Program dogodka</h2>-->
+      <h1>Program dogodka bo objavljen kmalu. </h1>
 
+<!--      <section class="program">-->
+<!--        <h2>Program dogodka bo objavljen kmalu.</h2>-->
+<!--        <h2>Program dogodka</h2>-->
 
 
 <!--        <div class="card">-->
 <!--          <div class="conference-card">-->
 <!--          </div>-->
 <!--        </div>-->
-<!--        </section>-->
-        <!--        <div class="card">-->
-        <!--          <h2>Delavnice 22. oktober 2025</h2>-->
-        <!--          <div class="workshops">-->
-        <!--            <div class="workshop-card">-->
-        <!--              <div class="workshop-title">Point-Cloud Acrobatics</div>-->
-        <!--              <div class="workshop-presenter">Tomaž Žagar & Alen Mangafić</div>-->
-        <!--              <div class="workshop-time">8:00</div>-->
-        <!--              <div class="workshop-room">Učilnica A1</div>-->
-        <!--              <div class="workshop-desc">Kratek opis: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
-        <!--            </div>-->
-        <!--            <div class="workshop-card">-->
-        <!--              <div class="workshop-title">QGIS</div>-->
-        <!--              <div class="workshop-presenter">Tomaž Šturm</div>-->
-        <!--              <div class="workshop-time">9:30</div>-->
-        <!--              <div class="workshop-room">Učilnica B2</div>-->
-        <!--              <div class="workshop-desc">Kratek opis: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
-        <!--            </div>-->
-        <!--            <div class="workshop-card">-->
-        <!--              <div class="workshop-title">GIT</div>-->
-        <!--              <div class="workshop-presenter">Nejc Dougan</div>-->
-        <!--              <div class="workshop-time">11:00</div>-->
-        <!--              <div class="workshop-room">Učilnica C3</div>-->
-        <!--              <div class="workshop-desc">Kratek opis: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
-        <!--            </div>-->
-        <!--            <div class="workshop-card">-->
-        <!--              <div class="workshop-title">Priprava razvojnega okolja</div>-->
-        <!--              <div class="workshop-presenter">TBD</div>-->
-        <!--              <div class="workshop-time">12:30</div>-->
-        <!--              <div class="workshop-room">Učilnica D4</div>-->
-        <!--              <div class="workshop-desc">Kratek opis: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </div>-->
-        <!--        &lt;!&ndash; Conference section unchanged &ndash;&gt;-->
-        <!--        <div class="card">-->
-        <!--          <h2>Konferenca 23. oktober 2025</h2>-->
-        <!--          <div class="conference-cards">-->
-        <!--            <div class="conference-card">-->
-        <!--              <div class="conference-time">8:30</div>-->
-        <!--              <div class="conference-title">Uvodni pozdrav</div>-->
-        <!--              <div class="conference-presenter">Tomaž Šturm</div>-->
-        <!--            </div>-->
-        <!--            <div class="conference-card">-->
-        <!--              <div class="conference-time">8:40</div>-->
-        <!--              <div class="conference-title">Infinate land for the Penguins</div>-->
-        <!--              <div class="conference-presenter">Gerardus Mercator</div>-->
-        <!--              <div class="conference-desc">-->
-        <!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
-        <!--                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
-        <!--                Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
-        <!--                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.-->
+<!--        <div class="card">-->
+<!--          <h2>Delavnice 22. oktober 2025</h2>-->
+<!--          <div class="workshops">-->
+<!--            <div class="workshop-card">-->
+<!--              <div class="workshop-title">Point-Cloud Acrobatics</div>-->
+<!--              <div class="workshop-presenter">Tomaž Žagar & Alen Mangafić</div>-->
+<!--              <div class="workshop-time">8:00</div>-->
+<!--              <div class="workshop-room">Učilnica A1</div>-->
+<!--              <div class="workshop-desc">Kratek opis: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
+<!--            </div>-->
+<!--            <div class="workshop-card">-->
+<!--              <div class="workshop-title">QGIS</div>-->
+<!--              <div class="workshop-presenter">Tomaž Šturm</div>-->
+<!--              <div class="workshop-time">9:30</div>-->
+<!--              <div class="workshop-room">Učilnica B2</div>-->
+<!--              <div class="workshop-desc">Kratek opis: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
+<!--            </div>-->
+<!--            <div class="workshop-card">-->
+<!--              <div class="workshop-title">GIT</div>-->
+<!--              <div class="workshop-presenter">Nejc Dougan</div>-->
+<!--              <div class="workshop-time">11:00</div>-->
+<!--              <div class="workshop-room">Učilnica C3</div>-->
+<!--              <div class="workshop-desc">Kratek opis: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
+<!--            </div>-->
+<!--            <div class="workshop-card">-->
+<!--              <div class="workshop-title">Priprava razvojnega okolja</div>-->
+<!--              <div class="workshop-presenter">TBD</div>-->
+<!--              <div class="workshop-time">12:30</div>-->
+<!--              <div class="workshop-room">Učilnica D4</div>-->
+<!--              <div class="workshop-desc">Kratek opis: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Conference section unchanged &ndash;&gt;-->
+<!--        <div class="card">-->
+<!--          <h2>Konferenca 23. oktober 2025</h2>-->
+<!--          <div class="conference-cards">-->
+<!--            <div class="conference-card">-->
+<!--              <div class="conference-time">8:30</div>-->
+<!--              <div class="conference-title">Uvodni pozdrav</div>-->
+<!--              <div class="conference-presenter">Tomaž Šturm</div>-->
+<!--            </div>-->
+<!--            <div class="conference-card">-->
+<!--              <div class="conference-time">8:40</div>-->
+<!--              <div class="conference-title">Infinite land for the Penguins</div>-->
+<!--              <div class="conference-presenter">Gerardus Mercator</div>-->
+<!--              <div class="conference-desc">-->
+<!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et-->
+<!--                dolore magna aliqua.-->
+<!--                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna-->
+<!--                aliqua.-->
+<!--                Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea-->
+<!--                commodo consequat.-->
+<!--                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna-->
+<!--                aliqua.-->
 
-        <!--              </div>-->
-        <!--            </div>-->
-        <!--          </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="conference-card">-->
+<!--              <div class="conference-time">9:00</div>-->
+<!--              <div class="conference-title">Top</div>-->
+<!--              <div class="conference-presenter">Gerardus Mercator</div>-->
+<!--              <div class="conference-desc">-->
+<!--                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et-->
+<!--                dolore magna aliqua.-->
+<!--                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna-->
+<!--                aliqua.-->
+<!--                Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea-->
+<!--                commodo consequat.-->
+<!--                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna-->
+<!--                aliqua.-->
 
-        <!--        </div>-->
-      </section>
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--      </section>-->
 
 <!--      <section class="registration card">-->
 <!--        <h2>Prijava na dogodek</h2>-->
 <!--        <ul>-->
 <!--          <li>Prijava na konferenco je <span class="free">BREZPLAČNA</span>.</li>-->
-<!--          <li>Cena delavnice je <span class="price">20 EUR</span>.</li>-->
+<!--          <li>Cena delavnice je <span class="price">20 EUR (zastonj za člane)</span>.</li>-->
 <!--          <li>Prijave sprejemamo do vključno <strong>14. 10. 2025 do 12. ure</strong>.</li>-->
 <!--        </ul>-->
 <!--        <button class="register-btn">PRIJAVNI OBRAZEC</button>-->
 <!--      </section>-->
     </div>
   </div>
-<!--  <button class="fixed-register-btn">PRIJAVNI OBRAZEC</button>-->
+  <!--  <button class="fixed-register-btn">PRIJAVNI OBRAZEC</button>-->
 </template>
 
 <style scoped>

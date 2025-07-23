@@ -5,6 +5,8 @@ import OsGeoConf from './views/OsGeoConfPage.vue'
 import GeoDev from './views/GeoDevPage.vue'
 import About from './views/AboutPage.vue'
 import Teren from './views/TerenPage.vue'
+import Svizec from './views/SvizecPage.vue'
+import KjeTebeKartaZuli from './views/KjeTebeKartaZuliPage.vue'
 import OsGeoEvent2025 from "@/views/osgeoevents/OsGeoEvent2025.vue";
 
 const routes = [
@@ -13,6 +15,9 @@ const routes = [
     { path: '/osgeo-konferenca', name: 'OsGeoConf', component: OsGeoConf },
     { path: '/geodev', name: 'GeoDev', component: GeoDev },
     { path: '/teren', name: 'Teren', component: Teren },
+    { path: '/about', name: 'About', component: About },
+    { path: '/svizec', name: 'Svizec', component: Svizec },
+    { path: '/kje-tebe-karta-zuli', name: 'KjeTebeKartaZuli', component: KjeTebeKartaZuli },
     { path: '/about', name: 'About', component: About },
     { path: '/osgeo-konferenca/2025', name: 'OsGeoKonferenca2025', component: OsGeoEvent2025},
     {path: '/geodev/:geoId', name: 'GeoDevDetail', component: () => import('@/views/GeoDevEvent.vue')

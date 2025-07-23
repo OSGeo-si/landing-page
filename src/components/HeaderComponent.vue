@@ -10,6 +10,8 @@
     </div>
     <nav :class="{ active: isMenuOpen }">
       <router-link to="/osgeo-konferenca" @click="closeMenu">Konferenca</router-link>
+      <router-link to="/kje-tebe-karta-zuli" @click="closeMenu">Kje tebe karta žuli?</router-link>
+      <router-link to="/svizec" @click="closeMenu">Svizec</router-link>
       <router-link to="/geodev" @click="closeMenu">GeoDev</router-link>
       <router-link to="/teren" @click="closeMenu">Teren</router-link>
       <router-link to="/about" @click="closeMenu">O nas</router-link>
