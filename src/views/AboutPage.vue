@@ -3,10 +3,8 @@
   <div class="container">
     <div class="content">
       <h2>O Društvu</h2>
-      <div class="section"></div>
       <span>Namen društva sta razvoj in promocija odprtokodnih geoprostorskih tehnologij ter odprtih podatkovnih standardov v
       Sloveniji.</span>
-
       <ul class="m-4">
         <li>promocija in podpora odprtokodnim geoprostorskim tehnologijam, zlasti programskim paketom, kot so QGIS,
           PostGIS, GRASS in GeoServer,
@@ -26,12 +24,10 @@
         </li>
       </ul>
 
+      <a href="/OSGeoSlovenija_statut.pdf" download>Statut Društva</a>
       <div class="section">
-        <h2>Statut društva</h2>
-        <a href="/OSGeoSlovenija_statut.pdf" download>Statut Društva</a>
-      </div>
 
-      <div class="section">
+
         <h2>Včlani se!</h2>
 
         <p>Če želite postati član društva,

@@ -4,7 +4,7 @@
     <div class="content mb-4">
       <div class="section">
         <img :src="logo" alt="Logo" class="logo"/>
-        <h2 style="text-align: center">razvoj in promocija odprtokodnih geoprostorskih tehnologij ter odprtih podatkovnih standardov v
+        <h2 class="my-5" style="text-align: center">razvoj in promocija odprtokodnih geoprostorskih tehnologij ter odprtih podatkovnih standardov v
           Sloveniji</h2>
       </div>
       <div class="section">
@@ -43,7 +43,7 @@
 
 <script setup>
 import logo from '@/assets/osgeo-si-logo.svg';
-import svizec from '@/assets/svizec-main-bw.svg';
+import svizec from '@/assets/svizec-main-clr.svg';
 import EventCard from '../components/EventCardComponent.vue'
 import eventsData from '../events.json';
 

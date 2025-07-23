@@ -2,23 +2,16 @@
 <template>
   <div class="container">
     <div class="content">
-      <h1>OSGeo Konferenca</h1>
-      <span>Konference Open Source Geospatial Slovenija, ki vsako leto potekajo v Ljubljani, služijo kot platforma za strokovnjake in navdušence za razpravo o napredku in uporabi odprtokodnih geoprostorskih tehnologij.</span>
+      <h1>Open Source Geospatial Slovenija</h1>
+      <span>Vsakoletna konferenca Open Source Geospatial Slovenija, ki poteka v Ljubljani, predstavlja osrednje stičišče za strokovnjake in navdušence nad odprtokodnimi geoprostorskimi tehnologijami, kjer razpravljajo o njihovem razvoju in uporabi.</span>
+
 
       <div class="section">
-        <h2>Dogodki in novice</h2>
         <div class="d-flex main overflow-auto gap-2 mt-3 p-2 relative">
           <div v-for="event in osgeoEvents" :key="event.id">
             <event-card :event="event"/>
           </div>
         </div>
-      </div>
-
-      <div class="newsletter" style="width: 264px">
-        <a href="https://eepurl.com/i3SUYE" target="_blank" class="btn">
-          Prijavi se na novice
-          <img src="../assets/mail.svg" alt="Mailing List" class="icon"/>
-        </a>
       </div>
 
 

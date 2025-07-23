@@ -70,7 +70,7 @@ const isFuture = computed(() => {
 }
 
 .future-event {
-  border: 2px solid #2a7ae2;
+  border: 2px solid --var(--v-primary-base);
   box-shadow: 0 0 10px #2a7ae233;
   background: #eaf6ff;
 }

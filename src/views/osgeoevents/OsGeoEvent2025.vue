@@ -8,15 +8,14 @@
           <p>Večna pot 2, 1000 Ljubljana</p>
           <p class="date">22 - 23 oktober 2025</p>
           <a href="https://github.com/OSGeo-si" target="_blank">
-            <img src="../../assets/github.svg" alt="Github" class="icon"/>
+<!--            <img src="../../assets/github.svg" alt="Github" class="icon"/>-->
           </a>
         </div>
       </div>
 
-      <h1>Program dogodka bo objavljen kmalu. </h1>
+      <h1 style="text-align: center" class="m-5">Program dogodka bo objavljen kmalu. </h1>
 
 <!--      <section class="program">-->
-<!--        <h2>Program dogodka bo objavljen kmalu.</h2>-->
 <!--        <h2>Program dogodka</h2>-->
 
 
@@ -102,7 +101,6 @@
 
 <!--        </div>-->
 <!--      </section>-->
-
 <!--      <section class="registration card">-->
 <!--        <h2>Prijava na dogodek</h2>-->
 <!--        <ul>-->
@@ -135,7 +133,7 @@
 }
 
 .workshop-card {
-  background: #fff;
+  background: var(--background-main);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 1.5em;
@@ -145,38 +143,36 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid #e3eaf3;
+  border: 1px solid var(--primary-color);
   transition: box-shadow 0.2s, border 0.2s;
 }
 
 .workshop-card:hover {
   box-shadow: 0 4px 16px rgba(42, 122, 226, 0.12);
-  border: 1px solid #2a7ae2;
+  border: 1px solid var(--primary-color);
 }
 
 .workshop-title {
   font-size: 1.15em;
   font-weight: bold;
-  color: #2a7ae2;
+  color: var(--primary-color);
   margin-bottom: 0.3em;
 }
 
 .workshop-presenter {
-  font-size: 1em;
-  color: #1a4d7a;
+  color: var(--secondary-color);
   margin-bottom: 0.2em;
 }
 
 .workshop-time,
 .workshop-room {
-  font-size: 0.98em;
-  color: #555;
+  color: var(--gray);
   margin-bottom: 0.2em;
 }
 
 .workshop-desc {
   font-size: 0.98em;
-  color: #444;
+  color: var(--gray-dark);
 }
 
 .conference-cards {
@@ -187,11 +183,11 @@
 }
 
 .conference-card {
-  background: #f8fbff;
+  background: var(--white);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(42, 122, 226, 0.07);
   padding: 1.2em 1.5em;
-  border: 1px solid #e3eaf3;
+  border: 1px solid var(--primary-color);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -200,26 +196,26 @@
 
 .conference-card:hover {
   box-shadow: 0 4px 16px rgba(42, 122, 226, 0.14);
-  border: 1px solid #2a7ae2;
+  border: 1px solid var(--secondary-color);
 }
 
 .conference-time {
   font-size: 1.1em;
   font-weight: bold;
-  color: #2a7ae2;
+  color: var(--primary-color);
   margin-bottom: 0.2em;
 }
 
 .conference-title {
   font-size: 1.15em;
   font-weight: bold;
-  color: #1a4d7a;
+  color: var(--secondary-color);
   margin-bottom: 0.2em;
 }
 
 .conference-presenter {
   font-size: 1em;
-  color: #555;
+  color: var(--gray-dark);
   margin-bottom: 0.2em;
 }
 
@@ -242,7 +238,7 @@
 }
 
 .registration.card h2 {
-  color: #2a7ae2;
+  color: var(--primary-color);
   font-size: 1.35em;
   margin-bottom: 1em;
 }
@@ -251,27 +247,26 @@
 .registration.card ul {
   margin-bottom: 1.5em;
   font-size: 1.08em;
-  color: #1a4d7a;
+  color: var(--gray-dark);
   padding-left: 1.2em;
 }
 
 .registration.card .free {
-  color: #2a7ae2;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
 .registration.card .price {
-  color: #e67e22;
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
 .register-btn {
-  background: #2a7ae2;
+  background: var(--secondary-color);
   color: #fff;
   font-size: 1.18em;
   font-weight: bold;
   padding: 1em 2.5em;
-  border: 2px solid #1a4d7a;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(42, 122, 226, 0.13);
   cursor: pointer;
@@ -281,7 +276,7 @@
 }
 
 .register-btn:hover {
-  background: #1a4d7a;
+  background: var(--primary-color);
   box-shadow: 0 4px 18px rgba(42, 122, 226, 0.22);
   transform: translateY(-2px) scale(1.05);
 }
@@ -301,7 +296,7 @@
 .head h1 {
   font-size: 2.3em;
   font-weight: 800;
-  color: #1a4d7a;
+  color: var(--primary-color);
   margin-bottom: 0.5em;
   letter-spacing: 0.03em;
   position: relative;
@@ -312,7 +307,7 @@
   display: block;
   width: 80px;
   height: 5px;
-  background: #2a7ae2;
+  background: var(--secondary-color);
   border-radius: 3px;
   margin-top: 0.3em;
 }
@@ -320,7 +315,7 @@
 .location-date {
   margin-top: 1em;
   font-size: 1.08em;
-  color: #1a4d7a;
+  color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   gap: 0.2em;
@@ -335,7 +330,7 @@
 
 .location-date .date {
   font-weight: bold;
-  color: #e67e22;
+  color: var(--secondary-color);
   font-size: 1.12em;
   margin-top: 0.3em;
 }
