@@ -9,8 +9,8 @@
       </div>
       <span>GeoDev so odprto, sproščeno in tehnično srečanje za uporabnike in razvijalce geoprostorskih tehnologij,
         in vse, ki jih zanimajo prostorski podatki in tehnologije za njihovo obdelavo, analizo in vizualizacijo.
-        Od navdušenih začetnikov do strokovnjakov - vsi ste dobrodošli, da se pridružite in delite svoje ideje,
-        izkušnje, vprašanja, bolečine ali radosti, povezane z geoprostorskih tehnologij.
+        Od navdušenih začetnikov do strokovnjakov - vsi so dobrodošli, da se pridružijo in delijo svoje ideje,
+        izkušnje, vprašanja, bolečine ali radosti, povezane z geoprostorskimi tehnologijami.
       </span>
 
 
@@ -23,18 +23,9 @@
         </div>
       </div>
 
-      <div class="section">
-
-
-
-        <div class="newsletter" style="width: 264px">
-          <a href="https://eepurl.com/i3SUYE" target="_blank" class="btn">
-            Prijavi se na novice
-            <img src="../assets/mail.svg" alt="Mailing List" class="icon"/>
-          </a>
-        </div>
-
-
+      <div class="m-2">
+        <span>Posreduj nam svojo idejo po <a href="mailto:osgeoslovenija@gmail.com">e-pošti</a> ali
+          <a href="https://discord.gg/7Q7v6vz">Discordu</a>.</span>
       </div>
 
     </div>

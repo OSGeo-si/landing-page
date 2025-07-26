@@ -3,7 +3,7 @@
   <div class="container">
     <div class="content">
       <h1>Open Source Geospatial Slovenija</h1>
-      <span>Vsakoletna konferenca Open Source Geospatial Slovenija, ki poteka v Ljubljani, predstavlja osrednje stičišče za strokovnjake in navdušence nad odprtokodnimi geoprostorskimi tehnologijami, kjer razpravljajo o njihovem razvoju in uporabi.</span>
+      <span>Vsakoletna konferenca Open Source Geospatial Slovenija, ki poteka v Ljubljani, predstavlja osrednje stičišče za strokovnjake in navdušence nad odprtokodnimi geoprostorskimi tehnologijami. Dogodek je namenjen predstavitvi najnovejših dosežkov, trendov in praks na področju razvoja in uporabe teh tehnologij ter spodbuja strokovno izmenjavo mnenj in mreženje.</span>
 
 
       <div class="section">

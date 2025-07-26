@@ -4,7 +4,7 @@
     <div class="content">
       <h2>Teren</h2>
       <div class="m-2">
-        Pridružite se nam pri ustvarjanju odprtokodnih geolokacijskih orodij za reševanje resničnih izzivov! Sodelujte
+        Pridružite se nam pri uporabi in ustvarjanju odprtokodnih geolokacijskih orodij za reševanje resničnih izzivov! Sodelujte
         pri oblikovanju, razvoju in terenskem preizkušanju inovativnih rešitev, ki podpirajo akademske raziskave ali
         naravovarstvene projekte.
       </div>
@@ -19,7 +19,7 @@
       </div>
 
       <div class="m-2">
-        <span>Če želite sodelovati, se obrnite na nas preko <a href="mailto:osgeoslovenija@gmail.com">e-pošte</a> ali
+        <span>Če želite sodelovati, se lahko obrnete na nas preko <a href="mailto:osgeoslovenija@gmail.com">e-pošte</a> ali
           <a href="https://discord.gg/7Q7v6vz">Discorda</a>.</span>
       </div>
 

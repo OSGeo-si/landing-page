@@ -10,6 +10,15 @@
       <p class="mt-4">
         Dogodek je namenjen vsem, ki jih zanima odprto sodelovanje, skupnostno ustvarjanje in povezovanje ob ognju, ne pa v sejni sobi. Prinesi svoj šotor, dobro voljo, idejo ali samo željo po druženju – ostalo uredimo skupaj.
       </p>
+
+      <div class="section">
+  <div class="d-flex main overflow-auto gap-2 mt-3 p-2 relative">
+    <div v-for="event in svizecEvents" :key="event.id">
+      <event-card :event="event" />
+    </div>
+  </div>
+</div>
+
       <img :src="svizec" alt="Logo" class="hero"/>
 <!--      <div class="m-2">-->
 <!--        <span>Pridi v brlog! Vabila na <a href="mailto:osgeoslovenija@gmail.com">e-pošte</a> ali-->
@@ -21,6 +30,11 @@
 </template>
 
 <script setup>
+import EventCard from "@/components/EventCardComponent.vue";
+import eventsData from "@/events.json";
+
+const svizecEvents = eventsData.filter(event => event.tags.includes("osgeo-svizec"));
+
 import svizec from '@/assets/svizec-main-clr.svg';
 // No specific logic needed here
 </script>
