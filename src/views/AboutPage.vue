@@ -24,7 +24,10 @@
         </li>
       </ul>
 
-      <a href="/OSGeoSlovenija_statut.pdf" download>Statut Društva</a>
+      <a href="/OSGeoSlovenija_statut.pdf" download>Statut Društva</a><br><br>
+      <a href="https://wiki.osgeo.org/wiki/Slovenia" download>OSGeo Wiki</a>
+
+
       <div class="section">
 
 
