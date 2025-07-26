@@ -11,6 +11,8 @@
         Dogodek je namenjen vsem, ki jih zanima odprto sodelovanje, skupnostno ustvarjanje in povezovanje ob ognju, ne pa v sejni sobi. Prinesi svoj šotor, dobro voljo, idejo ali samo željo po druženju – ostalo uredimo skupaj.
       </p>
 
+      <img :src="svizec" alt="Logo" class="hero"/>
+
       <div class="section">
   <div class="d-flex main overflow-auto gap-2 mt-3 p-2 relative">
     <div v-for="event in svizecEvents" :key="event.id">
@@ -19,7 +21,7 @@
   </div>
 </div>
 
-      <img :src="svizec" alt="Logo" class="hero"/>
+
 <!--      <div class="m-2">-->
 <!--        <span>Pridi v brlog! Vabila na <a href="mailto:osgeoslovenija@gmail.com">e-pošte</a> ali-->
 <!--          <a href="https://discord.gg/7Q7v6vz">Discord</a>.</span>-->
