@@ -11,7 +11,7 @@
         Dogodek je namenjen vsem, ki jih zanima odprto sodelovanje, skupnostno ustvarjanje in povezovanje ob ognju, ne pa v sejni sobi. Prinesi svoj šotor, dobro voljo, idejo ali samo željo po druženju – ostalo uredimo skupaj.
       </p>
 
-      <img :src="svizec" alt="Logo" class="hero"/>
+      <img :src="svizec" alt="Logo" class="hero mt-5"/>
 
       <div class="section">
   <div class="d-flex main overflow-auto gap-2 mt-3 p-2 relative">
