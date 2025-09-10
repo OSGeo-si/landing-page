@@ -46,13 +46,13 @@
         <div class="payment-list">
           <p><strong>Podatki za plačilo:</strong></p>
           <ul>
-            <li>Prejemnik: DRUŠTVO ODPRTOKODNIH GEOPROSTORSKIH TEHNOLOGIJ OSGEO SLOVENIJA</li>
+            <li>Prejemnik: DRUŠTVO OSGEO SLOVENIJA </li>
             <li>IBAN (TRR): SI56 6100 0003 0709 965</li>
             <li>Banka: Delavska hranilnica d.d.</li>
             <li>Naslov: Dolomitska ulica 20, 1000 Ljubljana</li>
             <li>Znesek: 20,00 EUR</li>
             <li>Referenca: SI99 (pustite prazno polje za sklic)</li>
-            <li>Namen: Članarina OSGEO Slovenija</li>
+            <li>Namen: Članarina 2025</li>
           </ul>
         </div>
 
