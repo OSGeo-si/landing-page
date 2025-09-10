@@ -37,9 +37,34 @@
           izpolnite
           <a href="/pristopna_izjava_osgeo_si_v20241101.pdf" download>pristopno izjavo</a>
           in jo pošljite na naš elektronski naslov:
-          <a href="mailto:osgeoslovenija@gmail.com">osgeoslovenija@gmail.com</a>.
+          <a href="mailto:osgeoslovenija@gmail.com">osgeoslovenija@gmail.com</a>. Letna članarina znaša 20 EUR.
         </p>
       </div>
+
+
+      <div class="payment-info">
+        <div class="payment-list">
+          <p><strong>Podatki za plačilo:</strong></p>
+          <ul>
+            <li>Prejemnik: DRUŠTVO ODPRTOKODNIH GEOPROSTORSKIH TEHNOLOGIJ OSGEO SLOVENIJA</li>
+            <li>IBAN (TRR): SI56 6100 0003 0709 965</li>
+            <li>Banka: Delavska hranilnica d.d.</li>
+            <li>Naslov: Dolomitska ulica 20, 1000 Ljubljana</li>
+            <li>Znesek: 20,00 EUR</li>
+            <li>Referenca: SI99 (pustite prazno polje za sklic)</li>
+            <li>Namen: Članarina OSGEO Slovenija</li>
+          </ul>
+        </div>
+
+        <figure class="payment-qr">
+          <img
+              :src="qr"
+              alt="QR koda za plačilo članarine (20 EUR)"
+              loading="lazy"
+          />
+        </figure>
+      </div>
+
 
       <div class="section">
 
@@ -53,5 +78,31 @@
 </template>
 
 <script setup>
-// No specific logic needed here
+import qr from '@/assets/qr_clanarina_2025.png';
 </script>
+
+<style scoped>
+.payment-info {
+  display: grid;
+  gap: 1.25rem 2rem;              /* row / column gaps */
+  align-items: start;
+  /* Two columns when there’s room; collapses to one when not */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.payment-list ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;          /* keep bullets aligned */
+}
+
+.payment-qr {
+  margin: 0;                      /* remove default figure margins */
+}
+
+.payment-qr img {
+  display: block;
+  width: 100%;
+  max-width: 200px;               /* keeps QR from getting too huge on wide screens */
+  height: auto;
+}
+</style>
