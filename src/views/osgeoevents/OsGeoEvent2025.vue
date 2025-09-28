@@ -12,13 +12,9 @@
           </a>
         </div>
       </div>
-
       <!--      <h1 style="text-align: center" class="m-5">Program dogodka bo objavljen kmalu. </h1>-->
-
       <section class="program">
         <h1>Program dogodka</h1>
-
-
         <div class="card">
           <h2>Delavnice 22. oktober 2025</h2>
           <div class="workshops">
@@ -32,7 +28,7 @@
                   QGIS delavnica je v osnovi namenjena vsem, ki se želijo spoznati z QGIS in tistim, ki že
                   delajo z QGIS in želijo poglobiti svoje znanje. Okvirni program delavnice obsega uvod v GIS in QGIS,
                   oblikovanje slojev in tematski zemljevidi, enostavne analize, postavitev zemljevida in izvoz. Na QGIS
-                  delavnici bomo tudi predstavili in uporabili najboljši slovenski vtičnik QNarcis, ki omogoča enostaven
+                  delavnici bomo tudi predstavili in uporabili slovenski vtičnik QNarcis, ki omogoča enostaven
                   dostop do več kot 300 prostorskih slojev različnih vsebin iz Slovenije. Predstavili bomo tudi možnost
                   uporabe prostorskih podatkov na sprehodu v naravi. In poiskali odgovore na vprašanja, tudi tista bolj
                   kompleksna, udeležencev delavnice.
@@ -48,11 +44,47 @@
 
             </div>
             <div class="workshop-card">
-              <div class="workshop-title">Point-Cloud Acrobatics</div>
+              <div class="workshop-title">Akrobacije z oblaki točk: od surovega lidarja do 3D vizualizacij</div>
               <div class="workshop-presenter">Tomaž Žagar in Alen Mangafić</div>
-              <div class="workshop-time">13:00 - 15:00</div>
+              <div class="workshop-time">13:00 - 16:00</div>
               <!--              <div class="workshop-room">Učilnica B2</div>-->
-              <div class="workshop-desc">Point-Cloud Acrobatics</div>
+              <div class="workshop-desc">
+                <p>
+
+                  Delavnica je namenjena vsem, ki se želijo spoznati z aerolaserskimi oblaki točk (lidar) – od
+                  začetnikov, ki še nikoli niso odprli oblaka točk v analitičnem okolju, do naprednih uporabnikov, ki
+                  želijo razširiti svoje znanje. Potek bo interaktiven z vnaprej pripravljenim okoljem: začetniki bodo
+                  lahko sledili posameznim korakom, medtem ko bodo napredni uporabniki imeli možnost poganjati tudi
+                  predpripravljene kode in raziskovati zahtevnejše primere.
+                </p>
+                <br>
+                <p>
+                  Delavnica se začne s predstavitvijo standarda ASPRS, ki vam pomaga razumeti osnovne pojme, kot so
+                  klasifikacija točk, število odbojev in drugi atributi, s katerimi so lidarski podatki opredeljeni.
+                  Naučili se boste, kako te atribute pravilno interpretirati in jih uporabiti za analize.
+                </p>
+                <br>
+                <p>
+                  Od popolnega začetka z odpiranjem oblaka točk v CloudCompare bomo postopoma prešli k vizualizacijam in
+                  osnovnim obdelavam, nato k naprednejšim pregledom in procesnim verigam v QGIS, vse do PDAL-a, GRASS-a
+                  in Python ekosistema, ki omogočajo izvedbo naprednih analiz ter uporabo podatkov za produkcijske
+                  namene.
+                </p>
+                <br>
+                <p>
+                  Na poti bomo reševali naloge iz prakse, kot so izdelava rastrskih izdelkov, interpolacija,
+                  vektorizacija in segmentacija, ter poudarili učinkovite pristope za obvladovanje in vizualizacijo
+                  velikih oblakov točk. V zadnjem delu bomo pokazali, kako oblake točk vizualizirati neposredno v Python
+                  okolju, ter zaključili s predstavitvijo knjižnice Potree, kjer se boste naučili, kako oblak točk
+                  pripraviti za objavo in pregledovanje na spletu.
+                </p>
+                <br>
+                <p>
+                  Alen Mangafić in Tomaž Žagar sta raziskovalca na Geodetskem inštitutu Slovenije, kjer se ukvarjata z
+                  razvojem in uporabo metod daljinskega zaznavanja, podatkovno znanostjo ter gradnjo GIS rešitev.
+                  Aktivno sodelujeta v odprtokodni geoinformatiki in sta aktivna člana FOSS4G skupnosti.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -119,13 +151,12 @@
             <div class="conference-card">
               <div class="conference-time">9:40</div>
               <div class="conference-title">GURS – podatki daljinskega zaznavanja (nekoč, danes, jutri)</div>
-              <div class="conference-presenter">Boštjan Pucelj
-              </div>
+              <div class="conference-presenter">Boštjan Pucelj</div>
               <div class="conference-desc">
                 <p>
                   Geodetska uprava Republike Slovenije (GURS) je javna institucija, odgovorna za upravljanje in
                   vzdrževanje geodetskih podatkov v Sloveniji. Znotraj svojih pristojnosti skrbi tudi za podatke
-                  daljinskega zaznavanje kot so aerofotografije, ortofote in lasarsko skeniranje. Predstavljeni bodo
+                  daljinskega zaznavanja, kot so aerofotografije, ortofoti in lasersko skeniranje. Predstavljeni bodo
                   podatki, ki jih GURS ima ali ustvarja, kako podatki nastanejo, kakšne so njene karakteristike ter
                   izdelki. V želji po množični uporabi in dostopnosti arhiva aerofotografij s katerimi upravlja GURS,
                   smo leta 2024 začeli projekt Georeferenciranje arhiva aerofotografij (GAAF).
@@ -142,7 +173,7 @@
                 <br>
                 <p>
                   Boštjan Pucelj je zaposlen na Uradu za geodezijo Geodetske uprave Republike Slovenije, in sicer na
-                  Sektorju za topografski sistem. Dela na področju daljinskega zaznavanja (aerofotografiranje, lasarsko
+                  Sektorju za topografski sistem. Dela na področju daljinskega zaznavanja (aerofotografiranje, lasersko
                   skeniranje). Diplomiral je leta 2004 na Fakulteti za gradbeništvo in geodezijo Univerze v Ljubljani s
                   področja fotogrametrije.
                 </p>
@@ -168,7 +199,7 @@
                   prostora,
                   uporabljeni v postopku pridobitve gradbenega dovoljenja, niso dovolj natančni, lahko to vodi do
                   pristranskih rezultatov, v skrajnem primeru pa na podlagi takih podatkov sploh ne moremo sprejeti
-                  določitev. Predstavitev bo ponazorila nekaj primerov v zvezi s kakovostjo prostorskih podatkov in
+                  odločitev. Predstavitev bo ponazorila nekaj primerov v zvezi s kakovostjo prostorskih podatkov in
                   morebitne posledice uporabe neustreznih podatkov. Pri tem se bomo dotaknili tako tehničnega vidika kot
                   t. i. človeškega dejavnika ter opredelili razliko med zaznano in dejansko kakovostjo podatkov. Na
                   podlagi teh spoznanj bomo predstavili koncept upravljanja kakovosti prostorskih podatkov z uporabo
@@ -211,7 +242,7 @@
                   of spatial data integration, which resulted in a versatile digital elevation model (DEM) of Slovenia,
                   and designed an interoperable spatial infrastructure for Arab countries, reducing implementation costs
                   to less than 20 percent in both cases. He currently works at the Ministry of Natural Resources and
-                  Spatial Planning and at the Faculty of Information Studies, where he is involved in R&amp;D. knowledge
+                  Spatial Planning and at the Faculty of Information Studies, where he is involved in R&D. knowledge
                   transfer and implementation of solutions in the field of geoinformatics.
                 </p>
               </div>
@@ -230,7 +261,6 @@
               </div>
               <div class="conference-desc">
                 <p>
-
                   Predstavimo kako storitvi Avtolog in Tocen.si izkoriščata odprte podatke za varnejši in preglednejši
                   avtomobilski trg ter za enoten dostop do vseh oblik mobilnosti. A po desetih letih odpiranja in
                   uporabe
@@ -241,7 +271,6 @@
                 </p>
                 <br>
                 <p>
-
                   We present how the services Avtolog and Točen.si leverage open data to create a safer and more
                   transparent car market and to provide unified access to all forms of mobility. Yet, ten years into the
                   era of opening and using data, gaps remain in data quality, interoperability, and the timeliness of
@@ -313,29 +342,18 @@
                 </p>
                 <br>
                 <p>
-                  Opis avtorja: Mitja Žalik je doktorski študent na Fakulteti za elektrotehniko, računalništvo in
+                  Mitja Žalik je doktorski študent na Fakulteti za elektrotehniko, računalništvo in
                   informatiko Univerze v Mariboru (UM FERI). Poleg pedagoškega dela sodeluje v laboratoriju GeMMA pri
                   številnih raziskovalno-razvojnih projektih. Njegovo raziskovalno delo je usmerjeno v področje umetne
                   inteligence, s poudarkom na detekciji objektov in federativnem učenju.
                 </p>
               </div>
             </div>
-
-
             <div class="conference-card">
               <div class="conference-time">11:40</div>
               <div class="conference-title">Geospatial deep learning with TorchGeo</div>
               <div class="conference-presenter">Blaž Rolih</div>
               <div class="conference-desc">
-                <p>
-                  TorchGeo is an open-source library built on PyTorch that provides datasets, models, and utilities for
-                  geospatial deep learning. In this talk, we will give an overview of TorchGeo, explain why it is a
-                  useful
-                  tool for both remote sensing and machine learning experts, and demonstrate its use through an existing
-                  example on earthquake detection. Finally, we will present our recent work on remote sensing change
-                  detection and show how we integrated it into TorchGeo.
-                </p>
-                <br>
                 <p>
                   TorchGeo je odprtokodna knjižnica, zasnovana na PyTorch-u, ki ponuja podatkovne zbirke, modele in
                   orodja
@@ -345,6 +363,15 @@
                   nedavno
                   delo na področju zaznavanja sprememb v daljinskem zaznavanju in pokazali, kako smo ga vključili v
                   knjižnico TorchGeo.
+                </p>
+                <br>
+                <p>
+                  TorchGeo is an open-source library built on PyTorch that provides datasets, models, and utilities for
+                  geospatial deep learning. In this talk, we will give an overview of TorchGeo, explain why it is a
+                  useful
+                  tool for both remote sensing and machine learning experts, and demonstrate its use through an existing
+                  example on earthquake detection. Finally, we will present our recent work on remote sensing change
+                  detection and show how we integrated it into TorchGeo.
                 </p>
                 <br>
                 <p>
@@ -381,13 +408,13 @@
                 </p>
                 <br>
                 <p>
-                  Jaša Dimič: Podatkovni znanstvenik z matematičnim ozadjem in poudarkom na statistiki, odgovoren za
+                  Jaša Dimič je podatkovni znanstvenik z matematičnim ozadjem in poudarkom na statistiki, odgovoren za
                   raziskovanje, preizkušanje in uporabo novih vegetacijskih indeksov ter izgradnjo modelov globokih
                   nevronskih mrež.
                 </p>
                 <br>
                 <p>
-                  Dr. Blaž Jakopin: Vodja projekta, ki ima izkušnje z razvojem produktov, tehnologijami IoT, raziskavami
+                  Dr. Blaž Jakopin je vodja projekta, ki ima izkušnje z razvojem produktov, tehnologijami IoT, raziskavami
                   daljinskega zaznavanja in tržnimi raziskavami; je direktor podjetja PRIOT d.o.o.
                 </p>
               </div>
@@ -409,7 +436,7 @@
           <li>Cena delavnice je <span class="price">20 EUR (zastonj za člane)</span>.</li>
           <li>Prijave sprejemamo do vključno <strong>14. 10. 2025 do 12. ure</strong>.</li>
         </ul>
-<!--        <button class="register-btn">PRIJAVNI OBRAZEC</button>-->
+        <!--        <button class="register-btn">PRIJAVNI OBRAZEC</button>-->
       </section>
     </div>
   </div>
