@@ -3,7 +3,7 @@
   <event-card :class="{ 'future-event': isFuture }">
     <h3>{{ event.title }}</h3>
     <p><span class="text-sm">📍 Lokacija: {{ event.location }}</span></p>
-    <p><span class="text-sm">📅 Datum: {{ event.date }}</span></p>
+    <p><span class="text-sm">📅 Datum: {{ event.date }}</span> <span class="text-sm" v-if="event.end_date"> - {{event.end_date}}</span> </p>
     <p><span class="text-sm">🕕 Ura:{{ event.time }} </span></p>
     <p><span class="text-sm">{{ event.summary }} </span></p>
 
