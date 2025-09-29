@@ -430,7 +430,7 @@
         <h2>Prijava na dogodek</h2>
         <ul>
           <li>Prijava na konferenco je <span class="free">BREZPLAČNA</span>.</li>
-          <li>Cena delavnice je <span class="price">20 EUR (zastonj za člane)</span>.</li>
+          <li>Cena posazmezne delavnice je <span class="price">20 EUR (brezplačno za člane)</span>.</li>
           <li>Prijave sprejemamo do vključno <strong>20. 10. 2025 do 14. ure</strong>.</li>
         </ul>
         <!--        <button class="register-btn">PRIJAVNI OBRAZEC</button>-->
