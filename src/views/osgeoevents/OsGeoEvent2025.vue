@@ -44,7 +44,7 @@
             <div class="workshop-card">
               <div class="workshop-title">Akrobacije z oblaki točk: od surovega lidarja do 3D vizualizacij</div>
               <div class="workshop-presenter">Tomaž Žagar in Alen Mangafić</div>
-              <div class="workshop-time">13:00 - 16:00</div>
+              <div class="workshop-time">12:30 - 15:30</div>
               <!--              <div class="workshop-room">Učilnica B2</div>-->
               <div class="workshop-desc">
                 <p>
