@@ -22,9 +22,6 @@
           </div>
         </div>
       </div>
-
-      <div>29.09.2025-20:07</div>
-
       <div class="m-2">
         <span>Posreduj nam svojo idejo po <a href="mailto:osgeoslovenija@gmail.com">e-pošti</a> ali
           <a href="https://discord.gg/7Q7v6vz">Discordu</a>.</span>
