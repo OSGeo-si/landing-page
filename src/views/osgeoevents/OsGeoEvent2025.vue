@@ -25,20 +25,18 @@
               <!--              <div class="workshop-room">Učilnica A1</div>-->
               <div class="workshop-desc">
                 <p>
-                  QGIS delavnica je v osnovi namenjena vsem, ki se želijo spoznati z QGIS in tistim, ki že
-                  delajo z QGIS in želijo poglobiti svoje znanje. Okvirni program delavnice obsega uvod v GIS in QGIS,
-                  oblikovanje slojev in tematski zemljevidi, enostavne analize, postavitev zemljevida in izvoz. Na QGIS
-                  delavnici bomo tudi predstavili in uporabili slovenski vtičnik QNarcis, ki omogoča enostaven
-                  dostop do več kot 300 prostorskih slojev različnih vsebin iz Slovenije. Predstavili bomo tudi možnost
-                  uporabe prostorskih podatkov na sprehodu v naravi. In poiskali odgovore na vprašanja, tudi tista bolj
-                  kompleksna, udeležencev delavnice.
+                  QGIS delavnica je namenjena vsem, ki se želijo spoznati z QGIS in tistim, ki že delajo z QGIS in 
+                  želijo poglobiti svoje znanje. Okvirni program delavnice obsega uvod v GIS in QGIS, 
+                  oblikovanje slojev in tematski zemljevidi, enostavne analize, postavitev zemljevida in izvoz.
+                  Na QGIS delavnici bomo tudi predstavili in uporabili slovenski vtičnik QNarcis, ki omogoča enostaven dostop
+                  do več kot 300 prostorskih slojev različnih vsebin iz Slovenije. 
+                  Predstavili bomo tudi možnost uporabe prostorskih podatkov na sprehodu v naravi.
                 </p>
                 <br>
                 <p>
-                  Tomaž Šturm že več let vodi delavnice in usposabljanja, kjer udeleženci spoznajo praktično uporabo
-                  QGIS,
-                  predvsem pri varovanju okolja in trajnostnem razvoju. Spodbuja ponovno uporabo odprtih podatkov in
-                  prosto dostopne programske opreme za delo s prostorskimi podatki (FOSS4G).
+                  Tomaž Šturm v okviru podjetja Spatial Mind že več let vodi delavnice in usposabljanja, 
+                  na katerih udeleženci spoznajo praktično uporabo QGIS-a, zlasti na področju varstva okolja in trajnostnega razvoja. 
+                  Spodbuja uporabo odprtih podatkov ter prosto dostopne programske opreme za delo s prostorskimi podatki (FOSS4G).
                 </p>
               </div>
 
@@ -50,12 +48,11 @@
               <!--              <div class="workshop-room">Učilnica B2</div>-->
               <div class="workshop-desc">
                 <p>
-
                   Delavnica je namenjena vsem, ki se želijo spoznati z aerolaserskimi oblaki točk (lidar) – od
                   začetnikov, ki še nikoli niso odprli oblaka točk v analitičnem okolju, do naprednih uporabnikov, ki
                   želijo razširiti svoje znanje. Potek bo interaktiven z vnaprej pripravljenim okoljem: začetniki bodo
                   lahko sledili posameznim korakom, medtem ko bodo napredni uporabniki imeli možnost poganjati tudi
-                  predpripravljene kode in raziskovati zahtevnejše primere.
+                  predpripravljeno programsko kodo in raziskovati zahtevnejše primere.
                 </p>
                 <br>
                 <p>
@@ -143,7 +140,7 @@
                 Discrete Global Grid Systems (DGGS) are an old idea whose time has finally come. With standardisation
                 efforts by the OGC and state-of-the-art, open-source software emerging, a new era for GIS is dawning.
                 This address will briefly go through the history of DGGS, their characteristics and impact on
-                geo-spatial. Finally, GeoPlegma will be introduced, a project meant to build a open source community for
+                geo-spatial. Finally, GeoPlegma will be introduced, a project meant to build an open source community for
                 DGGS development and adoption.
               </div>
             </div>
