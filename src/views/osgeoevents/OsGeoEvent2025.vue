@@ -2,7 +2,7 @@
   <div class="container">
     <div class="content">
       <div class="head">
-        <h1>Open Source Geospatial Slovenija</h1>
+        <h1>OSGEO Slovenija 2025</h1>
         <div class="location-date">
           <p>Gozdarski inštitut Slovenije</p>
           <p>Večna pot 2, 1000 Ljubljana</p>
@@ -20,23 +20,26 @@
           <div class="workshops">
             <div class="workshop-card">
               <div class="workshop-title">Delavnica QGIS</div>
-              <div class="workshop-presenter">Tomaž Šturm</div>
-              <div class="workshop-time">9:00 - 12:00</div>
+              <div class="workshop-presenter">Tomaž Šturm, Spatial Mind</div>
+              <div class="workshop-time">8:30 - 11:30</div>
               <!--              <div class="workshop-room">Učilnica A1</div>-->
               <div class="workshop-desc">
                 <p>
-                  QGIS delavnica je namenjena vsem, ki se želijo spoznati z QGIS in tistim, ki že delajo z QGIS in 
-                  želijo poglobiti svoje znanje. Okvirni program delavnice obsega uvod v GIS in QGIS, 
+                  QGIS delavnica je namenjena vsem, ki se želijo spoznati z QGIS in tistim, ki že delajo z QGIS in
+                  želijo poglobiti svoje znanje. Okvirni program delavnice obsega uvod v GIS in QGIS,
                   oblikovanje slojev in tematski zemljevidi, enostavne analize, postavitev zemljevida in izvoz.
-                  Na QGIS delavnici bomo tudi predstavili in uporabili slovenski vtičnik QNarcis, ki omogoča enostaven dostop
-                  do več kot 300 prostorskih slojev različnih vsebin iz Slovenije. 
+                  Na QGIS delavnici bomo tudi predstavili in uporabili slovenski vtičnik QNarcis, ki omogoča enostaven
+                  dostop
+                  do več kot 300 prostorskih slojev različnih vsebin iz Slovenije.
                   Predstavili bomo tudi možnost uporabe prostorskih podatkov na sprehodu v naravi.
                 </p>
                 <br>
                 <p>
-                  Tomaž Šturm v okviru podjetja Spatial Mind že več let vodi delavnice in usposabljanja, 
-                  na katerih udeleženci spoznajo praktično uporabo QGIS-a, zlasti na področju varstva okolja in trajnostnega razvoja. 
-                  Spodbuja uporabo odprtih podatkov ter prosto dostopne programske opreme za delo s prostorskimi podatki (FOSS4G).
+                  Tomaž Šturm v okviru podjetja Spatial Mind že več let vodi delavnice in usposabljanja,
+                  na katerih udeleženci spoznajo praktično uporabo QGIS-a, zlasti na področju varstva okolja in
+                  trajnostnega razvoja.
+                  Spodbuja uporabo odprtih podatkov ter prosto dostopne programske opreme za delo s prostorskimi podatki
+                  (FOSS4G).
                 </p>
               </div>
 
@@ -44,7 +47,7 @@
             <div class="workshop-card">
               <div class="workshop-title">Akrobacije z oblaki točk: od surovega lidarja do 3D vizualizacij</div>
               <div class="workshop-presenter">Tomaž Žagar in Alen Mangafić</div>
-              <div class="workshop-time">12:30 - 15:30</div>
+              <div class="workshop-time">12:00 - 15:00</div>
               <!--              <div class="workshop-room">Učilnica B2</div>-->
               <div class="workshop-desc">
                 <p>
@@ -140,14 +143,18 @@
                 Discrete Global Grid Systems (DGGS) are an old idea whose time has finally come. With standardisation
                 efforts by the OGC and state-of-the-art, open-source software emerging, a new era for GIS is dawning.
                 This address will briefly go through the history of DGGS, their characteristics and impact on
-                geo-spatial. Finally, GeoPlegma will be introduced, a project meant to build an open source community for
+                geo-spatial. Finally, GeoPlegma will be introduced, a project meant to build an open source community
+                for
                 DGGS development and adoption.
               </div>
             </div>
 
             <div class="conference-card">
               <div class="conference-time">9:40</div>
-              <div class="conference-title">GURS – podatki daljinskega zaznavanja (nekoč, danes, jutri)</div>
+              <div class="conference-title">
+                <p>GURS – podatki daljinskega zaznavanja (nekoč, danes, jutri)</p>
+                <p>GURS – Remote sensing data (past, present, future)</p>
+              </div>
               <div class="conference-presenter">Boštjan Pucelj</div>
               <div class="conference-desc">
                 <p>
@@ -185,7 +192,10 @@
 
             <div class="conference-card">
               <div class="conference-time">10:00</div>
-              <div class="conference-title">Zakaj je pomembno imeti visokokakovostne prostorske podatke?</div>
+              <div class="conference-title">
+                <p>Zakaj je pomembno imeti visokokakovostne prostorske podatke?</p>
+                <p>Why Do High-Quality Spatial Data Matter?</p>
+              </div>
               <div class="conference-presenter">Tomaž Podobnikar
               </div>
               <div class="conference-desc">
@@ -253,7 +263,10 @@
 
             <div class="conference-card">
               <div class="conference-time">11:00</div>
-              <div class="conference-title">Mobilnost in izzivi odprtih in osebnih podatkov – 10 let kasneje</div>
+              <div class="conference-title">
+                <p>Mobilnost in izzivi odprtih in osebnih podatkov – 10 let kasneje</p>
+                <p>Mobility and the Challenges of Open and Personal Data – Ten Years On</p>
+              </div>
               <div class="conference-presenter">Matevž Pesek
               </div>
               <div class="conference-desc">
@@ -291,7 +304,10 @@
 
             <div class="conference-card">
               <div class="conference-time">11:20</div>
-              <div class="conference-title">Uporaba umetne inteligence za zajem geoprostorskih podatkov.</div>
+              <div class="conference-title">
+                <p>Uporaba umetne inteligence za zajem geoprostorskih podatkov.</p>
+                <p>Leveraging Artificial Intelligence for Geospatial Data Acquisition.</p>
+              </div>
               <div class="conference-presenter">Mitja Žalik, Mitko Nikov, Matej Brumen, Domen Mongus</div>
               <div class="conference-desc">
                 <p>
@@ -348,7 +364,10 @@
             </div>
             <div class="conference-card">
               <div class="conference-time">11:40</div>
-              <div class="conference-title">Geospatial deep learning with TorchGeo</div>
+              <div class="conference-title">
+                <p>Geoprostorsko globoko učenje s TorchGeo</p>
+                <p>Geospatial deep learning with TorchGeo</p>
+              </div>
               <div class="conference-presenter">Blaž Rolih</div>
               <div class="conference-desc">
                 <p>
@@ -384,7 +403,10 @@
 
             <div class="conference-card">
               <div class="conference-time">12:00</div>
-              <div class="conference-title">Odkrivanje podlubnika z uporabo metod globokega učenja</div>
+              <div class="conference-title">
+                <p>Odkrivanje podlubnika z uporabo metod globokega učenja</p>
+                <p>Bark beetle detection using deep learning techniques</p>
+              </div>
               <div class="conference-presenter">Jaša Dimič, Blaž Jakopin</div>
               <div class="conference-desc">
                 <p>
@@ -411,7 +433,8 @@
                 </p>
                 <br>
                 <p>
-                  Dr. Blaž Jakopin je vodja projekta, ki ima izkušnje z razvojem produktov, tehnologijami IoT, raziskavami
+                  Dr. Blaž Jakopin je vodja projekta, ki ima izkušnje z razvojem produktov, tehnologijami IoT,
+                  raziskavami
                   daljinskega zaznavanja in tržnimi raziskavami; je direktor podjetja PRIOT d.o.o.
                 </p>
               </div>
