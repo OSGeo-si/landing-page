@@ -456,11 +456,12 @@
           <li>Cena posazmezne delavnice je <span class="price">20 EUR (brezplačno za člane)</span>.</li>
           <li>Prijave sprejemamo do vključno <strong>20. 10. 2025 do 14. ure</strong>.</li>
         </ul>
-        <!--        <button class="register-btn">PRIJAVNI OBRAZEC</button>-->
+                <a class="register-btn" href="https://docs.google.com/forms/d/1REFFbZb2g2wFtuFhbYL5sq9JVtVTVH7GvH3VIBxvzc4/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">PRIJAVNI OBRAZEC</a>
       </section>
     </div>
   </div>
-  <!--  <button class="fixed-register-btn">PRIJAVNI OBRAZEC</button>-->
+<!--    <a class="fixed-register-btn" href="https://docs.google.com/forms/d/1REFFbZb2g2wFtuFhbYL5sq9JVtVTVH7GvH3VIBxvzc4/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer"-->
+<!--    >PRIJAVNI OBRAZEC</a>-->
 </template>
 
 <style scoped>
