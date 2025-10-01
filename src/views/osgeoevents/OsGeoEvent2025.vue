@@ -728,6 +728,47 @@
   filter: brightness(1.2);
 }
 
+@media (max-width: 768px) {
+  .conference-desc {
+    display: none;
+  }
+  .conference-toggle {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-decoration: underline;
+  }
+}
+
+/* On desktop, always show */
+@media (min-width: 769px) {
+  .conference-toggle {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .workshop-desc {
+    display: none;
+  }
+  .conference-toggle {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-decoration: underline;
+  }
+}
+
+/* On desktop, always show */
+@media (min-width: 769px) {
+  .conference-toggle {
+    display: none;
+  }
+}
+
 </style>
 <script setup lang="ts">
 </script>
