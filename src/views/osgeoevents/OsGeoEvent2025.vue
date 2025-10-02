@@ -7,6 +7,9 @@
           <p>Gozdarski inštitut Slovenije</p>
           <p>Večna pot 2, 1000 Ljubljana</p>
           <p class="date">22 - 23 oktober 2025</p>
+          <a class="register-btn"
+             href="https://docs.google.com/forms/d/1REFFbZb2g2wFtuFhbYL5sq9JVtVTVH7GvH3VIBxvzc4/viewform?edit_requested=true"
+             target="_blank" rel="noopener noreferrer">PRIJAVNI OBRAZEC</a>
           <a href="https://github.com/OSGeo-si" target="_blank">
             <!--            <img src="../../assets/github.svg" alt="Github" class="icon"/>-->
           </a>
@@ -23,7 +26,8 @@
               <div class="workshop-presenter">Tomaž Šturm, Spatial Mind</div>
               <div class="workshop-time">8:30 - 11:30</div>
               <!--              <div class="workshop-room">Učilnica A1</div>-->
-              <div class="workshop-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
                   QGIS delavnica je namenjena vsem, ki se želijo spoznati z QGIS in tistim, ki že delajo z QGIS in
                   želijo poglobiti svoje znanje. Okvirni program delavnice obsega uvod v GIS in QGIS,
@@ -49,7 +53,8 @@
               <div class="workshop-presenter">Tomaž Žagar in Alen Mangafić</div>
               <div class="workshop-time">12:00 - 15:00</div>
               <!--              <div class="workshop-room">Učilnica B2</div>-->
-              <div class="workshop-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
                   Delavnica je namenjena vsem, ki se želijo spoznati z aerolaserskimi oblaki točk (lidar) – od
                   začetnikov, ki še nikoli niso odprli oblaka točk v analitičnem okolju, do naprednih uporabnikov, ki
@@ -101,7 +106,8 @@
               <div class="conference-time">8:40</div>
               <div class="conference-title">QGIS Feature Frenzy</div>
               <div class="conference-presenter">Kurt Menke</div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
                   QGIS releases three new versions per year and each spring a new long-term release (LTR) is designated.
                   Each version comes with a long list of new features. This rapid development pace can be difficult to
@@ -126,7 +132,8 @@
               <div class="conference-presenter">Salim Baidoun / Community & Partnerships – EU & LATAM, Community,
                 Corporates and Humanitarian
               </div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 The presentation will highlight TomTom’s partnership with the open mapping and open source community.
                 I’ll cover several partnership models, our work with other companies and humanitarian organizations, and
                 discuss opportunities to collaborate with the Slovenian community.
@@ -139,7 +146,8 @@
                 Instituto Superior Técnico,
                 University of Lisbon
               </div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 Discrete Global Grid Systems (DGGS) are an old idea whose time has finally come. With standardisation
                 efforts by the OGC and state-of-the-art, open-source software emerging, a new era for GIS is dawning.
                 This address will briefly go through the history of DGGS, their characteristics and impact on
@@ -156,7 +164,8 @@
                 <p>GURS – Remote sensing data (past, present, future)</p>
               </div>
               <div class="conference-presenter">Boštjan Pucelj</div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
                   Geodetska uprava Republike Slovenije (GURS) je javna institucija, odgovorna za upravljanje in
                   vzdrževanje geodetskih podatkov v Sloveniji. Znotraj svojih pristojnosti skrbi tudi za podatke
@@ -198,7 +207,8 @@
               </div>
               <div class="conference-presenter">Tomaž Podobnikar
               </div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
                   Kakovost se pogosto dojema kot abstrakten in izmuzljiv koncept, ki postane oprijemljiv šele, ko
                   določene
@@ -269,7 +279,8 @@
               </div>
               <div class="conference-presenter">Matevž Pesek
               </div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
                   Predstavimo kako storitvi Avtolog in Tocen.si izkoriščata odprte podatke za varnejši in preglednejši
                   avtomobilski trg ter za enoten dostop do vseh oblik mobilnosti. A po desetih letih odpiranja in
@@ -309,7 +320,8 @@
                 <p>Leveraging Artificial Intelligence for Geospatial Data Acquisition.</p>
               </div>
               <div class="conference-presenter">Mitja Žalik, Mitko Nikov, Matej Brumen, Domen Mongus</div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
 
                   Ustaljeni procesi na številnih področjih se v zadnjih letih nadgrajujejo z vključevanjem aplikacij
@@ -369,7 +381,8 @@
                 <p>Geospatial deep learning with TorchGeo</p>
               </div>
               <div class="conference-presenter">Blaž Rolih</div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
                   TorchGeo je odprtokodna knjižnica, zasnovana na PyTorch-u, ki ponuja podatkovne zbirke, modele in
                   orodja
@@ -408,7 +421,8 @@
                 <p>Bark beetle detection using deep learning techniques</p>
               </div>
               <div class="conference-presenter">Jaša Dimič, Blaž Jakopin</div>
-              <div class="conference-desc">
+              <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
+              <div class="desc">
                 <p>
                   Sistem za zaznavanje lubadarja uporablja časovne serije posnetkov Sentinel-2 in vegetacijske indekse,
                   kot je NDII, za prepoznavanje znakov okužbe. Preizkusili smo več modelov globokega učenja za
@@ -444,8 +458,6 @@
               <div class="conference-time">12:20</div>
               <div class="conference-title">Zaključek dogodka</div>
             </div>
-
-
           </div>
         </div>
       </section>
@@ -456,12 +468,14 @@
           <li>Cena posazmezne delavnice je <span class="price">20 EUR (brezplačno za člane)</span>.</li>
           <li>Prijave sprejemamo do vključno <strong>20. 10. 2025 do 14. ure</strong>.</li>
         </ul>
-                <a class="register-btn" href="https://docs.google.com/forms/d/1REFFbZb2g2wFtuFhbYL5sq9JVtVTVH7GvH3VIBxvzc4/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer">PRIJAVNI OBRAZEC</a>
+        <a class="register-btn"
+           href="https://docs.google.com/forms/d/1REFFbZb2g2wFtuFhbYL5sq9JVtVTVH7GvH3VIBxvzc4/viewform?edit_requested=true"
+           target="_blank" rel="noopener noreferrer">PRIJAVNI OBRAZEC</a>
       </section>
     </div>
   </div>
-<!--    <a class="fixed-register-btn" href="https://docs.google.com/forms/d/1REFFbZb2g2wFtuFhbYL5sq9JVtVTVH7GvH3VIBxvzc4/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer"-->
-<!--    >PRIJAVNI OBRAZEC</a>-->
+  <!--    <a class="fixed-register-btn" href="https://docs.google.com/forms/d/1REFFbZb2g2wFtuFhbYL5sq9JVtVTVH7GvH3VIBxvzc4/viewform?edit_requested=true" target="_blank" rel="noopener noreferrer"-->
+  <!--    >PRIJAVNI OBRAZEC</a>-->
 </template>
 
 <style scoped>
@@ -568,7 +582,7 @@
   margin-bottom: 0.2em;
 }
 
-.conference-desc {
+.desc {
   font-size: 0.98em;
   color: #444;
   margin-top: 0.3em;
@@ -729,46 +743,78 @@
 }
 
 @media (max-width: 768px) {
-  .conference-desc {
+  .desc {
     display: none;
   }
-  .conference-toggle {
+
+  /* allow Vue toggle to open it */
+  .desc.is-open {
     display: block;
-    cursor: pointer;
-    margin-bottom: 10px;
-    color: #007BFF;
-    text-decoration: underline;
   }
-}
 
-/* On desktop, always show */
-@media (min-width: 769px) {
-  .conference-toggle {
+  /* (optional) if you also want workshop descriptions collapsible via the same handler) */
+  .desc {
     display: none;
   }
-}
 
-
-@media (max-width: 768px) {
-  .workshop-desc {
-    display: none;
-  }
-  .conference-toggle {
+  .desc.is-open {
     display: block;
-    cursor: pointer;
-    margin-bottom: 10px;
-    color: #007BFF;
-    text-decoration: underline;
+  }
+
+  /* On mobile: show the toggle */
+  @media (max-width: 768px) {
+    .desc-toggle {
+      display: block;
+      cursor: pointer;
+      margin-bottom: 10px;
+      color: #007BFF;
+      text-decoration: underline;
+    }
+  }
+
+  /* On desktop: hide the toggle */
+  @media (min-width: 769px) {
+    .desc-toggle {
+      display: none;
+    }
   }
 }
 
-/* On desktop, always show */
-@media (min-width: 769px) {
-  .conference-toggle {
-    display: none;
-  }
-}
 
 </style>
-<script setup lang="ts">
+
+<script setup>
+import {ref, onMounted, onBeforeUnmount} from 'vue';
+
+const isMobile = ref(window.innerWidth <= 768);
+
+function updateIsMobile() {
+  isMobile.value = window.innerWidth <= 768;
+}
+
+onMounted(() => {
+  updateIsMobile();
+  window.addEventListener('resize', updateIsMobile);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', updateIsMobile);
+});
+
+/* existing code ... */
+function toggleDesc(event) {
+  const toggleEl = event.currentTarget;
+  if (!toggleEl) return;
+
+  const card = toggleEl.closest('.workshop-card, .conference-card');
+  if (!card) return;
+
+  const desc = card.querySelector('.desc, .workshop-desc');
+  if (!desc) return;
+
+  const isOpen = desc.classList.toggle('is-open');
+  toggleEl.textContent = isOpen ? 'Skrij podrobnosti' : 'Pokaži podrobnosti';
+}
+
+/* no local const isMobile here! */
 </script>
