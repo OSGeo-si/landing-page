@@ -742,41 +742,42 @@
   filter: brightness(1.2);
 }
 
+
 @media (max-width: 768px) {
+  /* Mobile: workshop cards stacked vertically */
+  .workshops {
+    flex-direction: column;
+  }
+  .workshop-card {
+    width: 100%;
+  }
+
+  /* Mobile: content collapsed by default, toggle visible */
   .desc {
     display: none;
   }
-
-  /* allow Vue toggle to open it */
   .desc.is-open {
     display: block;
   }
+  .desc-toggle {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-decoration: underline;
+  }
+}
 
-  /* (optional) if you also want workshop descriptions collapsible via the same handler) */
+@media (min-width: 769px) {
+  /* Desktop: workshop cards side-by-side */
+  .workshops {
+    flex-direction: row;
+  }
   .desc {
-    display: none;
-  }
-
-  .desc.is-open {
     display: block;
   }
-
-  /* On mobile: show the toggle */
-  @media (max-width: 768px) {
-    .desc-toggle {
-      display: block;
-      cursor: pointer;
-      margin-bottom: 10px;
-      color: #007BFF;
-      text-decoration: underline;
-    }
-  }
-
-  /* On desktop: hide the toggle */
-  @media (min-width: 769px) {
-    .desc-toggle {
-      display: none;
-    }
+  .desc-toggle {
+    display: none;
   }
 }
 
