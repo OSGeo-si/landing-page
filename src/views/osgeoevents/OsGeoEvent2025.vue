@@ -453,9 +453,13 @@
                 </p>
               </div>
             </div>
-
             <div class="conference-card">
               <div class="conference-time">12:20</div>
+              <div class="conference-title">Predstavitev aktivnosti Društva OSGeo Slovenija</div>
+              <div class="conference-presenter">Alen Mangafić</div>
+            </div>
+            <div class="conference-card">
+              <div class="conference-time">12:30</div>
               <div class="conference-title">Zaključek dogodka</div>
             </div>
           </div>
