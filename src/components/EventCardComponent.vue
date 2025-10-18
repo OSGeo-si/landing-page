@@ -3,7 +3,7 @@
   <event-card :class="{ 'future-event': isFuture }">
     <h3>{{ event.title }}</h3>
     <p><span class="text-sm">📍 Lokacija: {{ event.location }}</span></p>
-    <p><span class="text-sm">📅 Datum: {{ event.date }}</span> <span class="text-sm" v-if="event.end_date"> - {{event.end_date}}</span> </p>
+    <p><span class="text-sm">📅 Datum: {{ formatedDate }}</span> <span class="text-sm" v-if="event.end_date"> - {{formatedEndDate}}</span> </p>
     <p><span class="text-sm">🕕 Ura:{{ event.time }} </span></p>
     <p><span class="text-sm">{{ event.summary }} </span></p>
 
@@ -31,6 +31,7 @@
 
 <script setup>
 import {defineProps, computed} from 'vue'
+import dayjs from 'dayjs'
 
 // Define props
 const props = defineProps({
@@ -51,6 +52,14 @@ const props = defineProps({
 })
 
 const isInternal = computed(() => props.event.tags.includes("geodev"))
+
+const formatedDate = computed(() => {
+  return dayjs(props.event.date).format('DD.MM.YYYY')
+})
+
+const formatedEndDate = computed(() => {
+  return dayjs(props.event.end_date).format('DD.MM.YYYY')
+})
 
 // Check if event date is in the future
 const isFuture = computed(() => {

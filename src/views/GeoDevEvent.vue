@@ -4,8 +4,8 @@
       <div class="section">
         <div v-html="htmlContent" class="markdown"></div>
       </div>
-      <a :href="event.eventUrl" target="_blank">
-        <img src="../assets/github.svg" alt="Github" class="icon"/>
+      <a v-if="!eventPassed" :href="event.eventUrl" target="_blank" class="btn">
+        Prijavi se na dogodek
       </a>
     </div>
   </div>
@@ -25,6 +25,15 @@ const geoId = computed(() => route.params.geoId)
 
 // Find the matching event
 const event = computed(() => eventsData.find(item => item.id === geoId.value))
+
+const eventPassed = computed(() => {
+  if (event.value) {
+    const eventDate = new Date(event.value.date)
+    const currentDate = new Date()
+    return eventDate < currentDate
+  }
+  return false
+})
 
 // Safely render markdown only if event exists
 const htmlContent = computed(() => {

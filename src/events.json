@@ -1,9 +1,22 @@
 [
   {
+    "title": "GeoDev Meetup #14",
+    "id": "geodev-14",
+    "date": "2025.11.11",
+    "time": "18:00",
+    "location": "Tovarna podjemov, Ulica škofa Maksimilijana Držečnika 6, Maribor",
+    "summary": "",
+    "descriptions": "# GeoDev Meetup #14\n\n\n\uD83D\uDCCD __Lokacija:__  [Tovarna podjemov](https://venturefactory.org/sl/), Ulica škofa Maksimilijana Držečnika 6, __Maribor__, predavalnica se nahaja v 1. nadstropju\n\n\uD83D\uDCC5 __Datum:__ torek, 11. november 2025\n\n\uD83D\uDD55 __Čas:__ 18:00\n\n\n## Program\n\n\n__Vibecoding s prostorskimi podatki (primer mikro SaaS aplikacije v 2 tednih) / Vibecoding with Geospatial data (Building a Micro SaaS application in 2 weeks)__\n\nPogledali si bomo, kako sem zgradil aplikacijo za pregled stečajne mase v Sloveniji (Stecajnedrazbe.si). Kako si s pomočjo Google Cloud in Firebase pripraviti enostavno avtomatizacijo procesov (Web scraping, Cloud Scheduling, LLM processing), kako ekstrahirati podatke iz PDF-jev in to povezati s prostorskimi podatki. Uporaba Google Maps API in GURS API za uparjanje prostorskih podatkov o parcelah in drugem premoženju in kako vse skupaj prikazati na web aplikaciji za uporabnike.\n\nBlaž Jakopin, PRIOT\n\n---\n\n__Ekstrakcija geolokacijskih podatkov ob zagotavljanju zasebnosti / Privacy-oriented geolocation data extraction__\n\nV predstavitvi bo prikazano, kako smo rešili izziv pridobivanja okoljskih podatkov pri lastnikih eksposomskih podatkov, ki zaradi zagotavljanja zasebnosti niso mogli deliti natančnih lokacij udeležencev. Končni program, razvit v R, je zasnovan po načelu privacy by design in združuje lokalno obdelavo podatkov, varne metode pridobivanja okoljskih informacij ter osredotočenost na uporabnika. Tak pristop odpravlja potrebo po deljenju osebnih lokacij, hkrati pa ohranja uporabnost podatkov za znanstvene analize. Rešitev ponazarja, kako je mogoče v praksi uskladiti zahteve GDPR z raziskovalnimi potrebami ter spodbuja razvoj etično in pravno skladnih orodij za delo s prostorskimi podatki.\n\nJure Ftičar, Institut \"Jožef Stefan\"\n\n## Ostalo\n\nDogodek je brezplačen in odprt vsem. Pridruži se zabavnemu in poučnemu večeru z drugimi razvijalci in navdušenci nad geoprostorskimi rešitvami in podatki.",
+    "eventUrl": "https://forms.gle/AGsPH3ZfdMtLrFap7",
+    "tags": [
+      "geodev"
+    ]
+  },
+  {
     "title": "OSGeo Slovenija 2025",
     "id": "osgeo-slovenija-2025",
-    "date": "22.10.2025",
-    "end_date": "23.10.2025",
+    "date": "2025.10.22",
+    "end_date": "2025.10.23",
     "time": "08:30",
     "location": "Gozdarski inštitut Slovenije, Večna pot 2",
     "summary": "",
@@ -13,10 +26,10 @@
       "osgeo-conference"
     ]
   },
-    {
+  {
     "title": "Svizec 2025 - #1",
     "id": "svizec-2025",
-    "date": "2025.8.9",
+    "date": "2025.08.09",
     "time": "09:00",
     "location": "Železniki",
     "summary": "",
@@ -42,7 +55,7 @@
   {
     "title": "GeoDev Meetup #12",
     "id": "geodev-12",
-    "date": "29.01.2025",
+    "date": "2025.01.29",
     "time": "18:00",
     "location": " Urbanistični Inštitut Republike Slovenije, Trnovski pristan 2, Ljubljana",
     "summary": "",
@@ -55,7 +68,7 @@
   {
     "title": "GeoDev Meetup #11",
     "id": "geodev-11",
-    "date": "20.11.2024",
+    "date": "2024.11.20",
     "time": "18:00",
     "location": "Računalniški muzej, Celovška cesta 111, Ljubljana",
     "summary": "",
