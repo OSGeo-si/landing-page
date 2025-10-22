@@ -7,6 +7,9 @@
       <a v-if="!eventPassed" :href="event.eventUrl" target="_blank" class="btn">
         Prijavi se na dogodek
       </a>
+      <div class="section">
+        <div v-html="disclaimer" class="markdown"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -39,6 +42,14 @@ const eventPassed = computed(() => {
 const htmlContent = computed(() => {
   if (event.value && event.value.descriptions) {
     return marked(event.value.descriptions)
+  }
+  return ''
+})
+
+// Safely render markdown only if event exists
+const disclaimer = computed(() => {
+  if (event.value && event.value.disclaimer) {
+    return marked(event.value.disclaimer)
   }
   return ''
 })
