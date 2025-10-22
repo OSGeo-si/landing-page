@@ -73,13 +73,25 @@
         </a>
       </div>
 
+      <div class="section">
+
+        <h2>Podporniki</h2>
+        <div class="flex">
+          <img :src="flycom" alt="Flycom Logo" style="max-height: 100px;"/>
+        </div>
+
+      </div>
+
     </div>
   </div>
 </template>
 
 <script setup>
 import qr from '@/assets/qr_clanarina_2025.png';
+// import flycom from public fodler
+import flycom from '@/assets/flycom-logo-main-web.png';
 </script>
+
 
 <style scoped>
 .payment-info {
