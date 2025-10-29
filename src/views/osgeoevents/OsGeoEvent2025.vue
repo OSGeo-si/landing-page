@@ -274,41 +274,32 @@
             <div class="conference-card">
               <div class="conference-time">11:00</div>
               <div class="conference-title">
-                <p>Mobilnost in izzivi odprtih in osebnih podatkov – 10 let kasneje</p>
-                <p>Mobility and the Challenges of Open and Personal Data – Ten Years On</p>
+                <p>Trajnostni dostop do prostorskih podatkov (Arhiviranje)
+                  Zagotavljanje medopravilnega in zaupanje vrednega dostopa do prostorskih podatkov
+                </p>
+                <p>
+                  Sustainable access to Geospatial records (Archiving)
+                  Ensuring interoperable and trusted access to geospatial records
+                  </p>
               </div>
-              <div class="conference-presenter">Matevž Pesek
+              <div class="conference-presenter">Gregor Završnik
               </div>
               <div class="desc-toggle" v-if="isMobile" @click="toggleDesc($event)">Pokaži podrobnosti</div>
               <div class="desc">
                 <p>
-                  Predstavimo kako storitvi Avtolog in Tocen.si izkoriščata odprte podatke za varnejši in preglednejši
-                  avtomobilski trg ter za enoten dostop do vseh oblik mobilnosti. A po desetih letih odpiranja in
-                  uporabe
-                  podatkov še vedno najdemo vrzeli v kakovosti, pomanjkljivi interoperabilnosti in pomanjkljivi
-                  ažurnosti
-                  javnih zbirk. Vseeno pa nam nove priložnosti odpira Direktiva o podatkih, ki poleg odpiranja državnih
-                  podatkov naslavlja zasebne podatke, uporabo in zmožnosti deljenja med deležniki.
+                  Ali bi izguba vaših prostorskih podatkov lahko predstavljal problem? Ali ste prepričani, da boste znali uporabiti in dostopati do vseh vaših ključnih prostorskih podatkov čez recimo 10, 20 ali celo 50 let? Ali bi bili vaši stari prostorski podatki uporabni v vaših novih AI rešitvah prihodnosti?
+
+                  V tej kratki predstavitvi, boste, na podlagi resničnih primerov, spoznali pomen pravilnega upravljanja s podatki in dokumentacije prostorskih evidenc. Naš temelji na standardih in smernicah vzpostavljenih z EU eArchiving iniciativo. Predstavili bomo tudi model kategorij načilnih lastnosti digitalnega gradiva, na podlagi katerih boste lahko celovito zagotovili trajnostni dostop do vaših podatkov.
                 </p>
                 <br>
                 <p>
-                  We present how the services Avtolog and Točen.si leverage open data to create a safer and more
-                  transparent car market and to provide unified access to all forms of mobility. Yet, ten years into the
-                  era of opening and using data, gaps remain in data quality, interoperability, and the timeliness of
-                  public datasets. Nevertheless, new opportunities are emerging with the Data Act, which addresses not
-                  only the opening of government data but also private data, their use, and the ability to share them
-                  among stakeholders.
+                  Would losing your geospatial records be an issue? Are you sure you will know how to reuse and access all the key geospatial records in 10,20, or even 50 years? Would your old geospatial records be useful for your new AI applications of the future?
+
+                  In this short presentation, you will learn about the importance of proper data management and documentation of geospatial records, supported by real-world use cases. We present the approach, based on the standards and guidelines established within the EU eArchiving initiative. You will also learn about the model of key Categories of Significant properties, you need to document for long-term availability of your data.
                 </p>
                 <br>
                 <p>
-                  Matevž Pesek je izredni profesor na Fakulteti za računalništvo in informatiko. Od leta 2014 dela na
-                  končnih storitvah, ki temeljijo na odprtih podatkih, predvsem na področju v mobilnosti. Je
-                  soustvarjalec
-                  storitev Avtolog.si (za pregledno zgodovino rabljenih vozil) in Tocen.si (za enoten dostop do podatkov
-                  o
-                  mobilnosti), ki sta nastali na osnovi javno dostopnih podatkovnih virov. S svojimi projekti
-                  izpostavlja
-                  pomen kakovosti, interoperabilnosti in ponovne uporabe odprtih ter gospodarskih podatkov.
+                  Gregor Završnik from the company Geoarh is an expert in the field of Geoinformatics with more than 25 years in the international arena. After working in a GIS company for 15 years, where he developed and implemented GIS solutions, based on ESRI technology, for a variety of different users, he moved to explore the field of Geospatial digital life-cycle. In this field, he now consults for various international organisations. As a PhD candidate, he also explores the role of semantics in GeoAI applications.
                 </p>
               </div>
             </div>
