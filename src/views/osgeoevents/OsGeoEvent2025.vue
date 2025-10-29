@@ -274,12 +274,10 @@
             <div class="conference-card">
               <div class="conference-time">11:00</div>
               <div class="conference-title">
-                <p>Trajnostni dostop do prostorskih podatkov (Arhiviranje)
-                  Zagotavljanje medopravilnega in zaupanje vrednega dostopa do prostorskih podatkov
+                <p>Trajnostni dostop do prostorskih podatkov (Arhiviranje) - Zagotavljanje medopravilnega in zaupanje vrednega dostopa do prostorskih podatkov
                 </p>
                 <p>
-                  Sustainable access to Geospatial records (Archiving)
-                  Ensuring interoperable and trusted access to geospatial records
+                  Sustainable access to Geospatial records (Archiving) - Ensuring interoperable and trusted access to geospatial records
                   </p>
               </div>
               <div class="conference-presenter">Gregor Završnik
