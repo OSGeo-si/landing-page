@@ -1,120 +1,40 @@
-<!-- src/views/About.vue -->
 <template>
-  <div class="container">
-    <div class="content">
-      <h2>O Društvu</h2>
-      <span>Namen društva sta razvoj in promocija odprtokodnih geoprostorskih tehnologij ter odprtih podatkovnih standardov v
-      Sloveniji.</span>
-      <ul class="m-4">
-        <li>promocija in podpora odprtokodnim geoprostorskim tehnologijam, zlasti programskim paketom, kot so QGIS,
-          PostGIS, GRASS in GeoServer,
-        </li>
-        <li>organizacija izobraževanj, delavnic in drugih dogodkov, povezanih z odprtokodno geoprostorsko tehnologijo,
-        </li>
-        <li>sodelovanje s podobnimi organizacijami v Sloveniji in tujini,</li>
-        <li>prizadevanje za uveljavitev odprtih podatkovnih standardov in za izboljšanje odprtosti, dostopnosti in
-          kakovosti prostorskih podatkov v Sloveniji,
-        </li>
-        <li>spodbujanje široke uporabe geoinformatike v odprtokodnem okolju,</li>
-        <li>obveščanje članov društva o aktualnem dogajanju, novostih in pobudah na področju odprtokodnih geoprostorskih
-          tehnologij,
-        </li>
-        <li>podpora raziskavam, študijam in projektom, povezanimi z odprtokodno geoinformatiko in sorodnimi
-          tehnologijami.
-        </li>
-      </ul>
+  <PageHero eyebrow="Društvo OSGeo Slovenija" :title="page?.title || 'O društvu'" />
 
-      <a href="/OSGeoSlovenija_statut.pdf" download>Statut Društva</a><br><br>
-      <a href="https://wiki.osgeo.org/wiki/Slovenia" download>OSGeo Wiki</a>
+  <section class="section-tight">
+    <div class="container-narrow">
+      <MarkdownContent v-if="page" :html="page.html" />
 
-
-      <div class="section">
-
-
-        <h2>Včlani se!</h2>
-
-        <p>Če želite postati član društva,
-          izpolnite
-          <a href="/pristopna_izjava_osgeo_si_v20241101.pdf" download>pristopno izjavo</a>
-          in jo pošljite na naš elektronski naslov:
-          <a href="mailto:osgeoslovenija@gmail.com">osgeoslovenija@gmail.com</a>. Letna članarina znaša 20 EUR.
-        </p>
-      </div>
-
-
-      <div class="payment-info">
-        <div class="payment-list">
-          <p><strong>Podatki za plačilo:</strong></p>
-          <ul>
-            <li>Prejemnik: DRUŠTVO OSGEO SLOVENIJA </li>
-            <li>IBAN (TRR): SI56 6100 0003 0709 965</li>
-            <li>Banka: Delavska hranilnica d.d.</li>
-            <li>Naslov: Dolomitska ulica 20, 1000 Ljubljana</li>
-            <li>Znesek: 20,00 EUR</li>
-            <li>Referenca: SI99 (pustite prazno polje za sklic)</li>
-            <li>Namen: Članarina 2025</li>
-          </ul>
+      <div class="mt-12 grid items-start gap-8 rounded-xl border border-moss-700/10 bg-paper-2 p-8 md:grid-cols-[1fr_auto]">
+        <div>
+          <p class="eyebrow">Članarina 2025</p>
+          <h3 class="mt-2 font-serif text-2xl text-moss-900">Plačilo s QR kodo</h3>
+          <p class="mt-2 text-sm text-moss-900/75">Z mobilno banko poskeniraj QR kodo in plačaj 20 € članarine. Hvala za podporo skupnosti.</p>
+          <a href="http://eepurl.com/i3SUYE" target="_blank" rel="noopener" class="btn mt-6">Prijavi se na novice</a>
         </div>
-
-        <figure class="payment-qr">
-          <img
-              :src="qr"
-              alt="QR koda za plačilo članarine (20 EUR)"
-              loading="lazy"
-          />
+        <figure class="m-0 flex-none">
+          <img :src="qr" alt="QR koda za plačilo članarine (20 EUR)" loading="lazy" class="block w-44 rounded-md bg-white p-3 shadow-card" />
         </figure>
       </div>
 
-
-      <div class="section">
-
-        <a class="btn" href="http://eepurl.com/i3SUYE" target="_blank" rel="noopener noreferrer">
-          Prijavi se na novice
-        </a>
-      </div>
-
-      <div class="section">
-
-        <h2>Podporniki</h2>
-        <div class="flex">
-          <img :src="flycom" alt="Flycom Logo" style="max-height: 100px;"/>
+      <div class="mt-12">
+        <p class="eyebrow">Podporniki</p>
+        <h3 class="mt-2 font-serif text-2xl text-moss-900">Hvala za pomoč.</h3>
+        <span class="rule"></span>
+        <div class="mt-6 flex flex-wrap items-center gap-8">
+          <img :src="flycom" alt="Flycom Technologies" class="h-16 w-auto" />
         </div>
-
       </div>
-
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
-import qr from '@/assets/qr_clanarina_2025.png';
-// import flycom from public fodler
-import flycom from '@/assets/flycom-logo-main-web.png';
+import PageHero from '@/components/PageHero.vue'
+import MarkdownContent from '@/components/MarkdownContent.vue'
+import { getPage } from '@/content.js'
+import qr from '@/assets/qr_clanarina_2025.png'
+import flycom from '@/assets/flycom-logo-main-web.png'
+
+const page = getPage('about')
 </script>
-
-
-<style scoped>
-.payment-info {
-  display: grid;
-  gap: 1.25rem 2rem;              /* row / column gaps */
-  align-items: start;
-  /* Two columns when there’s room; collapses to one when not */
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.payment-list ul {
-  margin: 0.5rem 0 0;
-  padding-left: 1.25rem;          /* keep bullets aligned */
-}
-
-.payment-qr {
-  margin: 0;                      /* remove default figure margins */
-}
-
-.payment-qr img {
-  display: block;
-  width: 100%;
-  max-width: 200px;               /* keeps QR from getting too huge on wide screens */
-  height: auto;
-}
-</style>

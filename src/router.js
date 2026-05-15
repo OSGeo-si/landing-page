@@ -1,32 +1,28 @@
-// src/router.js
-import {createRouter, createWebHashHistory} from 'vue-router'
-import Home from './views/HomePage.vue'
-import OsGeoConf from './views/OsGeoConfPage.vue'
-import GeoDev from './views/GeoDevPage.vue'
-import About from './views/AboutPage.vue'
-import Teren from './views/TerenPage.vue'
-import Svizec from './views/SvizecPage.vue'
-import KjeTebeKartaZuli from './views/KjeTebeKartaZuliPage.vue'
-import OsGeoEvent2025 from "@/views/osgeoevents/OsGeoEvent2025.vue";
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
-    {path: '/', redirect: '/home'},
-    { path: '/home', name: 'Home', component: Home},
-    { path: '/osgeo-konferenca', name: 'OsGeoConf', component: OsGeoConf },
-    { path: '/geodev', name: 'GeoDev', component: GeoDev },
-    { path: '/teren', name: 'Teren', component: Teren },
-    { path: '/about', name: 'About', component: About },
-    { path: '/svizec', name: 'Svizec', component: Svizec },
-    { path: '/kje-tebe-karta-zuli', name: 'KjeTebeKartaZuli', component: KjeTebeKartaZuli },
-    { path: '/about', name: 'About', component: About },
-    { path: '/osgeo-konferenca/2025', name: 'OsGeoKonferenca2025', component: OsGeoEvent2025},
-    {path: '/geodev/:geoId', name: 'GeoDevDetail', component: () => import('@/views/GeoDevEvent.vue')
-}
+  { path: '/', name: 'Home', component: () => import('@/views/HomePage.vue') },
+  { path: '/home', redirect: '/' },
+  { path: '/about', name: 'About', component: () => import('@/views/AboutPage.vue') },
+  { path: '/osgeo-konferenca', name: 'OsGeoConf', component: () => import('@/views/OsGeoConfPage.vue') },
+  { path: '/geodev', name: 'GeoDev', component: () => import('@/views/GeoDevPage.vue') },
+  { path: '/svizec', name: 'Svizec', component: () => import('@/views/SvizecPage.vue') },
+  { path: '/teren', name: 'Teren', component: () => import('@/views/TerenPage.vue') },
+  { path: '/kje-tebe-karta-zuli', name: 'KjeTebeKartaZuli', component: () => import('@/views/KjeTebeKartaZuliPage.vue') },
+  { path: '/dogodki/:slug', name: 'Event', component: () => import('@/views/EventPage.vue') },
+
+  // Back-compat with old links
+  { path: '/geodev/:slug', redirect: to => `/dogodki/${to.params.slug}` },
+  { path: '/osgeo-konferenca/:slug', redirect: to => `/dogodki/${to.params.slug}` },
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
-    routes,
+  history: createWebHashHistory(),
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+    return { top: 0 }
+  },
 })
 
 export default router

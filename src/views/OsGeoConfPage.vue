@@ -1,28 +1,32 @@
-<!-- src/views/Contact.vue -->
 <template>
-  <div class="container">
-    <div class="content">
-      <h1>Open Source Geospatial Slovenija</h1>
-      <span>Vsakoletna konferenca Open Source Geospatial Slovenija, ki poteka v Ljubljani, predstavlja osrednje stičišče za strokovnjake in navdušence nad odprtokodnimi geoprostorskimi tehnologijami. Dogodek je namenjen predstavitvi najnovejših dosežkov, trendov in praks na področju razvoja in uporabe teh tehnologij ter spodbuja strokovno izmenjavo mnenj in mreženje.</span>
+  <PageHero
+    eyebrow="Konferenca"
+    :title="page?.title || 'Open Source Geospatial Slovenija'"
+    :tagline="page?.tagline"
+  />
 
+  <section class="section-tight">
+    <div class="container-page">
+      <MarkdownContent v-if="page" :html="page.html" class="mx-auto max-w-3xl" />
 
-      <div class="section">
-        <div class="d-flex main overflow-auto gap-2 mt-3 p-2 relative">
-          <div v-for="event in osgeoEvents" :key="event.id">
-            <event-card :event="event"/>
-          </div>
-        </div>
+      <div class="mt-14">
+        <p class="eyebrow">Letne konference</p>
+        <h2 class="mt-2 font-serif text-3xl text-moss-900">Programi in posnetki</h2>
+        <span class="rule"></span>
       </div>
-
-
+      <div class="mt-8">
+        <EventList :events="events" />
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
-// No specific logic needed here
-import EventCard from "@/components/EventCardComponent.vue";
-import eventsData from "@/events.json";
+import PageHero from '@/components/PageHero.vue'
+import MarkdownContent from '@/components/MarkdownContent.vue'
+import EventList from '@/components/EventList.vue'
+import { getEventsByTag, getPage } from '@/content.js'
 
-const osgeoEvents = eventsData.filter((event) => event.tags.includes("osgeo-conference"));
+const page = getPage('osgeo-konferenca')
+const events = getEventsByTag('osgeo-conference')
 </script>

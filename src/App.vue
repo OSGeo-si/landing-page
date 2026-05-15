@@ -1,29 +1,16 @@
-<!-- src/App.vue -->
 <template>
-  <div>
-    <Header />
-    <main class="d-flex w-full h-full">
-      <router-view />
+  <div class="flex min-h-screen flex-col">
+    <SiteHeader />
+    <main class="flex-1">
+      <router-view v-slot="{ Component }">
+        <component :is="Component" />
+      </router-view>
     </main>
-    <Footer />
+    <SiteFooter />
   </div>
 </template>
 
 <script setup>
-import Header from './components/HeaderComponent.vue'
-import Footer from './components/FooterComponent.vue'
+import SiteHeader from '@/components/SiteHeader.vue'
+import SiteFooter from '@/components/SiteFooter.vue'
 </script>
-
-<style lang="scss">
-
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-
-</style>
