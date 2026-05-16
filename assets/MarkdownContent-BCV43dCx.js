@@ -1,1 +1,0 @@
-import{l as t,e as n}from"./index-iYgaGEvu.js";const r=["innerHTML"],a={__name:"MarkdownContent",props:{html:{type:String,required:!0}},setup(e){return(o,s)=>(t(),n("div",{class:"prose-osgeo",innerHTML:e.html},null,8,r))}};export{a as _};
