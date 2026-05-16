@@ -16,7 +16,12 @@ Namen društva sta razvoj in promocija odprtokodnih geoprostorskih tehnologij te
 
 ## Včlani se
 
-Če želite postati član društva, izpolnite [pristopno izjavo](/pristopna_izjava_osgeo_si_v20241101.pdf) in jo pošljite na naš elektronski naslov: [osgeoslovenija@gmail.com](mailto:osgeoslovenija@gmail.com). Letna članarina znaša 20 EUR.
+Če želite postati član društva, izpolnite [pristopno izjavo](/pristopna_izjava_osgeo_si_v20241101.pdf) in jo pošljite na naš elektronski naslov: [osgeoslovenija@gmail.com](mailto:osgeoslovenija@gmail.com).
+
+Letna članarina znaša:
+
+- **20 EUR** — redna članarina
+- **10 EUR** — znižana članarina za **študente, upokojence in invalide**
 
 ## Podatki za plačilo
 
@@ -24,6 +29,6 @@ Namen društva sta razvoj in promocija odprtokodnih geoprostorskih tehnologij te
 - **IBAN (TRR):** SI56 6100 0003 0709 965
 - **Banka:** Delavska hranilnica d.d.
 - **Naslov:** Dolomitska ulica 20, 1000 Ljubljana
-- **Znesek:** 20,00 EUR
+- **Znesek:** 20,00 EUR (znižano 10,00 EUR za študente, upokojence in invalide)
 - **Referenca:** SI99 (pustite prazno polje za sklic)
 - **Namen:** Članarina 2026
