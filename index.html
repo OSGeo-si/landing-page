@@ -1,3 +1,28 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>OSGeo Slovenija</title><script defer="defer" src="/js/chunk-vendors.d5d600b5.js"></script><script defer="defer" src="/js/app.6cad66df.js"></script><link href="/css/app.833e17de.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but OSGeoSi doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html><script>if (!location.hash) {
-    location.replace(location.pathname + '#/home');
-  }</script>
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OSGeo Slovenija — razvoj in promocija odprtokodnih geoprostorskih tehnologij ter odprtih podatkovnih standardov v Sloveniji." />
+    <title>OSGeo Slovenija</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('osgeo-theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var dark = stored ? stored === 'dark' : prefersDark;
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) { /* ignore */ }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-DGFSXn_C.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-3rAST389.css">
+  </head>
+  <body class="bg-paper text-ink antialiased">
+    <div id="app"></div>
+  </body>
+</html>
