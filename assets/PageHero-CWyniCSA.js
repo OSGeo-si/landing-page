@@ -1,4 +1,4 @@
-import{_ as m}from"./EventMap-BNBtCr0R.js";import{l as t,e as a,h as f,d as r,a as o,i,u as c,q as u,c as b,g as p}from"./index-CQwuR4ki.js";const v={key:0,class:"absolute inset-0 isolate z-0"},y={key:1,class:"pointer-events-none absolute inset-0 z-10","aria-hidden":"true",style:{background:`linear-gradient(to right,
+import{_ as m}from"./EventMap--koarThz.js";import{l as t,e as a,h as f,d as r,a as o,i,u as c,q as u,c as b,g as p}from"./index-DlcjxCxi.js";const v={key:0,class:"absolute inset-0 isolate z-0"},y={key:1,class:"pointer-events-none absolute inset-0 z-10","aria-hidden":"true",style:{background:`linear-gradient(to right,
             var(--color-paper-2) 0%,
             var(--color-paper-2) 28%,
             color-mix(in srgb, var(--color-paper-2) 75%, transparent) 50%,
