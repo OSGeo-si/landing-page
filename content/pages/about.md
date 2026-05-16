@@ -32,3 +32,5 @@ Letna članarina znaša:
 - **Znesek:** 20,00 EUR (znižano 10,00 EUR za študente, upokojence in invalide)
 - **Referenca:** SI99 (pustite prazno polje za sklic)
 - **Namen:** Članarina 2026
+
+> ⚠️ **Prosim plačajte s svojega osebnega TRR** (z imenom in priimkom), da lahko plačilo pravilno povežemo z vašim članstvom.

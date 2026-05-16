@@ -1,8 +1,20 @@
 # OSGeo Slovenija — urejanje vsebine
 
-To je repozitorij spletne strani [osgeo.si](https://osgeo.si). Stran je **statična**, vsa vsebina pa živi v mapi [`content/`](./content) kot navadne Markdown datoteke. To pomeni, da **lahko vsak prispeva** — brez nameščanja kakršne koli programske opreme. Spreminjaš direktno na GitHubu, ob commitu se stran samodejno zgradi in objavi (~3 min).
+To je repozitorij spletne strani [osgeo.si](https://osgeo.si). Stran je **statična**, vsa vsebina pa živi v mapi [`content/`](./content) kot navadne Markdown datoteke. To pomeni, da **lahko vsak prispeva** — brez nameščanja kakršne koli programske opreme. Spreminjaš direktno na GitHubu, ob commitu se stran samodejno zgradi in objavi.
 
 > 💡 **Še nisi delal/a z Markdownom ali GitHubom?** Brez panike — pri vsakem koraku spodaj je predloga, ki jo samo prilepiš in zamenjaš vrednosti.
+
+## 🚀 Kako pride sprememba na osgeo.si
+
+Vsak `commit` v vejo `main` (preko GitHub web UI ali `git push`) samodejno sproži **GitHub Actions** workflow [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml), ki:
+
+1. Naredi gradnjo strani (`npm run build`),
+2. Objavi rezultat na vejo `gh-pages`,
+3. GitHub Pages pa servira to vejo pod domeno [osgeo.si](https://osgeo.si).
+
+**Skupni čas od commita do objave ~2–3 min.** Status posameznega buildanja vidiš na zavihku [Actions](https://github.com/OSGeo-si/landing-page/actions). Če katero zgradbo poči (rdeč krogec), klikni nanjo za logiranje napake — najpogosteje je razlog napaka v YAML frontmatter datoteki (npr. manjkajoči narekovaji).
+
+> ✅ **Ni možnosti, da z napačnim commitom prestrelimo produkcijo** — če gradnja ne uspe, stara verzija strani ostane objavljena. Lahko se varno učiš.
 
 ---
 
@@ -15,6 +27,7 @@ To je repozitorij spletne strani [osgeo.si](https://osgeo.si). Stran je **stati�
 - [📄 Urejanje obstoječe strani (O nas, GeoDev, …)](#-urejanje-obstoje%C4%8De-strani-o-nas-geodev-)
 - [🗺️ Kako pridobiti koordinate](#%EF%B8%8F-kako-pridobiti-koordinate)
 - [📝 Markdown — osnove](#-markdown--osnove)
+- [🧪 Lokalni predogled (neobvezno)](#-lokalni-predogled-neobvezno)
 - [💬 Potrebuješ pomoč?](#-potrebuje%C5%A1-pomo%C4%8D)
 - [🛠️ Za razvijalce](#%EF%B8%8F-za-razvijalce)
 
@@ -289,6 +302,40 @@ print("hello")
 ```
 
 > Več: [GitHub Markdown vodič](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+---
+
+## 🧪 Lokalni predogled (neobvezno)
+
+Če želiš pred objavo videti, kako bo sprememba izgledala na strani (npr. preveriti, ali se nova novica res prikaže pravilno z galerijo), lahko stran zaženeš lokalno na svojem računalniku.
+
+**Predpogoj:** nameščen [Node.js](https://nodejs.org/) (vzemi LTS verzijo — 20 ali novejšo).
+
+```bash
+# 1. Kloniraj repozitorij
+git clone git@github.com:OSGeo-si/landing-page.git
+cd landing-page
+
+# 2. Naloži odvisnosti (samo enkrat)
+npm install
+
+# 3. Zaženi lokalni strežnik
+npm run dev
+```
+
+Terminal ti bo izpisal `Local: http://localhost:5173/` — odpri to povezavo v brskalniku.
+
+Stran se **samodejno osveži ob vsaki spremembi datoteke** (`.md`, `.vue`, slika …). Idealno za testiranje nove novice ali dogodka pred commitom.
+
+### Uporabne komande
+
+| Komanda | Kaj naredi |
+| --- | --- |
+| `npm run dev` | lokalni strežnik z živim osveževanjem (`http://localhost:5173`) |
+| `npm run build` | produkcijska gradnja v mapo `dist/` |
+| `npm run preview` | predogled produkcijske gradnje (po `npm run build`) |
+
+> ℹ️ Lokalno testiranje **ne** vpliva na produkcijsko stran — ta se posodobi šele, ko pushaš spremembe v `main` na GitHubu. Tudi če pri lokalnem testiranju kaj zlomiš, na osgeo.si tega nihče ne vidi.
 
 ---
 

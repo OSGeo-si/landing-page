@@ -11,6 +11,7 @@
           <h3 class="mt-2 font-serif text-2xl text-moss-900">Plačilo s QR kodo</h3>
           <p class="mt-2 text-sm text-moss-900/75">Z mobilno banko poskeniraj QR kodo in plačaj 20 € članarine. Hvala za podporo skupnosti.</p>
           <p class="mt-2 text-xs text-moss-900/60">Za <strong>znižano članarino 10 €</strong> (študenti, upokojenci, invalidi) plačaj ročno po zgornjih podatkih.</p>
+          <p class="mt-3 rounded-md border border-ochre/30 bg-ochre/10 p-3 text-xs text-moss-900/85"><strong>⚠️ Pomembno:</strong> prosim plačaj s svojega <strong>osebnega TRR</strong> (z imenom in priimkom), da lahko plačilo pravilno povežemo s tvojim članstvom.</p>
           <a href="http://eepurl.com/i3SUYE" target="_blank" rel="noopener" class="btn mt-6">Prijavi se na novice</a>
         </div>
         <figure class="m-0 flex-none">
