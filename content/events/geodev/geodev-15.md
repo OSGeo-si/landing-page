@@ -43,17 +43,14 @@ Predstavitev bo zato poskusila povezati praktične izkušnje iz prototipa AiGIS 
 
 _Jaša Dimič, podatkovni znanstvenik, PRIOT d.o.o._
 
-**SLO** — Objavnik.si je storitev, ki spremlja občinske oglasne deske po vsej Sloveniji in z LLM analizo izlušči vse prodajne ponudbe za kmetijska zemljišča. Uporabniki izberejo občine, ki jih zanimajo, in nove priložnosti prejmejo neposredno na e-pošto — brez ročnega prebiranja objav.
+Objavnik.si je storitev, ki spremlja občinske oglasne deske po vsej Sloveniji in z LLM analizo izlušči vse prodajne ponudbe za kmetijska zemljišča. Uporabniki izberejo občine, ki jih zanimajo, in nove priložnosti prejmejo neposredno na e-pošto — brez ročnega prebiranja objav.
 
-**ENG** — Objavnik.si is a service that monitors municipal notice boards across Slovenia and uses an LLM stack to extract every sale offer for agricultural land. Users pick the municipalities they care about and get new opportunities delivered straight to their inbox — no manual scanning of public notices required.
-
-Dodajamo nove funkcionalnosti, trenutno še ne oglašujemo, imamo pa preko **250 BETA uporabnikov**.
 
 ---
 
 ### 19:00 — Točno opoldne na robu vesolja
 
-_Tomaž Šturm_
+_Tomaž Šturm, predsednik OSGeo Slovenija_
 
 Človek že od nekdaj pogleduje proti zvezdam in razmišlja o daljnih svetovih ter potovanju med njimi. Vesoljska potovanja imajo stroga pravila, ki jim mora slediti tudi navigacija. Ko pa dodamo ščepec domišljije, se lahko podamo v povsem neznane galaksije, tudi tiste na drugem koncu vesolja. Natančna navigacija pa je tista, ki poskrbi, da tja prispemo varno, hitro in natanko ob pravem času.
 
