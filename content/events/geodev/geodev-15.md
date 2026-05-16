@@ -1,55 +1,68 @@
 ---
 title: "GeoDev Meetup #15"
 slug: geodev-15
-date: 2026-11-11
+date: 2026-05-26
 time: "18:00"
-location: "KID KIBLA, Ulica kneza Koclja 9, Maribor"
-eventUrl: "https://forms.gle/AGsPH3ZfdMtLrFap7"
+location: "Urbanistični inštitut Republike Slovenije, Trnovski pristan 2, Ljubljana"
+lat: 46.0445
+lng: 14.5045
 tags: [geodev]
 ---
 
-# GeoDev Meetup #15
+Pozdravljeni!
 
-📍 __Lokacija:__  [KID KIBLA](https://venturefactory.org/sl/), Ulica kneza Koclja 9, __Maribor__
+Vabljeni na **petnajsti GeoDev meetup**, tokrat s **tremi predavanji** (vsako 20 min + 10 min Q&A).
 
-📅 __Datum:__ torek, 11. november 2025
+📍 **Lokacija:** [Urbanistični inštitut Republike Slovenije](https://www.uirs.si/sl-si/), Trnovski pristan 2, Ljubljana
 
-🕕 __Čas:__ 18:00
+📅 **Datum:** torek, 26. maj 2026
+
+🕕 **Čas:** 18:00
 
 ## Program
 
-__Preveč podatkov, premalo časa: ko avtomatizacija postane nuja / Too Much Data, Too Little Time: When Automation Becomes a Necessity__
+### 18:00 — AI agenti za geoprostorske naloge · _AI Agents for Geo-Spatial Tasks_
 
-18:00 - 18:30
+_Vid Primožič, mag. fiz., Flycom Technologies d.o.o._
 
-Živimo v krasnem času, ko dostop do podatkov ni več težava – prej nasprotno. Podatki so povsod, pogosto v več različicah, brez metapodatkov ali z metapodatki zakopanimi nekje v globinah spleta. Še ne dolgo nazaj je bilo povsem sprejemljivo verzijo podatkov navajati z letnico, danes že ura lahko pomeni razliko v vsebini. Ob vseh drugih nalogah hitro zabredemo v kaos.
-Kot nekakšen vmesni člen med širšim krogom uporabnikov in razvijalci poskušam s pomočjo Pythona, QGIS-a in PostGIS-a avtomatizirati rutinska opravila ter olajšati dostop do podatkov. Rutino naj opravi koda – ne človek.
-V predstavitvi bom izpostavil nekaj izzivov, s katerimi se srečujem pri delu s (prostorskimi) podatki, in pokazal nekaj primerov, kako se z njimi spopadam s pomočjo Pythona in PostGIS-a ter z razvojem QGIS vtičnikov.
+Namen predstavitve je predstaviti naš pogled na razvoj in uporabo AI agentov za prostorske podatke ter opozoriti na specifike, zaradi katerih se geoprostorski agenti razlikujejo od splošnih agentov (npr. za administracijo ali kodiranje). Izhodišče bodo naši eksperimenti s prototipom **AiGIS**, razvitim v Flycom Technologies. AiGIS je avtonomni agent za poizvedbe in analize nad prostorsko bazo. Z njim smo preverjali, kako z agentom nalogo v naravnem jeziku rešiti s pripravo kompleksnejše SQL poizvedbe.
 
-Matjaž Mori, ZUM URBANIZEM, PLANIRANJE, PROJEKTIRANJE d.o.o.
+Sodobni jezikovni modeli (od GPT-4o dalje), vključno z modeli z odprtimi utežmi, lahko zanesljivo razumejo prostorsko vprašanje, izberejo ustrezne podatke in nad PostGIS bazo odprtih podatkov generirajo preverljivo SQL poizvedbo. Rešitev je bila predvsem »proof of concept«, izkušnje pri delu z njo pa odpirajo ključna vprašanja za razvoj "agentov za geoprostorske podatke" in ponujajo nekatere smernice za nadaljnji razvoj.
 
-__Ekstrakcija geolokacijskih podatkov ob zagotavljanju zasebnosti / Privacy-oriented geolocation data extraction__
+Prostorske analize so zelo pogosto še vedno predvsem domena GIS strokovnjakov, čeprav so pogosto potrebne tudi v urbanizmu, ekologiji, javni upravi, nevladnih organizacijah in v zadnjem času tudi pri poslih z nepremičninami. Vse te skupine bi imele bistvene koristi od razvoja avtonomnih AI agentov.
 
-18:30 - 19:00
+Ključna ugotovitev naših eksperimentov je, da so AI operacije nad prostorskimi podatki možne, bistvene razlike pa se kažejo med rezultati različnih modelov, pri čemer se večji in novejši modeli obnašajo bistveno bolje, celo primerljivo z GIS strokovnjakom. Prav tako se je izkazalo, da je rezultat odvisen tudi od tega, kako jasno in nedvoumno je definirana naloga, kar predstavlja glavni izziv pri izdelavi agenta za splošno javnost.
 
-V predstavitvi bo prikazano, kako smo rešili izziv pridobivanja okoljskih podatkov pri lastnikih eksposomskih podatkov, ki zaradi zagotavljanja zasebnosti niso mogli deliti natančnih lokacij udeležencev. Končni program, razvit v R, je zasnovan po načelu privacy by design in združuje lokalno obdelavo podatkov, varne metode pridobivanja okoljskih informacij ter osredotočenost na uporabnika. Tak pristop odpravlja potrebo po deljenju osebnih lokacij, hkrati pa ohranja uporabnost podatkov za znanstvene analize. Rešitev ponazarja, kako je mogoče v praksi uskladiti zahteve GDPR z raziskovalnimi potrebami ter spodbuja razvoj etično in pravno skladnih orodij za delo s prostorskimi podatki.
+Prav to pripelje do ključnega vprašanja, kakšne naloge mora sploh reševati "agent za geoprostorske podatke"? Pojem je zelo širok, saj obsega agente za analizo podatkov v bazi, vektorskih podatkov in rastrskih slojev, pa vse do izvedbe kompleksnih numeričnih analiz. Vsak od teh primerov ima drugačne zahteve glede podatkov, orodij, nadzora, razlage rezultatov in dopustnih napak, kar predstavlja glavne izzive pri razvoju agentov. Menimo, da je ključni izziv, kako agentu zagotoviti ustrezna orodja za obdelavo teh specifičnih vrst podatkov, medtem ko sami LLM modeli in ogrodja za postavitev agentov že dosegajo ustrezno raven razvitosti.
 
-Jure Ftičar, Institut "Jožef Stefan"
-
-__Druženje in mreženje ob pijači__
-
-19:00 - 21:00
-
-## Ostalo
-
-Dogodek je brezplačen in odprt vsem. Pridruži se zabavnemu in poučnemu večeru z drugimi razvijalci in navdušenci nad geoprostorskimi rešitvami in podatki.
+Predstavitev bo zato poskusila povezati praktične izkušnje iz prototipa AiGIS s širšim razmislekom o prihodnosti geoprostorskih agentov. Namen ni podati dokončnih odgovorov, temveč odpreti razpravo o tem, kakšni agenti so za prostorske naloge dejansko uporabni in zanesljivi.
 
 ---
 
-__Dogodek omogočili__
+### 18:30 — Objavnik.si
 
-[OSGEO Slovenija z donatorji](/#/about)
+_Jaša Dimič, podatkovni znanstvenik, PRIOT d.o.o._
 
-in
+**SLO** — Objavnik.si je storitev, ki spremlja občinske oglasne deske po vsej Sloveniji in z LLM analizo izlušči vse prodajne ponudbe za kmetijska zemljišča. Uporabniki izberejo občine, ki jih zanimajo, in nove priložnosti prejmejo neposredno na e-pošto — brez ročnega prebiranja objav.
 
-<img src="/sponsors/StartupMB-izvajalec-financer-noga.png" alt="StartupMB" style="max-width: 600px; height: auto;" />
+**ENG** — Objavnik.si is a service that monitors municipal notice boards across Slovenia and uses an LLM stack to extract every sale offer for agricultural land. Users pick the municipalities they care about and get new opportunities delivered straight to their inbox — no manual scanning of public notices required.
+
+Dodajamo nove funkcionalnosti, trenutno še ne oglašujemo, imamo pa preko **250 BETA uporabnikov**.
+
+---
+
+### 19:00 — Točno opoldne na robu vesolja
+
+_Tomaž Šturm_
+
+Človek že od nekdaj pogleduje proti zvezdam in razmišlja o daljnih svetovih ter potovanju med njimi. Vesoljska potovanja imajo stroga pravila, ki jim mora slediti tudi navigacija. Ko pa dodamo ščepec domišljije, se lahko podamo v povsem neznane galaksije, tudi tiste na drugem koncu vesolja. Natančna navigacija pa je tista, ki poskrbi, da tja prispemo varno, hitro in natanko ob pravem času.
+
+---
+
+### 19:30 — Druženje in mreženje ob pijači
+
+## Ostalo
+
+Dogodek je **brezplačen** in odprt vsem. Pridruži se zabavnemu in poučnemu večeru z drugimi razvijalci in navdušenci nad geoprostorskimi rešitvami in podatki.
+
+Dogodek in prostor je omogočil [Urbanistični inštitut Republike Slovenije](https://www.uirs.si/sl-si/).

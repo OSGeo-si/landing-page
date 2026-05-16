@@ -26,4 +26,4 @@ Namen društva sta razvoj in promocija odprtokodnih geoprostorskih tehnologij te
 - **Naslov:** Dolomitska ulica 20, 1000 Ljubljana
 - **Znesek:** 20,00 EUR
 - **Referenca:** SI99 (pustite prazno polje za sklic)
-- **Namen:** Članarina 2025
+- **Namen:** Članarina 2026

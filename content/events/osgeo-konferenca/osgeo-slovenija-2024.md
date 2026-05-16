@@ -4,6 +4,8 @@ slug: osgeo-slovenija-2024
 date: 2024-10-17
 time: "08:30"
 location: "Gozdarski inštitut Slovenije, Večna pot 2, Ljubljana"
+lat: 46.0518
+lng: 14.4727
 eventUrl: "https://github.com/OSGeo-si/OpenSourceGeospatialSlovenija2024"
 tags: [osgeo-conference]
 ---

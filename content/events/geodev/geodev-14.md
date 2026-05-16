@@ -4,6 +4,8 @@ slug: geodev-14
 date: 2025-11-11
 time: "18:00"
 location: "KID KIBLA, Ulica kneza Koclja 9, Maribor"
+lat: 46.5594
+lng: 15.6437
 eventUrl: "https://forms.gle/AGsPH3ZfdMtLrFap7"
 tags: [geodev]
 ---

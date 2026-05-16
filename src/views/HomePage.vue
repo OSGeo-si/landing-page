@@ -45,7 +45,43 @@
         </router-link>
       </div>
       <div class="mt-10">
-        <EventList :events="events" />
+        <EventSections :events="allEvents" :past-limit="3" upcoming-title="Prihajajoči dogodki" past-title="Nedavni dogodki" />
+      </div>
+    </div>
+  </section>
+
+  <section v-if="latestNews.length" class="section">
+    <div class="container-page">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <p class="eyebrow">Bilten</p>
+          <h2 class="mt-2 font-serif text-3xl text-moss-900 md:text-4xl">Zadnje novice</h2>
+          <span class="rule"></span>
+        </div>
+        <router-link to="/novice" class="hidden text-sm font-semibold text-moss-700 hover:text-moss-900 md:inline">
+          Vse novice →
+        </router-link>
+      </div>
+      <div class="mt-10">
+        <NewsList :news="latestNews" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-page">
+      <div class="flex flex-col items-start justify-between gap-3 md:flex-row md:items-end">
+        <div>
+          <p class="eyebrow">Zemljevid</p>
+          <h2 class="mt-2 font-serif text-3xl text-moss-900 md:text-4xl">Kje se srečujemo</h2>
+          <span class="rule"></span>
+        </div>
+        <p class="max-w-md text-sm text-moss-900/70">
+          Klikni na pin za podrobnosti dogodka. Vse lokacije naših srečanj po Sloveniji.
+        </p>
+      </div>
+      <div class="mt-8">
+        <EventMap :events="allEvents" height="480px" />
       </div>
     </div>
   </section>
@@ -82,9 +118,12 @@
 
 <script setup>
 import svizec from '@/assets/svizec-main-clr.svg'
-import EventList from '@/components/EventList.vue'
-import { getAllEvents, getPage } from '@/content.js'
+import EventSections from '@/components/EventSections.vue'
+import EventMap from '@/components/EventMap.vue'
+import NewsList from '@/components/NewsList.vue'
+import { getAllEvents, getAllNews, getPage } from '@/content.js'
 
 const home = getPage('home')
-const events = getAllEvents().slice(0, 6)
+const allEvents = getAllEvents()
+const latestNews = getAllNews().slice(0, 3)
 </script>

@@ -11,6 +11,9 @@ const routes = [
   { path: '/kje-tebe-karta-zuli', name: 'KjeTebeKartaZuli', component: () => import('@/views/KjeTebeKartaZuliPage.vue') },
   { path: '/dogodki/:slug', name: 'Event', component: () => import('@/views/EventPage.vue') },
 
+  { path: '/novice', name: 'News', component: () => import('@/views/NewsPage.vue') },
+  { path: '/novice/:slug', name: 'NewsItem', component: () => import('@/views/NewsItemPage.vue') },
+
   // Back-compat with old links
   { path: '/geodev/:slug', redirect: to => `/dogodki/${to.params.slug}` },
   { path: '/osgeo-konferenca/:slug', redirect: to => `/dogodki/${to.params.slug}` },

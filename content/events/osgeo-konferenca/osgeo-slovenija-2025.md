@@ -5,6 +5,8 @@ date: 2025-10-22
 end_date: 2025-10-23
 time: "08:30"
 location: "Gozdarski inštitut Slovenije, Večna pot 2, Ljubljana"
+lat: 46.0518
+lng: 14.4727
 tags: [osgeo-conference]
 featured: true
 ---

@@ -23,6 +23,40 @@ function renderBody(body) {
 
 const eventModules = import.meta.glob('/content/events/**/*.md', { query: '?raw', import: 'default', eager: true })
 const pageModules = import.meta.glob('/content/pages/*.md', { query: '?raw', import: 'default', eager: true })
+const newsModules = import.meta.glob('/content/news/*.md', { query: '?raw', import: 'default', eager: true })
+const eventImages = import.meta.glob(
+  '/content/events/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
+  { query: '?url', import: 'default', eager: true }
+)
+const newsImages = import.meta.glob(
+  '/content/news/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}',
+  { query: '?url', import: 'default', eager: true }
+)
+
+function filenameToAlt(filename) {
+  return filename
+    .replace(/\.[a-z]+$/i, '')
+    .replace(/^\d+[-_\s]*/, '')
+    .replace(/[-_]+/g, ' ')
+    .trim()
+}
+
+function imagesUnder(modules, prefix) {
+  return Object.entries(modules)
+    .filter(([path]) => path.startsWith(prefix))
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([path, url]) => {
+      const filename = path.slice(prefix.length)
+      return { url, filename, alt: filenameToAlt(filename) }
+    })
+}
+
+function pickCover(images, metaCover) {
+  if (metaCover) {
+    return images.find(img => img.filename === metaCover) || null
+  }
+  return images.find(img => /^cover\.(jpg|jpeg|png|webp)$/i.test(img.filename)) || null
+}
 
 function buildEvent(raw, sourcePath) {
   const { meta, body } = parseFile(raw, sourcePath)
@@ -31,6 +65,9 @@ function buildEvent(raw, sourcePath) {
   const tags = Array.isArray(meta.tags) ? meta.tags : (meta.tags ? [meta.tags] : [])
   const dateStr = meta.date ? toISO(meta.date) : null
   const endDateStr = meta.end_date ? toISO(meta.end_date) : null
+  const lat = meta.lat != null ? Number(meta.lat) : null
+  const lng = meta.lng != null ? Number(meta.lng) : null
+  const gallery = imagesUnder(eventImages, `/content/events/${category}/${slug}/`)
   return {
     ...meta,
     slug,
@@ -38,6 +75,9 @@ function buildEvent(raw, sourcePath) {
     tags,
     date: dateStr,
     end_date: endDateStr,
+    lat: Number.isFinite(lat) ? lat : null,
+    lng: Number.isFinite(lng) ? lng : null,
+    gallery,
     bodyMarkdown: body,
     html: renderBody(body),
   }
@@ -49,6 +89,29 @@ function buildPage(raw, sourcePath) {
   return {
     ...meta,
     name,
+    bodyMarkdown: body,
+    html: renderBody(body),
+  }
+}
+
+function buildNews(raw, sourcePath) {
+  const { meta, body } = parseFile(raw, sourcePath)
+  const baseName = sourcePath.split('/').pop().replace(/\.md$/, '')
+  // derive slug from filename, stripping leading YYYY-MM[-DD]- date prefix if present
+  const derivedSlug = baseName.replace(/^\d{4}-\d{2}(-\d{2})?-/, '')
+  const slug = meta.slug || derivedSlug
+  const dateStr = meta.date ? toISO(meta.date) : null
+  const tags = Array.isArray(meta.tags) ? meta.tags : (meta.tags ? [meta.tags] : [])
+  const allImages = imagesUnder(newsImages, `/content/news/${baseName}/`)
+  const cover = pickCover(allImages, meta.cover)
+  const gallery = cover ? allImages.filter(img => img !== cover) : allImages
+  return {
+    ...meta,
+    slug,
+    tags,
+    date: dateStr,
+    cover,
+    gallery,
     bodyMarkdown: body,
     html: renderBody(body),
   }
@@ -74,6 +137,10 @@ const pages = Object.fromEntries(
     return [page.name, page]
   })
 )
+
+const news = Object.entries(newsModules)
+  .map(([path, raw]) => buildNews(raw, path))
+  .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
 
 export function getAllEvents() {
   return events
@@ -106,4 +173,12 @@ export function getUpcomingEvents(limit) {
 export function isFutureEvent(event) {
   const today = new Date().toISOString().slice(0, 10)
   return (event.end_date || event.date) >= today
+}
+
+export function getAllNews() {
+  return news
+}
+
+export function getNews(slug) {
+  return news.find(n => n.slug === slug)
 }

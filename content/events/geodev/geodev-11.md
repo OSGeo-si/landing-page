@@ -4,6 +4,8 @@ slug: geodev-11
 date: 2024-11-20
 time: "18:00"
 location: "Računalniški muzej, Celovška cesta 111, Ljubljana"
+lat: 46.0762
+lng: 14.4886
 eventUrl: "https://github.com/OSGeo-si/GeoDev/tree/master/2024-11-meetup"
 tags: [geodev]
 ---

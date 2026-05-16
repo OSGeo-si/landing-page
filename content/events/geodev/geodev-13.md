@@ -4,6 +4,8 @@ slug: geodev-13
 date: 2025-04-10
 time: "18:00"
 location: "Urbanistični Inštitut Republike Slovenije, Trnovski pristan 2, Ljubljana"
+lat: 46.0445
+lng: 14.5045
 eventUrl: "https://github.com/OSGeo-si/GeoDev/tree/master/2025-13-meetup"
 tags: [geodev]
 ---

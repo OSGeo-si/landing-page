@@ -7,7 +7,7 @@
 
       <div class="mt-12 grid items-start gap-8 rounded-xl border border-moss-700/10 bg-paper-2 p-8 md:grid-cols-[1fr_auto]">
         <div>
-          <p class="eyebrow">Članarina 2025</p>
+          <p class="eyebrow">Članarina 2026</p>
           <h3 class="mt-2 font-serif text-2xl text-moss-900">Plačilo s QR kodo</h3>
           <p class="mt-2 text-sm text-moss-900/75">Z mobilno banko poskeniraj QR kodo in plačaj 20 € članarine. Hvala za podporo skupnosti.</p>
           <a href="http://eepurl.com/i3SUYE" target="_blank" rel="noopener" class="btn mt-6">Prijavi se na novice</a>
@@ -33,7 +33,7 @@
 import PageHero from '@/components/PageHero.vue'
 import MarkdownContent from '@/components/MarkdownContent.vue'
 import { getPage } from '@/content.js'
-import qr from '@/assets/qr_clanarina_2025.png'
+import qr from '@/assets/qr-koda-2026.png'
 import flycom from '@/assets/flycom-logo-main-web.png'
 
 const page = getPage('about')

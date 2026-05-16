@@ -1,21 +1,73 @@
 <template>
   <header class="sticky top-0 z-40 border-b border-moss-700/10 bg-paper/85 backdrop-blur">
     <div class="container-page flex h-16 items-center justify-between gap-6">
-      <router-link to="/" class="flex items-center gap-3 no-underline" @click="closeMenu">
+      <router-link to="/" class="flex items-center gap-3 no-underline" @click="closeAll">
         <img :src="logo" alt="OSGeo Slovenija" class="h-9 w-auto" />
         <span class="hidden font-serif text-lg font-semibold text-moss-800 md:inline">OSGeo Slovenija</span>
       </router-link>
 
       <nav class="hidden items-center gap-1 md:flex">
+        <!-- Dogodki dropdown -->
+        <div ref="dropdownEl" class="relative">
+          <button
+            type="button"
+            class="inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium no-underline transition hover:bg-moss-50 hover:text-moss-900"
+            :class="dogodkiActive ? 'text-moss-800 bg-moss-50' : 'text-moss-900/70'"
+            :aria-expanded="dropdownOpen"
+            aria-haspopup="menu"
+            @click="dropdownOpen = !dropdownOpen"
+          >
+            Dogodki
+            <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 transition" :class="{ 'rotate-180': dropdownOpen }" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+          <transition
+            enter-active-class="transition duration-150 ease-out"
+            enter-from-class="opacity-0 -translate-y-1"
+            enter-to-class="opacity-100 translate-y-0"
+            leave-active-class="transition duration-100 ease-in"
+            leave-from-class="opacity-100 translate-y-0"
+            leave-to-class="opacity-0 -translate-y-1"
+          >
+            <div
+              v-if="dropdownOpen"
+              role="menu"
+              class="absolute left-0 top-full z-50 mt-2 min-w-[14rem] overflow-hidden rounded-lg border border-moss-700/15 bg-surface shadow-card"
+            >
+              <router-link
+                v-for="item in eventNav"
+                :key="item.to"
+                :to="item.to"
+                role="menuitem"
+                class="block px-4 py-2.5 text-sm font-medium text-moss-900/80 no-underline transition hover:bg-moss-50 hover:text-moss-900"
+                active-class="bg-moss-50 text-moss-800"
+                @click="closeAll"
+              >
+                {{ item.label }}
+              </router-link>
+            </div>
+          </transition>
+        </div>
+
         <router-link
-          v-for="item in nav"
-          :key="item.to"
-          :to="item.to"
+          to="/novice"
           class="rounded-md px-3 py-2 text-sm font-medium text-moss-900/70 no-underline transition hover:bg-moss-50 hover:text-moss-900"
           active-class="text-moss-800 bg-moss-50"
+          @click="closeAll"
         >
-          {{ item.label }}
+          Novice
         </router-link>
+
+        <router-link
+          to="/about"
+          class="rounded-md px-3 py-2 text-sm font-medium text-moss-900/70 no-underline transition hover:bg-moss-50 hover:text-moss-900"
+          active-class="text-moss-800 bg-moss-50"
+          @click="closeAll"
+        >
+          O nas
+        </router-link>
+
         <button
           type="button"
           class="ml-2 rounded-md p-2 text-moss-800 transition hover:bg-moss-50"
@@ -63,11 +115,11 @@
         <button
           type="button"
           class="inline-flex items-center justify-center rounded-md p-2 text-moss-800 transition hover:bg-moss-50"
-          @click="isOpen = !isOpen"
-          :aria-expanded="isOpen"
+          @click="mobileOpen = !mobileOpen"
+          :aria-expanded="mobileOpen"
           aria-label="Menu"
         >
-          <svg v-if="!isOpen" viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <svg v-if="!mobileOpen" viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
           <svg v-else viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -77,17 +129,35 @@
       </div>
     </div>
 
-    <nav v-if="isOpen" class="border-t border-moss-700/10 md:hidden">
+    <nav v-if="mobileOpen" class="border-t border-moss-700/10 md:hidden">
       <div class="container-page flex flex-col py-3">
+        <p class="px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-[0.16em] text-moss-600">Dogodki</p>
         <router-link
-          v-for="item in nav"
+          v-for="item in eventNav"
           :key="item.to"
           :to="item.to"
-          class="rounded-md px-3 py-3 text-sm font-medium text-moss-900/80 no-underline transition hover:bg-moss-50"
+          class="rounded-md px-5 py-2.5 text-sm font-medium text-moss-900/80 no-underline transition hover:bg-moss-50"
           active-class="bg-moss-50 text-moss-900"
-          @click="closeMenu"
+          @click="closeAll"
         >
           {{ item.label }}
+        </router-link>
+        <div class="my-2 h-px bg-moss-700/10"></div>
+        <router-link
+          to="/novice"
+          class="rounded-md px-3 py-2.5 text-sm font-medium text-moss-900/80 no-underline transition hover:bg-moss-50"
+          active-class="bg-moss-50 text-moss-900"
+          @click="closeAll"
+        >
+          Novice
+        </router-link>
+        <router-link
+          to="/about"
+          class="rounded-md px-3 py-2.5 text-sm font-medium text-moss-900/80 no-underline transition hover:bg-moss-50"
+          active-class="bg-moss-50 text-moss-900"
+          @click="closeAll"
+        >
+          O nas
         </router-link>
       </div>
     </nav>
@@ -95,21 +165,51 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import logo from '@/assets/osgeo-si-logo.svg'
 import { useDarkMode } from '@/composables/useDarkMode.js'
 
-const nav = [
+const eventNav = [
   { to: '/osgeo-konferenca', label: 'Konferenca' },
   { to: '/geodev', label: 'GeoDev' },
   { to: '/svizec', label: 'Svizec' },
   { to: '/kje-tebe-karta-zuli', label: 'Kje tebe karta žuli?' },
   { to: '/teren', label: 'Teren' },
-  { to: '/about', label: 'O nas' },
 ]
 
-const isOpen = ref(false)
-const closeMenu = () => { isOpen.value = false }
+const route = useRoute()
+const dropdownOpen = ref(false)
+const mobileOpen = ref(false)
+const dropdownEl = ref(null)
+
+const dogodkiActive = computed(() => eventNav.some(item => route.path.startsWith(item.to)))
+
+const closeAll = () => {
+  dropdownOpen.value = false
+  mobileOpen.value = false
+}
+
+const onDocClick = (e) => {
+  if (dropdownOpen.value && dropdownEl.value && !dropdownEl.value.contains(e.target)) {
+    dropdownOpen.value = false
+  }
+}
+const onKey = (e) => {
+  if (e.key === 'Escape') dropdownOpen.value = false
+}
+
+onMounted(() => {
+  document.addEventListener('click', onDocClick)
+  document.addEventListener('keydown', onKey)
+})
+onBeforeUnmount(() => {
+  document.removeEventListener('click', onDocClick)
+  document.removeEventListener('keydown', onKey)
+})
+
+// Close on route change
+watch(() => route.fullPath, closeAll)
 
 const { isDark, toggle } = useDarkMode()
 </script>

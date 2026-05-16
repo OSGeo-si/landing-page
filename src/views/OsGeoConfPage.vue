@@ -3,6 +3,7 @@
     eyebrow="Konferenca"
     :title="page?.title || 'Open Source Geospatial Slovenija'"
     :tagline="page?.tagline"
+    :events="events"
   />
 
   <section class="section-tight">
@@ -15,7 +16,7 @@
         <span class="rule"></span>
       </div>
       <div class="mt-8">
-        <EventList :events="events" />
+        <EventSections :events="events" />
       </div>
     </div>
   </section>
@@ -24,7 +25,7 @@
 <script setup>
 import PageHero from '@/components/PageHero.vue'
 import MarkdownContent from '@/components/MarkdownContent.vue'
-import EventList from '@/components/EventList.vue'
+import EventSections from '@/components/EventSections.vue'
 import { getEventsByTag, getPage } from '@/content.js'
 
 const page = getPage('osgeo-konferenca')
