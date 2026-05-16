@@ -7,7 +7,7 @@
           <h3 class="font-serif text-2xl text-moss-900">{{ upcomingTitle }}</h3>
         </div>
         <span class="text-xs font-medium uppercase tracking-[0.12em] text-moss-700/70">
-          {{ upcoming.length }} {{ upcoming.length === 1 ? 'dogodek' : 'dogodkov' }}
+          {{ upcoming.length }} {{ slPlural(upcoming.length, eventForms) }}
         </span>
       </div>
       <EventList :events="upcoming" />
@@ -17,7 +17,7 @@
       <div class="mb-5 flex items-baseline justify-between gap-4 border-b border-moss-700/15 pb-3">
         <h3 class="font-serif text-2xl text-moss-900/80">{{ pastTitle }}</h3>
         <span class="text-xs font-medium uppercase tracking-[0.12em] text-moss-700/60">
-          {{ past.length }} {{ past.length === 1 ? 'arhivski' : 'v arhivu' }}
+          {{ past.length }} {{ slPlural(past.length, eventForms) }}
         </span>
       </div>
       <EventList :events="pastDisplayed" />
@@ -27,7 +27,7 @@
           class="text-sm font-semibold text-moss-700 hover:text-moss-900"
           @click="showAllPast = !showAllPast"
         >
-          {{ showAllPast ? 'Prikaži manj ↑' : `Pokaži vseh ${past.length} preteklih ↓` }}
+          {{ showAllPast ? 'Prikaži manj ↑' : `Pokaži ${pastShowAllLabel} ↓` }}
         </button>
       </div>
     </section>
@@ -42,6 +42,9 @@
 import { computed, ref } from 'vue'
 import EventList from './EventList.vue'
 import { isFutureEvent } from '@/content.js'
+import { slPlural } from '@/utils/slPlural.js'
+
+const eventForms = ['dogodek', 'dogodka', 'dogodki', 'dogodkov']
 
 const props = defineProps({
   events: { type: Array, required: true },
@@ -69,4 +72,5 @@ const pastDisplayed = computed(() => {
   if (!props.pastLimit) return past.value
   return showAllPast.value ? past.value : past.value.slice(0, props.pastLimit)
 })
+const pastShowAllLabel = computed(() => `vse pretekle (${past.value.length})`)
 </script>

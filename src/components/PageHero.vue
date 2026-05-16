@@ -1,7 +1,7 @@
 <template>
   <section
     class="relative overflow-hidden border-b border-moss-700/10 bg-paper-2"
-    :class="hasMap ? 'min-h-[480px]' : ''"
+    :class="hasMap ? 'min-h-[320px]' : ''"
   >
     <!-- Map (full-bleed). `isolate` contains Leaflet's pane z-indices so they don't paint over the title. -->
     <div v-if="hasMap" class="absolute inset-0 isolate z-0">
@@ -38,7 +38,7 @@
       <div class="absolute right-0 bottom-0 h-72 w-72 rounded-full bg-ochre/30 blur-3xl"></div>
     </div>
 
-    <div class="container-page relative z-20 py-16 md:py-24">
+    <div class="container-page relative z-20 py-10 md:py-14">
       <div :class="hasMap ? 'max-w-2xl' : ''">
         <p v-if="eyebrow" class="eyebrow">{{ eyebrow }}</p>
         <h1 class="mt-3 font-serif text-4xl leading-tight text-moss-900 md:text-5xl" :class="hasMap ? '' : 'max-w-3xl'">

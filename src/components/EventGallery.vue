@@ -5,7 +5,7 @@
         <p class="eyebrow">Galerija</p>
       </div>
       <span class="text-xs font-medium uppercase tracking-[0.12em] text-moss-700/70">
-        {{ images.length }} {{ images.length === 1 ? 'fotografija' : 'fotografij' }}
+        {{ images.length }} {{ slPlural(images.length, photoForms) }}
       </span>
     </div>
     <div class="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3">
@@ -80,6 +80,9 @@
 
 <script setup>
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { slPlural } from '@/utils/slPlural.js'
+
+const photoForms = ['fotografija', 'fotografiji', 'fotografije', 'fotografij']
 
 const props = defineProps({
   images: { type: Array, required: true },

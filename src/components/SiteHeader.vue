@@ -1,9 +1,8 @@
 <template>
   <header class="sticky top-0 z-40 border-b border-moss-700/10 bg-paper/85 backdrop-blur">
     <div class="container-page flex h-16 items-center justify-between gap-6">
-      <router-link to="/" class="flex items-center gap-3 no-underline" @click="closeAll">
+      <router-link to="/" class="flex items-center no-underline" @click="closeAll">
         <img :src="logo" alt="OSGeo Slovenija" class="h-9 w-auto" />
-        <span class="hidden font-serif text-lg font-semibold text-moss-800 md:inline">OSGeo Slovenija</span>
       </router-link>
 
       <nav class="hidden items-center gap-1 md:flex">
