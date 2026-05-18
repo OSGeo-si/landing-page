@@ -6,6 +6,7 @@ time: "18:00"
 location: "Urbanistični inštitut Republike Slovenije, Trnovski pristan 2, Ljubljana"
 lat: 46.0445
 lng: 14.5045
+eventUrl: "https://luma.com/n0xccp20"
 tags: [geodev]
 ---
 

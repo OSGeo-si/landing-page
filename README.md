@@ -114,10 +114,22 @@ Dogodek je brezplačen in odprt vsem. Pridruži se.
 | `time` | ne | `"18:00"` — _v narekovajih_ |
 | `location` | ✅ | Polni naslov |
 | `lat`, `lng` | ne* | Koordinati (glej [spodaj](#%EF%B8%8F-kako-pridobiti-koordinate)) |
-| `eventUrl` | ne | Povezava za prijavo (Google form, Mailchimp …) |
+| `eventUrl` | ne | Povezava za prijavo (Luma, Google form, Mailchimp …). Na strani dogodka postane gumb **"Prijavi se na dogodek"** (odpre v novem zavihku). |
 | `tags` | ✅ | `[geodev]`, `[osgeo-conference]` ali `[osgeo-svizec]` |
 
 > \* Brez `lat`/`lng` se dogodek **ne pojavi na zemljevidu**, vse ostalo pa deluje normalno.
+
+### 💡 Priporočilo: uporabi Luma za prijave
+
+Za vsak nov dogodek priporočamo, da naredimo Luma dogodek na [lu.ma](https://lu.ma) (brezplačno, brez registracije za udeležence) in **njegov URL prilepimo v `eventUrl:`**. Luma poskrbi za:
+
+- potrditveni e-mail,
+- opomnike pred dogodkom,
+- listo udeležencev,
+- kapaciteto z waiting listo,
+- dodajanje v koledar.
+
+Tudi gumb "Dodaj v koledar" na strani dogodka deluje samodejno (generiran iz `date`, `time`, `end_date` v frontmatter), ne glede na to, kateri RSVP servis uporabimo.
 
 ### 4. Shrani
 

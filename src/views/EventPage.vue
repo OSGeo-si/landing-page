@@ -21,16 +21,19 @@
             {{ formattedCoords }}
           </span>
         </div>
-        <a
-          v-if="event.eventUrl && !eventPassed && isExternal"
-          :href="event.eventUrl"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn"
-        >
-          Prijavi se na dogodek
-          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7" /></svg>
-        </a>
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            v-if="event.eventUrl && !eventPassed && isExternal"
+            :href="event.eventUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
+          >
+            Prijavi se na dogodek
+            <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7" /></svg>
+          </a>
+          <AddToCalendarButton v-if="!eventPassed" :event="event" />
+        </div>
       </template>
     </PageHero>
 
@@ -68,6 +71,7 @@ import PageHero from '@/components/PageHero.vue'
 import MarkdownContent from '@/components/MarkdownContent.vue'
 import EventGallery from '@/components/EventGallery.vue'
 import NewsletterSignup from '@/components/NewsletterSignup.vue'
+import AddToCalendarButton from '@/components/AddToCalendarButton.vue'
 import { getEvent } from '@/content.js'
 
 const route = useRoute()
