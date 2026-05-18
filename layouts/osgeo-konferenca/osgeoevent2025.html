@@ -1,0 +1,155 @@
+{{ define "main" }}
+<div class="container">
+  <div class="content">
+    <div class="head">
+      <h1>{{ .Title }}</h1>
+      <div class="location-date">
+        {{ range .Params.location_lines }}<p>{{ . }}</p>{{ end }}
+        <p class="date">{{ .Params.date_display }}</p>
+      </div>
+    </div>
+    <section class="program">
+      <h1>Program dogodka</h1>
+
+      <div class="card">
+        <h2>Delavnice 22. oktober 2025</h2>
+        <div class="workshops">
+          {{ range .Params.workshops }}
+            <div class="workshop-card">
+              <div class="workshop-title">{{ .title }}</div>
+              <div class="workshop-presenter">{{ .presenter }}</div>
+              <div class="workshop-time">{{ .time }}</div>
+              <div class="desc-toggle">Pokaži podrobnosti</div>
+              <div class="desc">{{ .description | safeHTML }}</div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Konferenca 23. oktober 2025</h2>
+        <div class="conference-cards">
+          {{ range .Params.conference }}
+            <div class="conference-card">
+              <div class="conference-time">{{ .time }}</div>
+              <div class="conference-title">
+                {{ range .titles }}<p>{{ . }}</p>{{ end }}
+                {{ with .title }}{{ . }}{{ end }}
+              </div>
+              {{ with .presenter }}<div class="conference-presenter">{{ . }}</div>{{ end }}
+              {{ with .description }}
+                <div class="desc-toggle">Pokaži podrobnosti</div>
+                <div class="desc">{{ . | safeHTML }}</div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section class="registration card">
+      <h2>Prijava na dogodek</h2>
+      <ul>
+        <li>Prijava na konferenco je <span class="free">BREZPLAČNA</span>.</li>
+        <li>Cena posamezne delavnice je <span class="price">20 EUR (brezplačno za člane)</span>.</li>
+        <li>Prijave sprejemamo do vključno <strong>20. 10. 2025 do 14. ure</strong>.</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<style>
+.workshops { display: flex; flex-wrap: nowrap; gap: 1.2em; margin-top: 1em; }
+.card { margin-top: 2.5em; }
+.card:first-of-type { margin-top: 0; }
+.workshop-card {
+  background: var(--background-main);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.5em;
+  min-width: 180px;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--primary-color);
+}
+.workshop-title { font-size: 1.15em; font-weight: bold; color: var(--primary-color); margin-bottom: 0.3em; }
+.workshop-presenter { color: var(--secondary-color); margin-bottom: 0.2em; }
+.workshop-time { color: var(--gray); margin-bottom: 0.2em; }
+.conference-cards { display: flex; flex-direction: column; gap: 1.2em; margin-top: 1em; }
+.conference-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(42, 122, 226, 0.07);
+  padding: 1.2em 1.5em;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.conference-time { font-size: 1.1em; font-weight: bold; color: var(--primary-color); margin-bottom: 0.2em; }
+.conference-title { font-size: 1.15em; font-weight: bold; color: var(--secondary-color); margin-bottom: 0.2em; }
+.conference-presenter { font-size: 1em; color: var(--gray-dark); margin-bottom: 0.2em; }
+.desc { font-size: 0.98em; color: #444; margin-top: 0.3em; }
+.registration.card {
+  background: linear-gradient(135deg, #f8fbff 80%, #e3eaf3 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(42, 122, 226, 0.09);
+  padding: 2em 2.5em;
+  margin-top: 2.5em;
+  border: 1px solid #e3eaf3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.registration.card h2 { color: var(--primary-color); font-size: 1.35em; margin-bottom: 1em; }
+.registration.card ul { margin-bottom: 1.5em; font-size: 1.08em; color: var(--gray-dark); padding-left: 1.2em; }
+.registration.card .free { color: var(--primary-color); font-weight: bold; }
+.registration.card .price { color: var(--secondary-color); font-weight: bold; }
+.head {
+  background: #f6fafd;
+  border-radius: 16px;
+  box-shadow: 0 2px 14px rgba(42, 122, 226, 0.08);
+  padding: 2.2em 2.5em 1.5em 2.5em;
+  margin-bottom: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #e3eaf3;
+}
+.head h1 { font-size: 2.3em; font-weight: 800; color: var(--primary-color); margin-bottom: 0.5em; letter-spacing: 0.03em; position: relative; }
+.head h1::after { content: ''; display: block; width: 80px; height: 5px; background: var(--secondary-color); border-radius: 3px; margin-top: 0.3em; }
+.location-date { margin-top: 1em; font-size: 1.08em; color: var(--secondary-color); display: flex; flex-direction: column; gap: 0.2em; }
+.location-date p { margin: 0; display: flex; align-items: center; gap: 0.5em; }
+.location-date .date { font-weight: bold; color: var(--secondary-color); font-size: 1.12em; margin-top: 0.3em; }
+
+@media (max-width: 768px) {
+  .workshops { flex-direction: column; }
+  .workshop-card { width: 100%; }
+  .desc { display: none; }
+  .desc.is-open { display: block; }
+  .desc-toggle { display: block; cursor: pointer; margin-bottom: 10px; color: #007BFF; text-decoration: underline; }
+}
+@media (min-width: 769px) {
+  .workshops { flex-direction: row; }
+  .desc { display: block; }
+  .desc-toggle { display: none; }
+}
+</style>
+
+<script>
+(function () {
+  document.querySelectorAll('.desc-toggle').forEach(function (t) {
+    t.addEventListener('click', function () {
+      var card = t.closest('.workshop-card, .conference-card');
+      if (!card) return;
+      var desc = card.querySelector('.desc');
+      if (!desc) return;
+      var open = desc.classList.toggle('is-open');
+      t.textContent = open ? 'Skrij podrobnosti' : 'Pokaži podrobnosti';
+    });
+  });
+})();
+</script>
+{{ end }}

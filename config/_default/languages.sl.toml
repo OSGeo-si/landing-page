@@ -1,0 +1,26 @@
+disabled = false
+locale = "sl-SI"
+label = "Slovenščina"
+weight = 1
+title = "OSGeo Slovenija"
+
+[params]
+  displayName = "SL"
+  isoCode = "sl"
+  rtl = false
+  dateFormat = "2. 1. 2006"
+  logo = "images/osgeo-si-logo.svg"
+  description = "Razvoj in promocija odprtokodnih geoprostorskih tehnologij ter odprtih podatkovnih standardov v Sloveniji."
+  copyright = "© :YEAR: OSGeo Slovenija"
+
+[params.author]
+  name = "OSGeo Slovenija"
+  image = "images/osgeo-si-logo.svg"
+  headline = "Razvoj in promocija odprtokodnih geoprostorskih tehnologij ter odprtih podatkovnih standardov v Sloveniji."
+  bio = "Društvo OSGeo Slovenija — odprtokodne geoprostorske tehnologije."
+  links = [
+    { email = "mailto:osgeoslovenija@gmail.com" },
+    { github = "https://github.com/OSGeo-si" },
+    { discord = "https://discord.gg/XQGqrz8CgA" },
+    { linkedin = "https://www.linkedin.com/company/osgeo-slovenija/about" },
+  ]

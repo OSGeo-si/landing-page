@@ -1,0 +1,29 @@
+[[main]]
+  name = "Konferenca"
+  pageRef = "osgeo-konferenca"
+  weight = 10
+
+[[main]]
+  name = "GeoDev"
+  pageRef = "geodev"
+  weight = 20
+
+[[main]]
+  name = "Svizec"
+  pageRef = "svizec"
+  weight = 30
+
+[[main]]
+  name = "Kje tebe karta žuli?"
+  pageRef = "kje-tebe-karta-zuli"
+  weight = 40
+
+[[main]]
+  name = "Teren"
+  pageRef = "teren"
+  weight = 50
+
+[[main]]
+  name = "O nas"
+  pageRef = "about"
+  weight = 60
