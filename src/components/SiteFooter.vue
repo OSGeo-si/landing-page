@@ -27,10 +27,10 @@
             <a href="mailto:osgeoslovenija@gmail.com" class="text-moss-900/80 no-underline hover:text-moss-700">osgeoslovenija@gmail.com</a>
           </li>
           <li>
-            <a href="http://eepurl.com/i3SUYE" target="_blank" rel="noopener" class="text-moss-900/80 no-underline hover:text-moss-700">Newsletter</a>
+            <a :href="withUtm('http://eepurl.com/i3SUYE', 'newsletter')" target="_blank" rel="noopener" class="text-moss-900/80 no-underline hover:text-moss-700">Newsletter</a>
           </li>
           <li>
-            <a href="https://wiki.osgeo.org/wiki/Slovenia" target="_blank" rel="noopener" class="text-moss-900/80 no-underline hover:text-moss-700">OSGeo Wiki</a>
+            <a :href="withUtm('https://wiki.osgeo.org/wiki/Slovenia', 'footer')" target="_blank" rel="noopener" class="text-moss-900/80 no-underline hover:text-moss-700">OSGeo Wiki</a>
           </li>
         </ul>
         <div class="mt-4 flex items-center gap-3">
@@ -57,6 +57,7 @@
 
 <script setup>
 import logo from '@/assets/osgeo-si-logo.svg'
+import { withUtm } from '@/utils/utm.js'
 
 const year = new Date().getFullYear()
 </script>

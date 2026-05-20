@@ -1,7 +1,19 @@
 import yaml from 'js-yaml'
 import { marked } from 'marked'
+import { withUtm } from '@/utils/utm.js'
 
 const frontmatterRe = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/
+
+function tagExternalLinks(html) {
+  return html.replace(/<a\b([^>]*?)href="(https?:\/\/[^"]+)"([^>]*)>/gi, (match, pre, href, post) => {
+    const tagged = withUtm(href, 'content')
+    if (tagged === href) return match
+    const attrs = pre + post
+    const hasTarget = /\btarget=/i.test(attrs)
+    const extra = hasTarget ? '' : ' target="_blank" rel="noopener"'
+    return `<a${pre}href="${tagged}"${post}${extra}>`
+  })
+}
 
 function parseFile(raw, sourcePath) {
   const match = frontmatterRe.exec(raw)
@@ -18,7 +30,7 @@ function parseFile(raw, sourcePath) {
 }
 
 function renderBody(body) {
-  return marked.parse(body, { gfm: true, breaks: false })
+  return tagExternalLinks(marked.parse(body, { gfm: true, breaks: false }))
 }
 
 const eventModules = import.meta.glob('/content/events/**/*.md', { query: '?raw', import: 'default', eager: true })
