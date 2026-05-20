@@ -20,6 +20,17 @@
       </div>
 
       <div class="mt-12">
+        <p class="eyebrow">Partnerji</p>
+        <h3 class="mt-2 font-serif text-2xl text-moss-900">Skupaj odpiramo prostorske podatke.</h3>
+        <span class="rule"></span>
+        <div class="mt-6 flex flex-wrap items-center gap-8">
+          <a href="https://citizenscience.si/" target="_blank" rel="noopener" aria-label="Mreža občanske znanosti">
+            <img :src="citizenscience" alt="Mreža občanske znanosti" class="h-12 w-auto" />
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-12">
         <p class="eyebrow">Podporniki</p>
         <h3 class="mt-2 font-serif text-2xl text-moss-900">Hvala za pomoč.</h3>
         <span class="rule"></span>
@@ -37,6 +48,7 @@ import MarkdownContent from '@/components/MarkdownContent.vue'
 import { getPage } from '@/content.js'
 import qr from '@/assets/qr-koda-2026.png'
 import flycom from '@/assets/flycom-logo-main-web.png'
+import citizenscience from '@/assets/citizenscience-si.png'
 
 const page = getPage('about')
 </script>

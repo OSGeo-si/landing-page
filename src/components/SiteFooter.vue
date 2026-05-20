@@ -2,9 +2,8 @@
   <footer class="mt-16 border-t border-moss-700/10 bg-paper-2">
     <div class="container-page grid gap-10 py-12 md:grid-cols-3">
       <div>
-        <router-link to="/" class="flex items-center gap-3 no-underline">
+        <router-link to="/" class="inline-flex items-center no-underline">
           <img :src="logo" alt="OSGeo Slovenija" class="h-10 w-auto" />
-          <span class="font-serif text-lg font-semibold text-moss-800">OSGeo Slovenija</span>
         </router-link>
         <p class="mt-4 max-w-xs text-sm text-moss-900/70">
           Razvoj in promocija odprtokodnih geoprostorskih tehnologij ter odprtih podatkovnih standardov v Sloveniji.

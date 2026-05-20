@@ -9,6 +9,7 @@ const routes = [
   { path: '/svizec', name: 'Svizec', component: () => import('@/views/SvizecPage.vue') },
   { path: '/teren', name: 'Teren', component: () => import('@/views/TerenPage.vue') },
   { path: '/kje-tebe-karta-zuli', name: 'KjeTebeKartaZuli', component: () => import('@/views/KjeTebeKartaZuliPage.vue') },
+  { path: '/dogodki', name: 'Events', component: () => import('@/views/EventsPage.vue') },
   { path: '/dogodki/:slug', name: 'Event', component: () => import('@/views/EventPage.vue') },
 
   { path: '/novice', name: 'News', component: () => import('@/views/NewsPage.vue') },

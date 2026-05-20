@@ -40,7 +40,7 @@
           <h2 class="mt-2 font-serif text-3xl text-moss-900 md:text-4xl">Prihajajoči dogodki</h2>
           <span class="rule"></span>
         </div>
-        <router-link to="/geodev" class="hidden text-sm font-semibold text-moss-700 hover:text-moss-900 md:inline">
+        <router-link to="/dogodki" class="hidden text-sm font-semibold text-moss-700 hover:text-moss-900 md:inline">
           Vsi dogodki →
         </router-link>
       </div>

@@ -3,7 +3,7 @@ title: "Skupno terensko srečanje z odonatološkim društvom"
 slug: srecanje-z-odonatologi
 date: 2023-06-03
 summary: "Na Krasu in v Vipavski dolini smo skupaj s Slovenskim odonatološkim društvom (SOD) združili znanje o opazovanju kačjih pastirjev z odprtokodnimi GIS-orodji za terensko zbiranje podatkov."
-cover: 01-terensko-delo.jpg
+cover: 09-terensko-delo.jpg
 tags: [teren, sodelovanje, biologija]
 ---
 

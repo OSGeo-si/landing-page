@@ -2,7 +2,6 @@
   <PageHero
     eyebrow="Bilten"
     title="Novice"
-    tagline="Kratka poročila s konferenc, hackathonov in dogodkov, kjer društvo sodeluje, ter novice iz odprtokodne geoprostorske skupnosti."
   />
 
   <section class="section-tight">

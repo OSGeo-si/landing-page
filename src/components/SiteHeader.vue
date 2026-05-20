@@ -6,17 +6,25 @@
       </router-link>
 
       <nav class="hidden items-center gap-1 md:flex">
-        <!-- Dogodki dropdown -->
-        <div ref="dropdownEl" class="relative">
-          <button
-            type="button"
-            class="inline-flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium no-underline transition hover:bg-moss-50 hover:text-moss-900"
-            :class="dogodkiActive ? 'text-moss-800 bg-moss-50' : 'text-moss-900/70'"
-            :aria-expanded="dropdownOpen"
-            aria-haspopup="menu"
-            @click="dropdownOpen = !dropdownOpen"
+        <!-- Dogodki: link + sub-series dropdown via chevron -->
+        <div ref="dropdownEl" class="relative flex items-center">
+          <router-link
+            to="/dogodki"
+            class="rounded-md px-3 py-2 text-sm font-medium text-moss-900/70 no-underline transition hover:bg-moss-50 hover:text-moss-900"
+            active-class="text-moss-800 bg-moss-50"
+            :class="dogodkiActive ? 'text-moss-800 bg-moss-50' : ''"
+            @click="closeAll"
           >
             Dogodki
+          </router-link>
+          <button
+            type="button"
+            class="ml-0.5 rounded-md p-1.5 text-moss-900/60 transition hover:bg-moss-50 hover:text-moss-900"
+            :aria-expanded="dropdownOpen"
+            aria-haspopup="menu"
+            aria-label="Serije dogodkov"
+            @click="dropdownOpen = !dropdownOpen"
+          >
             <svg viewBox="0 0 24 24" class="h-3.5 w-3.5 transition" :class="{ 'rotate-180': dropdownOpen }" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6" />
             </svg>
@@ -34,6 +42,15 @@
               role="menu"
               class="absolute left-0 top-full z-50 mt-2 min-w-[14rem] overflow-hidden rounded-lg border border-moss-700/15 bg-surface shadow-card"
             >
+              <router-link
+                to="/dogodki"
+                role="menuitem"
+                class="block border-b border-moss-700/10 px-4 py-2.5 text-sm font-semibold text-moss-900 no-underline transition hover:bg-moss-50"
+                active-class="bg-moss-50 text-moss-800"
+                @click="closeAll"
+              >
+                Vsi dogodki
+              </router-link>
               <router-link
                 v-for="item in eventNav"
                 :key="item.to"
@@ -130,7 +147,15 @@
 
     <nav v-if="mobileOpen" class="border-t border-moss-700/10 md:hidden">
       <div class="container-page flex flex-col py-3">
-        <p class="px-3 pb-1 pt-2 text-xs font-semibold uppercase tracking-[0.16em] text-moss-600">Dogodki</p>
+        <router-link
+          to="/dogodki"
+          class="rounded-md px-3 py-2.5 text-sm font-semibold text-moss-900 no-underline transition hover:bg-moss-50"
+          active-class="bg-moss-50 text-moss-800"
+          @click="closeAll"
+        >
+          Vsi dogodki
+        </router-link>
+        <p class="px-3 pb-1 pt-3 text-xs font-semibold uppercase tracking-[0.16em] text-moss-600">Serije</p>
         <router-link
           v-for="item in eventNav"
           :key="item.to"
@@ -182,7 +207,11 @@ const dropdownOpen = ref(false)
 const mobileOpen = ref(false)
 const dropdownEl = ref(null)
 
-const dogodkiActive = computed(() => eventNav.some(item => route.path.startsWith(item.to)))
+const dogodkiActive = computed(() =>
+  route.path === '/dogodki' ||
+  route.path.startsWith('/dogodki/') ||
+  eventNav.some(item => route.path.startsWith(item.to))
+)
 
 const closeAll = () => {
   dropdownOpen.value = false
