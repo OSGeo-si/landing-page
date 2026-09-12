@@ -34,7 +34,7 @@ SLOnček je odprtokodna platforma za avtomatizirano pridobivanje, upravljanje in
 
 _Alen Mangafić, OSGeo Slovenija_
 
-Letošnja svetovna konferenca [FOSS4G](https://2026.foss4g.org/en/) je potekala v Hirošimi na Japonskem, OSGeo Slovenija pa se je je udeležila v polni zasedbi. Strnili bomo vtise in predstavili tehnične novosti, ki so nas najbolj navdušile: nove različice in funkcionalnosti ključnih odprtokodnih geoprostorskih orodij, formate in standarde, ki se uveljavljajo, ter projekte in trende, ki jih velja spremljati. Kaj lahko že jutri uporabimo doma in kaj nas je dobesedno sezulo.
+Letošnja svetovna konferenca [FOSS4G](https://2026.foss4g.org/en/) je potekala v Hirošimi na Japonskem, OSGeo Slovenija pa se je je udeležila v polni zasedbi. Strnili bomo vtise s konference in dogajanja nasploh ter predstavili tehnične novosti, ki so nas najbolj navdušile: nove različice in funkcionalnosti ključnih odprtokodnih geoprostorskih orodij, formate in standarde, ki se uveljavljajo, ter projekte in trende, ki jih velja spremljati. Kaj lahko že jutri uporabimo doma in kaj nas je dobesedno sezulo.
 
 ---
 
