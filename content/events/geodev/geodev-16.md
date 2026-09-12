@@ -44,4 +44,8 @@ Letošnja svetovna konferenca [FOSS4G](https://2026.foss4g.org/en/) je potekala 
 
 Dogodek je **brezplačen** in odprt vsem. Pridruži se zabavnemu in poučnemu večeru z drugimi razvijalci in navdušenci nad geoprostorskimi rešitvami in podatki.
 
+📹 Dogodek se bo **snemal**. Z udeležbo na dogodku soglašaš s snemanjem.
+
+💻 Kdor se dogodka ne more udeležiti v živo, ga lahko spremlja prek [Microsoft Teams](https://teams.microsoft.com/meet/396308877197169?p=JiPjaIa9pvN7cJ6zLf) (Meeting ID: 396 308 877 197 169). Geslo za vstop bo objavljeno na [Discordu](https://discord.gg/aJtB6VxG) eno uro pred dogodkom.
+
 Dogodek in prostor je omogočil [Urbanistični inštitut Republike Slovenije](https://www.uirs.si/sl-si/).
