@@ -6,7 +6,7 @@ time: "18:00"
 location: "Urbanistični inštitut Republike Slovenije, Trnovski pristan 2, Ljubljana"
 lat: 46.0445
 lng: 14.5045
-eventUrl: "{{LUMA_URL}}"
+eventUrl: "https://luma.com/xbu56l9s"
 tags: [geodev]
 ---
 
