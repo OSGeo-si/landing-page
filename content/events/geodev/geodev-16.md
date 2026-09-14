@@ -1,7 +1,7 @@
 ---
 title: "GeoDev Meetup #16"
 slug: geodev-16
-date: 2026-09-22
+date: 2026-09-23
 time: "18:00"
 location: "Urbanistični inštitut Republike Slovenije, Trnovski pristan 2, Ljubljana"
 lat: 46.0445
@@ -16,7 +16,7 @@ Vabljeni na **šestnajsti GeoDev meetup**, tokrat z **dvema predavanjema** (vsak
 
 📍 **Lokacija:** [Urbanistični inštitut Republike Slovenije](https://www.uirs.si/sl-si/), Trnovski pristan 2, Ljubljana
 
-📅 **Datum:** torek, 22. september 2026
+📅 **Datum:** sreda, 23. september 2026
 
 🕕 **Čas:** 18:00
 
@@ -32,7 +32,7 @@ SLOnček je odprtokodna platforma za avtomatizirano pridobivanje, upravljanje in
 
 ### 18:30 — FOSS4G 2026: kaj nas je sezulo
 
-_Alen Mangafić, OSGeo Slovenija_
+_Alen Mangafić, Geodetski inštitut Slovenije in OSGeo Slovenija_
 
 Letošnja svetovna konferenca [FOSS4G](https://2026.foss4g.org/en/) je potekala v Hirošimi na Japonskem, OSGeo Slovenija pa se je je udeležila v polni zasedbi. Strnili bomo vtise s konference in dogajanja nasploh ter predstavili tehnične novosti, ki so nas najbolj navdušile: nove različice in funkcionalnosti ključnih odprtokodnih geoprostorskih orodij, formate in standarde, ki se uveljavljajo, ter projekte in trende, ki jih velja spremljati. Kaj lahko že jutri uporabimo doma in kaj nas je dobesedno sezulo.
 
