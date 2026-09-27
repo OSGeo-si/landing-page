@@ -1,4 +1,4 @@
-var jo=Object.defineProperty;var fo=(e,n,o)=>n in e?jo(e,n,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[n]=o;var b=(e,n,o)=>fo(e,typeof n!="symbol"?n+"":n,o);import{A as bo}from"./index-D4li67vn.js";function bl(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const zo=`---
+var jo=Object.defineProperty;var fo=(e,n,o)=>n in e?jo(e,n,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[n]=o;var b=(e,n,o)=>fo(e,typeof n!="symbol"?n+"":n,o);import{A as bo}from"./index-CwUTNFJl.js";function bl(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const zo=`---
 title: "GeoDev Meetup #1"
 slug: geodev-1
 date: 2017-10-23
@@ -951,6 +951,7 @@ slug: osgeo-slovenija-2026
 date: 2026-10-14
 end_date: 2026-10-15
 time: "08:30"
+end_time: "12:30"
 location: "Gozdarski inštitut Slovenije, Večna pot 2, Ljubljana"
 lat: 46.0518
 lng: 14.4727
@@ -983,27 +984,27 @@ Blaž Rolih je doktorski študent na Fakulteti za računalništvo in informatiko
 
 Patrik Mizera — 12:00–15:00
 
-This workshop provides a hands-on guide to the complete field data collection workflow using **QGIS** and **Mergin Maps**.
+This workshop provides a hands-on guide to the complete field data collection workflow using QGIS and Mergin Maps.
 
 Participants will learn how to:
 
-1. **Configure QGIS projects ready for data collection:** Set up background maps, smart forms, and tracking tools for offline use.
-2. **Collect data collaboratively:** Deploy projects to mobile devices and capture data as a team, managing synchronization and version control.
-3. **Publish results:** Seamlessly share finished projects as interactive web maps for non-GIS stakeholders.
+1. Configure QGIS projects ready for data collection: Set up background maps, smart forms, and tracking tools for offline use.
+2. Collect data collaboratively: Deploy projects to mobile devices and capture data as a team, managing synchronization and version control.
+3. Publish results: Seamlessly share finished projects as interactive web maps for non-GIS stakeholders.
 
 We will start by setting up a QGIS project specifically for the field. You will learn how to prepare background maps for offline use, design smart forms for easy data entry, and enable tools for tracking and sketching. Once the project is configured, we will show you how to share it with multiple users, allowing a whole team to go out and collect data simultaneously.
 
 Acting as that field team, we will then use the Mergin Maps mobile app to capture data in real time. We will look at how the platform handles collaboration, merging edits from different users and managing version control without the usual conflicts.
 
-Finally, we will bring the data back into the desktop environment and explore **Web Map Publishing**. You will see how to take your finished QGIS project and publish it as an interactive web map, making it easy to share survey results with clients or stakeholders who do not use GIS.
+Finally, we will bring the data back into the desktop environment and explore Web Map Publishing. You will see how to take your finished QGIS project and publish it as an interactive web map, making it easy to share survey results with clients or stakeholders who do not use GIS.
 
-**Requirements:** Laptop with QGIS installed. Mobile device (Android or iOS) with the Mergin Maps app.
+Requirements: Laptop with QGIS installed. Mobile device (Android or iOS) with the Mergin Maps app.
 
 Patrik Mizera helps organizations improve their field data collection. As a GIS Consultant at Lutra Consulting, he focuses on helping teams adopt QGIS and Mergin Maps to eliminate data loss and scale their projects efficiently. An extrovert at heart, he enjoys meeting fellow GIS enthusiasts and hearing their perspectives on industry challenges.
 
 ## Konferenca — 15. oktober 2026
 
-Moderator prvega dela: **dr. Tomaž Šturm**
+Moderator prvega dela: **Tomaž Šturm**
 
 ### 8:30 — Uvodni pozdrav
 
@@ -1043,9 +1044,9 @@ Many organizations still rely on the manual "pen and paper" method for field sur
 
 During the talk, we will present how Mergin Maps is used in real-life scenarios, enabling:
 
-- **Seamless collection:** Prepare standardized forms with safety features such as mandatory fields and drop-down menus to ensure that no data is left behind or incorrectly collected.
-- **Integrated geotagged photos:** With the mobile app, you can take multiple pictures per data point. They are automatically georeferenced and become part of your project immediately.
-- **Instant synchronization:** Update your QGIS layers with a single button, with no cables or manual CSV imports required. Surveyors can work on the same project at the same time with precise versioning of their data, while office and field teams remain connected even when they are miles apart. While synchronization is handled online, all data collection remains fully available offline for remote locations.
+- Seamless collection: Prepare standardized forms with safety features such as mandatory fields and drop-down menus to ensure that no data is left behind or incorrectly collected.
+- Integrated geotagged photos: With the mobile app, you can take multiple pictures per data point. They are automatically georeferenced and become part of your project immediately.
+- Instant synchronization: Update your QGIS layers with a single button, with no cables or manual CSV imports required. Surveyors can work on the same project at the same time with precise versioning of their data, while office and field teams remain connected even when they are miles apart. While synchronization is handled online, all data collection remains fully available offline for remote locations.
 
 Mergin Maps is an open-source platform that enables you to collect field data directly into your QGIS project. Being fully integrated with QGIS means that all layers, background maps, symbology, and custom forms are synchronized and shown in the mobile app exactly as they appear on your desktop. Mergin Maps is designed to be intuitive and as simple as possible. Your field team can focus on the tasks at hand without needing to know that QGIS exists, yet they will still be able to collect high-quality, professional data.
 
@@ -1071,7 +1072,7 @@ Matevž Pesek je izredni profesor na Fakulteti za računalništvo in informatiko
 
 ### 10:25 — Odmor
 
-Moderator drugega dela: **dr. Alen Mangafić**
+Moderator drugega dela: **Alen Mangafić**
 
 ### 11:00 — Od satelitskega posnetka do uporabne rešitve: Planet, odprti ekosistem in Geo Slovenija
 
@@ -1115,7 +1116,7 @@ Brin Blatnik is a data scientist currently working in bank risk management, with
 
 ### 12:20 — Predstavitev aktivnosti Društva OSGeo Slovenija
 
-dr. Alen Mangafić
+Alen Mangafić
 
 ### 12:30 — Zaključek dogodka
 `,No=`---
