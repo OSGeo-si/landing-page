@@ -112,6 +112,7 @@ Dogodek je brezplačen in odprt vsem. Pridruži se.
 | `date` | ✅ | `YYYY-MM-DD`, npr. `2026-02-12` |
 | `end_date` | ne | Za večdnevne dogodke (`2026-02-13`) |
 | `time` | ne | `"18:00"` — _v narekovajih_ |
+| `end_time` | ne | `"12:30"`, konec dogodka (zadnji dan), uporabi se pri "Dodaj v koledar" |
 | `location` | ✅ | Polni naslov |
 | `lat`, `lng` | ne* | Koordinati (glej [spodaj](#%EF%B8%8F-kako-pridobiti-koordinate)) |
 | `eventUrl` | ne | Povezava za prijavo (Luma, Google form, Mailchimp …). Na strani dogodka postane gumb **"Prijavi se na dogodek"** (odpre v novem zavihku). |

@@ -47,9 +47,9 @@ export function buildICS(event) {
 
   let endToken
   if (event.end_date) {
-    endToken = formatDateTime(event.end_date, event.time || '17:00')
+    endToken = formatDateTime(event.end_date, event.end_time || event.time || '17:00')
   } else if (hasTime) {
-    endToken = formatDateTime(event.date, inferEndTime(event.time))
+    endToken = formatDateTime(event.date, event.end_time || inferEndTime(event.time))
   } else {
     // All-day single date — DTEND should be next day (exclusive).
     const start = new Date(`${event.date}T00:00:00Z`)
