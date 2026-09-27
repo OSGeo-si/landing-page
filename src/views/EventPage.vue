@@ -38,16 +38,19 @@
     </PageHero>
 
     <section class="section-tight">
-      <div class="container-narrow">
-        <MarkdownContent :html="event.html" />
-        <div v-if="event.gallery?.length" class="mt-16">
-          <EventGallery :images="event.gallery" />
-        </div>
-        <div class="mt-14">
-          <NewsletterSignup />
-        </div>
-        <div class="mt-10">
-          <router-link to="/" class="text-sm font-semibold text-moss-700 hover:text-moss-900">← Nazaj na začetno stran</router-link>
+      <div :class="program ? 'container-page lg:grid lg:grid-cols-[minmax(0,48rem)_15rem] lg:justify-center lg:gap-14' : 'container-narrow'">
+        <ProgramToc v-if="program" :items="program.toc" class="lg:col-start-2 lg:row-start-1" />
+        <div class="min-w-0 lg:col-start-1 lg:row-start-1">
+          <MarkdownContent :html="html" :class="{ 'prose-program': program }" />
+          <div v-if="event.gallery?.length" class="mt-16">
+            <EventGallery :images="event.gallery" />
+          </div>
+          <div class="mt-14">
+            <NewsletterSignup />
+          </div>
+          <div class="mt-10">
+            <router-link to="/" class="text-sm font-semibold text-moss-700 hover:text-moss-900">← Nazaj na začetno stran</router-link>
+          </div>
         </div>
       </div>
     </section>
@@ -73,9 +76,13 @@ import EventGallery from '@/components/EventGallery.vue'
 import NewsletterSignup from '@/components/NewsletterSignup.vue'
 import AddToCalendarButton from '@/components/AddToCalendarButton.vue'
 import { getEvent } from '@/content.js'
+import ProgramToc from '@/components/ProgramToc.vue'
+import { programLayout } from '@/utils/programLayout.js'
 
 const route = useRoute()
 const event = computed(() => getEvent(route.params.slug))
+const program = computed(() => event.value?.layout === 'program' ? programLayout(event.value.html) : null)
+const html = computed(() => program.value?.html ?? event.value?.html)
 
 const formattedDate = computed(() => event.value?.date ? dayjs(event.value.date).format('DD. MM. YYYY') : '')
 const formattedEndDate = computed(() => event.value?.end_date ? dayjs(event.value.end_date).format('DD. MM. YYYY') : '')

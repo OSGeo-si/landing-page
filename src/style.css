@@ -122,4 +122,62 @@
   .prose-osgeo h3 {
     @apply mt-8 font-serif text-2xl;
   }
+
+  /* Conference program (events with `layout: program`, see utils/programLayout.js) */
+  .prose-program > h1 {
+    @apply hidden;
+  }
+  .prose-program [id] {
+    @apply scroll-mt-32 lg:scroll-mt-24;
+  }
+  .prose-program > h1 + p {
+    @apply mt-0 rounded-lg border border-moss-700/15 bg-paper-2 px-5 py-4 text-sm leading-relaxed text-moss-900/80;
+  }
+  .prose-program > h2 {
+    @apply mt-16 mb-6 border-b border-moss-700/15 pb-3 text-3xl text-moss-900;
+  }
+  .prose-program > h2:first-of-type {
+    @apply mt-10;
+  }
+  .prose-program .program-moderator {
+    @apply my-6 text-xs font-semibold uppercase tracking-[0.14em] text-moss-600;
+  }
+  .prose-program .program-moderator strong {
+    @apply text-moss-800;
+  }
+  .prose-program .session {
+    @apply my-4 grid gap-x-6 gap-y-2 rounded-xl bg-surface p-5 shadow-card sm:grid-cols-[6.5rem_1fr] md:p-6;
+  }
+  .prose-program .session-time {
+    @apply pt-1 font-mono text-sm font-semibold tabular-nums text-moss-600;
+  }
+  .prose-program .session-body > :first-child {
+    @apply mt-0;
+  }
+  .prose-program .session-body > :last-child {
+    @apply mb-0;
+  }
+  .prose-program .session h3 {
+    @apply mb-0 text-xl leading-snug text-moss-900 md:text-2xl;
+  }
+  .prose-program .session-badge {
+    @apply ml-2 inline-block translate-y-[-2px] rounded-full border border-moss-600/40 px-2 py-0.5 align-middle font-sans text-[0.65rem] font-semibold tracking-[0.12em] text-moss-600;
+  }
+  .prose-program .session-speaker {
+    @apply mt-1.5 mb-4 text-sm font-semibold text-moss-700;
+  }
+  .prose-program .session-body > p:not(.session-speaker),
+  .prose-program .session-body > ul,
+  .prose-program .session-body > ol {
+    @apply text-[0.95rem] leading-relaxed;
+  }
+  .prose-program .session-short {
+    @apply bg-transparent py-3 shadow-none ring-1 ring-moss-700/10 ring-inset md:py-4;
+  }
+  .prose-program .session-short h3 {
+    @apply text-lg text-moss-800 md:text-lg;
+  }
+  .prose-program .session-short .session-time {
+    @apply pt-0.5;
+  }
 }
