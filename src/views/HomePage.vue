@@ -18,7 +18,7 @@
         <p v-if="home?.html" class="mt-4 max-w-xl text-base text-moss-900/70" v-html="home.html"></p>
 
         <div class="mt-8 flex flex-wrap gap-3">
-          <router-link to="/osgeo-konferenca" class="btn">
+          <router-link :to="currentConference ? `/dogodki/${currentConference.slug}` : '/osgeo-konferenca'" class="btn">
             Letošnja konferenca
             <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7" /></svg>
           </router-link>
@@ -73,9 +73,11 @@
 import svizec from '@/assets/svizec-main-clr.svg'
 import EventList from '@/components/EventList.vue'
 import NewsList from '@/components/NewsList.vue'
-import { getAllNews, getPage, getUpcomingEvents } from '@/content.js'
+import { getAllNews, getEventsByTag, getPage, getUpcomingEvents } from '@/content.js'
 
 const home = getPage('home')
+// Events are sorted newest first, so this is this year's conference.
+const currentConference = getEventsByTag('osgeo-conference')[0]
 const upcomingEvents = getUpcomingEvents()
 const latestNews = getAllNews().slice(0, 3)
 </script>
