@@ -3,9 +3,9 @@ title: "GeoDev Meetup #17"
 slug: geodev-17
 date: 2026-11-11
 time: "18:00"
-location: "TBD, Maribor (center)"
-lat: 46.5575
-lng: 15.6456
+location: "Vetrinjc - BarCoda, Vetrinjski dvor, Vetrinjska ulica 30, Maribor"
+lat: 46.5596
+lng: 15.6486
 eventUrl: "{{LUMA_URL}}"
 tags: [geodev]
 ---
@@ -14,7 +14,7 @@ Pozdravljeni!
 
 Vabljeni na **sedemnajsti GeoDev meetup**, tokrat že tradicionalno **na Martinovo v Mariboru**, z **dvema predavanjema** (vsako 20 min + 10 min Q&A).
 
-📍 **Lokacija:** TBD (Maribor, center). Točna lokacija bo objavljena kmalu.
+📍 **Lokacija:** [Vetrinjc - BarCoda](https://www.openstreetmap.org/node/5102758625), Vetrinjski dvor, Vetrinjska ulica 30, Maribor
 
 📅 **Datum:** sreda, 11. november 2026
 
