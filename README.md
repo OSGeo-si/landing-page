@@ -116,6 +116,7 @@ Dogodek je brezplačen in odprt vsem. Pridruži se.
 | `location` | ✅ | Polni naslov |
 | `lat`, `lng` | ne* | Koordinati (glej [spodaj](#%EF%B8%8F-kako-pridobiti-koordinate)) |
 | `eventUrl` | ne | Povezava za prijavo (Luma, Google form, Mailchimp …). Na strani dogodka postane gumb **"Prijavi se na dogodek"** (odpre v novem zavihku). |
+| `registrationClosed` | ne | `true`, ko so prijave zaprte (npr. ni več prostih mest). Namesto gumba za prijavo se prikaže "Prijave so zaprte - ni več prostih mest". |
 | `tags` | ✅ | `[geodev]`, `[osgeo-conference]` ali `[osgeo-svizec]` |
 
 > \* Brez `lat`/`lng` se dogodek **ne pojavi na zemljevidu**, vse ostalo pa deluje normalno.

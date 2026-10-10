@@ -23,7 +23,7 @@
         </div>
         <div class="flex flex-wrap items-center gap-3">
           <a
-            v-if="event.eventUrl && !eventPassed && isExternal"
+            v-if="event.eventUrl && !eventPassed && isExternal && !event.registrationClosed"
             :href="event.eventUrl"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,6 +32,12 @@
             Prijavi se na dogodek
             <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7" /></svg>
           </a>
+          <span
+            v-if="event.registrationClosed && !eventPassed"
+            class="inline-flex items-center rounded-full bg-moss-50 px-4 py-2 text-sm font-semibold text-moss-700"
+          >
+            Prijave so zaprte - ni več prostih mest
+          </span>
           <AddToCalendarButton v-if="!eventPassed" :event="event" />
         </div>
       </template>

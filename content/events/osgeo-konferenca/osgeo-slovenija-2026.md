@@ -9,6 +9,7 @@ location: "Gozdarski inštitut Slovenije, Večna pot 2, Ljubljana"
 lat: 46.0518
 lng: 14.4727
 eventUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfFXBAVDKNSfVKIl0fvPrmVvE_tGH67nURGFmmIv60uJuP8KA/viewform"
+registrationClosed: true
 tags: [osgeo-conference]
 featured: true
 layout: program
