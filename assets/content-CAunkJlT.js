@@ -1,4 +1,4 @@
-var jo=Object.defineProperty;var fo=(e,n,o)=>n in e?jo(e,n,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[n]=o;var b=(e,n,o)=>fo(e,typeof n!="symbol"?n+"":n,o);import{A as bo}from"./index-zalzxQLL.js";function Ls(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const zo=`---
+var jo=Object.defineProperty;var fo=(e,n,o)=>n in e?jo(e,n,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[n]=o;var b=(e,n,o)=>fo(e,typeof n!="symbol"?n+"":n,o);import{A as bo}from"./index-B-8pmn9v.js";function Ls(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const zo=`---
 title: "GeoDev Meetup #1"
 slug: geodev-1
 date: 2017-10-23
@@ -333,7 +333,7 @@ tags: [geodev]
 
 Pozdravljeni!
 
-Vabljeni na **sedemnajsti GeoDev meetup**, tokrat že tradicionalno **na Martinovo v Mariboru**, s **tremi predavanji** (vsako 15 min + 5 min Q&A).
+Vabljeni na **sedemnajsti GeoDev meetup**, tokrat že tradicionalno **na Martinovo v Mariboru**, z **dvema predavanjema**.
 
 📍 **Lokacija:** [Vetrinjc - BarCoda](https://www.openstreetmap.org/node/5102758625), Vetrinjski dvor, Vetrinjska ulica 30, Maribor
 
@@ -351,17 +351,11 @@ Model 15-minutnega mesta predvideva, da so vsakodnevne potrebe dostopne v kratke
 
 ---
 
-### 18:20 - Primerjava arhitektur modelov za napovedovanje vegetacije iz delno zakritih satelitskih posnetkov
+### 18:30 - Primerjava arhitektur modelov za napovedovanje vegetacije iz delno zakritih satelitskih posnetkov
 
 _Aljaž Žel, UM FERI_
 
 Kratkoročno napovedovanje vegetacije iz satelitskih posnetkov pogosto ovira oblačnost, zaradi katere je časovna vrsta posnetkov redka in neenakomerno vzorčena. Obstoječi pristopi večinoma predpostavljajo vhodne podatke brez oblakov. V sklopu predstavitve bodo primerjane različne arhitekture modelov in zasnove napovednih cevovodov, pri katerih so manjkajoči podatki najprej zapolnjeni ali pa je napovedovanje izvedeno neposredno na podlagi razpoložljivih opazovanj. Ob tem bo prikazano širše metodološko vprašanje napovedovanja v okoliščinah, ko vsa opazovanja niso na voljo, in kako je pristop mogoče prenesti na druga področja.
-
----
-
-### 18:40 - Iščemo predavatelja: vinogradništvo in prostorski podatki
-
-Tretje predavanje je še prosto! Glede na datum dogodka iščemo predavanje, ki bi povezalo **vinogradništvo** ter **prostorske podatke in analize**. Če bi kaj želel povedati, piši na [nejc.dougan@flai.ai](mailto:nejc.dougan@flai.ai).
 
 ---
 
