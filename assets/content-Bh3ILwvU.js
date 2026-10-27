@@ -1,4 +1,4 @@
-var jo=Object.defineProperty;var fo=(e,n,o)=>n in e?jo(e,n,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[n]=o;var b=(e,n,o)=>fo(e,typeof n!="symbol"?n+"":n,o);import{A as bo}from"./index-B-8pmn9v.js";function Ls(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const zo=`---
+var jo=Object.defineProperty;var fo=(e,n,o)=>n in e?jo(e,n,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[n]=o;var b=(e,n,o)=>fo(e,typeof n!="symbol"?n+"":n,o);import{A as bo}from"./index-Bl90f6Ml.js";function Ls(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const zo=`---
 title: "GeoDev Meetup #1"
 slug: geodev-1
 date: 2017-10-23
@@ -324,9 +324,9 @@ title: "GeoDev Meetup #17"
 slug: geodev-17
 date: 2026-11-11
 time: "18:00"
-location: "Vetrinjc - BarCoda, Vetrinjski dvor, Vetrinjska ulica 30, Maribor"
+location: "Tovarna podjemov (Venture Factory), Ulica škofa Maksimilijana Držečnika 6, Maribor"
 lat: 46.5596
-lng: 15.6486
+lng: 15.6491
 eventUrl: "{{LUMA_URL}}"
 tags: [geodev]
 ---
@@ -335,7 +335,7 @@ Pozdravljeni!
 
 Vabljeni na **sedemnajsti GeoDev meetup**, tokrat že tradicionalno **na Martinovo v Mariboru**, z **dvema predavanjema**.
 
-📍 **Lokacija:** [Vetrinjc - BarCoda](https://www.openstreetmap.org/node/5102758625), Vetrinjski dvor, Vetrinjska ulica 30, Maribor
+📍 **Lokacija:** [Tovarna podjemov (Venture Factory)](https://www.openstreetmap.org/?mlat=46.5596&mlon=15.6491#map=19/46.5596/15.6491), Ulica škofa Maksimilijana Držečnika 6, Maribor
 
 📅 **Datum:** sreda, 11. november 2026
 
