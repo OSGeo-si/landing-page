@@ -6,7 +6,7 @@ time: "18:00"
 location: "Tovarna podjemov (Venture Factory), Ulica škofa Maksimilijana Držečnika 6, Maribor"
 lat: 46.5596
 lng: 15.6491
-eventUrl: "{{LUMA_URL}}"
+eventUrl: "https://luma.com/npo68nwq"
 tags: [geodev]
 ---
 
