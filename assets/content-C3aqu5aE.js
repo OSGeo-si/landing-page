@@ -1,4 +1,4 @@
-var jo=Object.defineProperty;var fo=(e,n,o)=>n in e?jo(e,n,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[n]=o;var b=(e,n,o)=>fo(e,typeof n!="symbol"?n+"":n,o);import{A as bo}from"./index-Bl90f6Ml.js";function Ls(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const zo=`---
+var jo=Object.defineProperty;var fo=(e,n,o)=>n in e?jo(e,n,{enumerable:!0,configurable:!0,writable:!0,value:o}):e[n]=o;var b=(e,n,o)=>fo(e,typeof n!="symbol"?n+"":n,o);import{A as bo}from"./index-DduUQkdS.js";function Ls(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}const zo=`---
 title: "GeoDev Meetup #1"
 slug: geodev-1
 date: 2017-10-23
@@ -327,7 +327,7 @@ time: "18:00"
 location: "Tovarna podjemov (Venture Factory), Ulica škofa Maksimilijana Držečnika 6, Maribor"
 lat: 46.5596
 lng: 15.6491
-eventUrl: "{{LUMA_URL}}"
+eventUrl: "https://luma.com/npo68nwq"
 tags: [geodev]
 ---
 
