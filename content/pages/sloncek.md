@@ -7,6 +7,4 @@ SLOnček je odprtokodna platforma za avtomatizirano pridobivanje, upravljanje in
 
 Projekt je nastal v okviru [Geo Slovenija Hackathona](/#/novice/geo-slovenija-hackathon), skupnosti pa je bil predstavljen na [GeoDevu #16](/#/novice/geodev-16). Prvo delovno srečanje je potekalo 11. novembra 2026 v Mariboru, ob [GeoDevu #17](/#/novice/geodev-17).
 
-Projekt bo dobil svoj dom na [OSGeo Slovenija GitHubu](https://github.com/OSGeo-si). Repozitorij je zaenkrat še zaseben, pod _issues_ pa so že prve teme za razpravo.
-
 Če želiš sodelovati, se nam oglasi po [e-pošti](mailto:osgeoslovenija@gmail.com) ali na [Discordu](https://discord.gg/XQGqrz8CgA). Veseli bomo kakršnihkoli komentarjev, predlogov in mnenj!
