@@ -198,7 +198,7 @@ const eventNav = [
   { to: '/osgeo-konferenca', label: 'Konferenca' },
   { to: '/geodev', label: 'GeoDev' },
   { to: '/svizec', label: 'Svizec' },
-  { to: '/kje-tebe-karta-zuli', label: 'Kje tebe karta žuli?' },
+  { to: '/sloncek', label: 'SLOnček' },
   { to: '/teren', label: 'Teren' },
 ]
 

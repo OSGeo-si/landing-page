@@ -243,7 +243,7 @@ Opisi posameznih sekcij so v mapi [`content/pages/`](./content/pages):
 | `osgeo-konferenca.md` | uvod nad arhivom konferenc |
 | `svizec.md` | uvod nad Svizci |
 | `teren.md` | Teren |
-| `kje-tebe-karta-zuli.md` | Karta |
+| `sloncek.md` | SLOnček |
 
 Klikni datoteko, klikni svinčnik (✏️) za urejanje, naredi spremembe, na dnu klikni **Commit changes**.
 

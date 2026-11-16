@@ -8,7 +8,7 @@ const routes = [
   { path: '/geodev', name: 'GeoDev', component: () => import('@/views/GeoDevPage.vue') },
   { path: '/svizec', name: 'Svizec', component: () => import('@/views/SvizecPage.vue') },
   { path: '/teren', name: 'Teren', component: () => import('@/views/TerenPage.vue') },
-  { path: '/kje-tebe-karta-zuli', name: 'KjeTebeKartaZuli', component: () => import('@/views/KjeTebeKartaZuliPage.vue') },
+  { path: '/sloncek', name: 'Sloncek', component: () => import('@/views/SloncekPage.vue') },
   { path: '/dogodki', name: 'Events', component: () => import('@/views/EventsPage.vue') },
   { path: '/dogodki/:slug', name: 'Event', component: () => import('@/views/EventPage.vue') },
 

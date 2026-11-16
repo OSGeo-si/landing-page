@@ -1,7 +1,7 @@
 <template>
   <PageHero
-    eyebrow="Kartografija"
-    :title="page?.title || 'Kje tebe karta žuli?'"
+    eyebrow="Skupnostni projekti"
+    :title="page?.title || 'SLOnček'"
     :tagline="page?.tagline"
   />
   <section class="section-tight">
@@ -16,5 +16,5 @@ import PageHero from '@/components/PageHero.vue'
 import MarkdownContent from '@/components/MarkdownContent.vue'
 import { getPage } from '@/content.js'
 
-const page = getPage('kje-tebe-karta-zuli')
+const page = getPage('sloncek')
 </script>
